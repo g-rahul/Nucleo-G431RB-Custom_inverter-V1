@@ -1,0 +1,2378 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [NUCLEOG431RB-Custom-IN-A2212\NUCLEOG431RB-Custom-IN-A2212.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image NUCLEOG431RB-Custom-IN-A2212\NUCLEOG431RB-Custom-IN-A2212.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Jul 30 14:00:41 2020
+<BR><P>
+<H3>Maximum Stack Usage =        264 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; MX_MotorControl_Init &rArr; MCboot &rArr; R1_Init &rArr; R1_TIMxInit
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[c]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c]">NMI_Handler</a><BR>
+ <LI><a href="#[e]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[e]">MemManage_Handler</a><BR>
+ <LI><a href="#[f]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[f]">BusFault_Handler</a><BR>
+ <LI><a href="#[10]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[10]">UsageFault_Handler</a><BR>
+ <LI><a href="#[11]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[11]">SVC_Handler</a><BR>
+ <LI><a href="#[12]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[12]">DebugMon_Handler</a><BR>
+ <LI><a href="#[13]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[13]">PendSV_Handler</a><BR>
+ <LI><a href="#[4e]">COMP1_2_3_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4e]">COMP1_2_3_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[26]">ADC1_2_IRQHandler</a> from stm32g4xx_mc_it.o(i.ADC1_2_IRQHandler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[f]">BusFault_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[4e]">COMP1_2_3_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[4f]">COMP4_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[59]">CORDIC_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[50]">CRS_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[20]">DMA1_Channel1_IRQHandler</a> from stm32g4xx_mc_it.o(i.DMA1_Channel1_IRQHandler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[21]">DMA1_Channel2_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[22]">DMA1_Channel3_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[23]">DMA1_Channel4_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[24]">DMA1_Channel5_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[25]">DMA1_Channel6_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[48]">DMA2_Channel1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[49]">DMA2_Channel2_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[4a]">DMA2_Channel3_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[4b]">DMA2_Channel4_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[4c]">DMA2_Channel5_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[58]">DMA2_Channel6_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[57]">DMAMUX_OVR_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[12]">DebugMon_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[1b]">EXTI0_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[3c]">EXTI15_10_IRQHandler</a> from stm32g4xx_mc_it.o(i.EXTI15_10_IRQHandler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[1c]">EXTI1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[1d]">EXTI2_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[1e]">EXTI3_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[1f]">EXTI4_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[2b]">EXTI9_5_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[29]">FDCAN1_IT0_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[2a]">FDCAN1_IT1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[19]">FLASH_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[5a]">FMAC_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[52]">FPU_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[d]">HardFault_Handler</a> from stm32g4xx_mc_it.o(i.HardFault_Handler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[34]">I2C1_ER_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[33]">I2C1_EV_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[36]">I2C2_ER_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[35]">I2C2_EV_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[56]">I2C3_ER_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[55]">I2C3_EV_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[43]">LPTIM1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[54]">LPUART1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[5e]">MCP_OnTimeOut</a> from motor_control_protocol.o(i.MCP_OnTimeOut) referenced from motor_control_protocol.o(i.MCP_Init)
+ <LI><a href="#[5f]">MCP_ReceivedFrame</a> from motor_control_protocol.o(i.MCP_ReceivedFrame) referenced from motor_control_protocol.o(i.MCP_Init)
+ <LI><a href="#[60]">MCP_SentFrame</a> from motor_control_protocol.o(i.MCP_SentFrame) referenced from motor_control_protocol.o(i.MCP_Init)
+ <LI><a href="#[e]">MemManage_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[c]">NMI_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[16]">PVD_PVM_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[13]">PendSV_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[5]">R1_CalcDutyCycles</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_CalcDutyCycles) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[5]">R1_CalcDutyCycles</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_CalcDutyCycles) referenced from r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+ <LI><a href="#[3]">R1_CurrentReadingPolarization</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[0]">R1_GetPhaseCurrents</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_GetPhaseCurrents) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[0]">R1_GetPhaseCurrents</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_GetPhaseCurrents) referenced from r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+ <LI><a href="#[61]">R1_HFCurrentsPolarization</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_HFCurrentsPolarization) referenced from r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+ <LI><a href="#[6]">R1_IsOverCurrentOccurred</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_IsOverCurrentOccurred) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[62]">R1_SetADCSampPointPolarization</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_SetADCSampPointPolarization) referenced from r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+ <LI><a href="#[1]">R1_SwitchOffPWM</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_SwitchOffPWM) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[2]">R1_SwitchOnPWM</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_SwitchOnPWM) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[4]">R1_TurnOnLowSides</a> from r1_g4xx_pwm_curr_fdbk.o(i.R1_TurnOnLowSides) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[1a]">RCC_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[53]">RNG_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[3d]">RTC_Alarm_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[17]">RTC_TAMP_LSECSS_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[18]">RTC_WKUP_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[b]">Reset_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[51]">SAI1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[37]">SPI1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[38]">SPI2_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[44]">SPI3_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[9]">STO_OTF_ResetPLL</a> from sto_pll_speed_pos_fdbk.o(.text) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[7]">STO_PLL_ForceConvergency1</a> from sto_pll_speed_pos_fdbk.o(.text) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[8]">STO_PLL_ForceConvergency2</a> from sto_pll_speed_pos_fdbk.o(.text) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[a]">STO_PLL_IsVarianceTight</a> from sto_pll_speed_pos_fdbk.o(.text) referenced 2 times from mc_config.o(.data)
+ <LI><a href="#[11]">SVC_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[14]">SysTick_Handler</a> from stm32g4xx_mc_it.o(i.SysTick_Handler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[5c]">SystemInit</a> from system_stm32g4xx.o(i.SystemInit) referenced from startup_stm32g431xx.o(.text)
+ <LI><a href="#[2c]">TIM1_BRK_TIM15_IRQHandler</a> from stm32g4xx_mc_it.o(i.TIM1_BRK_TIM15_IRQHandler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[2f]">TIM1_CC_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[2e]">TIM1_TRG_COM_TIM17_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[2d]">TIM1_UP_TIM16_IRQHandler</a> from stm32g4xx_mc_it.o(i.TIM1_UP_TIM16_IRQHandler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[30]">TIM2_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[31]">TIM3_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[32]">TIM4_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[46]">TIM6_DAC_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[47]">TIM7_DAC_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[3f]">TIM8_BRK_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[42]">TIM8_CC_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[41]">TIM8_TRG_COM_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[40]">TIM8_UP_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[45]">UART4_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[4d]">UCPD1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[63]">UFCP_AbortReceive</a> from usart_frame_communication_protocol.o(i.UFCP_AbortReceive) referenced from ui_task.o(i.UI_TaskInit)
+ <LI><a href="#[64]">UFCP_Receive</a> from usart_frame_communication_protocol.o(i.UFCP_Receive) referenced from ui_task.o(i.UI_TaskInit)
+ <LI><a href="#[65]">UFCP_Send</a> from usart_frame_communication_protocol.o(i.UFCP_Send) referenced from ui_task.o(i.UI_TaskInit)
+ <LI><a href="#[39]">USART1_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[3a]">USART2_IRQHandler</a> from stm32g4xx_mc_it.o(i.USART2_IRQHandler) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[3b]">USART3_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[3e]">USBWakeUp_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[27]">USB_HP_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[28]">USB_LP_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[10]">UsageFault_Handler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[15]">WWDG_IRQHandler</a> from startup_stm32g431xx.o(.text) referenced from startup_stm32g431xx.o(RESET)
+ <LI><a href="#[5d]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_stm32g431xx.o(.text)
+ <LI><a href="#[5b]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[5d]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(.text)
+</UL>
+<P><STRONG><a name="[166]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[66]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[8e]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[167]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[168]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[169]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[16a]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[16b]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[11b]"></a>RUC_FirstAccelerationStageReached</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, revup_ctrl.o(.ccmram))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[68]"></a>STO_PLL_CalcElAngle</STRONG> (Thumb, 466 bytes, Stack size 112 bytes, sto_pll_speed_pos_fdbk.o(.ccmram))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = STO_PLL_CalcElAngle &rArr; PI_Controller
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Trig_Functions
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PI_Controller
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[11d]"></a>STO_PLL_CalcAvrgElSpeedDpp</STRONG> (Thumb, 78 bytes, Stack size 4 bytes, sto_pll_speed_pos_fdbk.o(.ccmram))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = STO_PLL_CalcAvrgElSpeedDpp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[6b]"></a>STO_ResetPLL</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.ccmram))
+<BR><BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetIntegralTerm
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[b]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[4e]"></a>COMP1_2_3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;COMP1_2_3_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;COMP1_2_3_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[4f]"></a>COMP4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[59]"></a>CORDIC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[50]"></a>CRS_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>DMA1_Channel2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>DMA1_Channel3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>DMA1_Channel4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>DMA1_Channel5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>DMA1_Channel6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[48]"></a>DMA2_Channel1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[49]"></a>DMA2_Channel2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[4a]"></a>DMA2_Channel3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[4b]"></a>DMA2_Channel4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[4c]"></a>DMA2_Channel5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[58]"></a>DMA2_Channel6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[57]"></a>DMAMUX_OVR_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>FDCAN1_IT0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>FDCAN1_IT1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>FLASH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[5a]"></a>FMAC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[52]"></a>FPU_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>I2C1_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>I2C1_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>I2C2_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>I2C2_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[56]"></a>I2C3_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[55]"></a>I2C3_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[43]"></a>LPTIM1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[54]"></a>LPUART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>PVD_PVM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>RCC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[53]"></a>RNG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>RTC_Alarm_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>RTC_TAMP_LSECSS_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>RTC_WKUP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[51]"></a>SAI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[44]"></a>SPI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>TIM1_TRG_COM_TIM17_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>TIM2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>TIM4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[46]"></a>TIM6_DAC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>TIM7_DAC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[3f]"></a>TIM8_BRK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>TIM8_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[41]"></a>TIM8_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[40]"></a>TIM8_UP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[45]"></a>UART4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[4d]"></a>UCPD1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>USART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>USART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>USBWakeUp_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>USB_HP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>USB_LP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g431xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[eb]"></a>RUC_Init</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, revup_ctrl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RUC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[6d]"></a>RUC_Clear</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, revup_ctrl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = RUC_Clear &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_SetControlMode
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_ExecRamp
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_Clear
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_SetMecAngle
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_SetMecAcceleration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[73]"></a>RUC_OTF_Exec</STRONG> (Thumb, 508 bytes, Stack size 40 bytes, revup_ctrl.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_ExecRamp
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetAvrgMecSpeedUnit
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_SwitchOffPWM
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_SetMecAcceleration
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_SetCopyObserver
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_TurnOnLowSides
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_SwitchOnPWM
+</UL>
+
+<P><STRONG><a name="[79]"></a>RUC_Exec</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, revup_ctrl.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = RUC_Exec &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_ExecRamp
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_SetMecAcceleration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[16c]"></a>RUC_Completed</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, revup_ctrl.o(.text), UNUSED)
+
+<P><STRONG><a name="[7a]"></a>RUC_Stop</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, revup_ctrl.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetAvrgMecSpeedUnit
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_SetMecAcceleration
+</UL>
+
+<P><STRONG><a name="[154]"></a>RUC_SetPhaseDurationms</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, revup_ctrl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetRevupData
+</UL>
+
+<P><STRONG><a name="[155]"></a>RUC_SetPhaseFinalMecSpeedUnit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, revup_ctrl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetRevupData
+</UL>
+
+<P><STRONG><a name="[156]"></a>RUC_SetPhaseFinalTorque</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, revup_ctrl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetRevupData
+</UL>
+
+<P><STRONG><a name="[14b]"></a>RUC_GetPhaseDurationms</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, revup_ctrl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetRevupData
+</UL>
+
+<P><STRONG><a name="[14c]"></a>RUC_GetPhaseFinalMecSpeedUnit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, revup_ctrl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetRevupData
+</UL>
+
+<P><STRONG><a name="[14d]"></a>RUC_GetPhaseFinalTorque</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, revup_ctrl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetRevupData
+</UL>
+
+<P><STRONG><a name="[146]"></a>RUC_GetNumberOfPhases</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, revup_ctrl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[16d]"></a>RUC_Get_SCLowsideOTF_Status</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, revup_ctrl.o(.text), UNUSED)
+
+<P><STRONG><a name="[7b]"></a>STO_PLL_Clear</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = STO_PLL_Clear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetIntegralTerm
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_Init
+</UL>
+
+<P><STRONG><a name="[7c]"></a>STO_PLL_Init</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = STO_PLL_Init &rArr; STO_PLL_Clear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_Clear
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_HandleInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[16e]"></a>STO_PLL_Return</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text), UNUSED)
+
+<P><STRONG><a name="[7e]"></a>STO_PLL_CalcAvrgMecSpeedUnit</STRONG> (Thumb, 318 bytes, Stack size 24 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = STO_PLL_CalcAvrgMecSpeedUnit &rArr; SPD_IsMecSpeedReliable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_IsMecSpeedReliable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[124]"></a>STO_PLL_IsObserverConverged</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = STO_PLL_IsObserverConverged
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[13f]"></a>STO_PLL_GetEstimatedBemf</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[13e]"></a>STO_PLL_GetEstimatedCurrent</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[13c]"></a>STO_PLL_GetObserverGains</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[152]"></a>STO_PLL_SetObserverGains</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+</UL>
+
+<P><STRONG><a name="[80]"></a>STO_GetPLLGains</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = STO_GetPLLGains
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKP
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKI
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[83]"></a>STO_SetPLLGains</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = STO_SetPLLGains
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKP
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKI
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+</UL>
+
+<P><STRONG><a name="[16f]"></a>STO_PLL_SetMecAngle</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text), UNUSED)
+
+<P><STRONG><a name="[9]"></a>STO_OTF_ResetPLL</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetIntegralTerm
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[86]"></a>STO_SetPLL</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, sto_pll_speed_pos_fdbk.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetIntegralTerm
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKIDivisor
+</UL>
+
+<P><STRONG><a name="[140]"></a>STO_PLL_GetEstimatedBemfLevel</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[141]"></a>STO_PLL_GetObservedBemfLevel</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[170]"></a>STO_PLL_BemfConsistencyCheckSwitch</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text), UNUSED)
+
+<P><STRONG><a name="[171]"></a>STO_PLL_IsBemfConsistent</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text), UNUSED)
+
+<P><STRONG><a name="[a]"></a>STO_PLL_IsVarianceTight</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[7]"></a>STO_PLL_ForceConvergency1</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[8]"></a>STO_PLL_ForceConvergency2</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[172]"></a>STO_SetMinStartUpValidSpeedUnit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sto_pll_speed_pos_fdbk.o(.text), UNUSED)
+
+<P><STRONG><a name="[88]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+</UL>
+
+<P><STRONG><a name="[8c]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[173]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[174]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[8b]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[158]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[175]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[8d]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[8a]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[176]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[89]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[177]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[67]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[178]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[179]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[17a]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[26]"></a>ADC1_2_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32g4xx_mc_it.o(i.ADC1_2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = ADC1_2_IRQHandler &rArr; TSK_HighFrequencyTask &rArr; STO_PLL_CalcElAngle &rArr; PI_Controller
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[118]"></a>Circle_Limitation</STRONG> (Thumb, 86 bytes, Stack size 4 bytes, circle_limitation.o(i.Circle_Limitation))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Circle_Limitation
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[20]"></a>DMA1_Channel1_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32g4xx_mc_it.o(i.DMA1_Channel1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32g4xx_mc_it.o(i.EXTI15_10_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = EXTI15_10_IRQHandler &rArr; UI_HandleStartStopButton_cb &rArr; MC_StartMotor1 &rArr; MCI_StartMotor &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_HandleStartStopButton_cb
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[ab]"></a>Error_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, main.o(i.Error_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+</UL>
+
+<P><STRONG><a name="[132]"></a>FCP_CalcCRC</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, frame_communication_protocol.o(i.FCP_CalcCRC))
+<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_RX_IRQ_Handler
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_Send
+</UL>
+
+<P><STRONG><a name="[131]"></a>FCP_Init</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, frame_communication_protocol.o(i.FCP_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_Init
+</UL>
+
+<P><STRONG><a name="[d2]"></a>FCP_SetClient</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, frame_communication_protocol.o(i.FCP_SetClient))
+<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_Init
+</UL>
+
+<P><STRONG><a name="[91]"></a>FOC_CalcCurrRef</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, mc_tasks.o(i.FOC_CalcCurrRef))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = FOC_CalcCurrRef &rArr; STC_CalcTorqueReference &rArr; PI_Controller
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_CalcTorqueReference
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[93]"></a>FOC_Clear</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, mc_tasks.o(i.FOC_Clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FOC_Clear
+</UL>
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_Clear
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_SwitchOffPWM
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetIntegralTerm
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[127]"></a>FOC_InitAdditionalMethods</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, mc_tasks.o(i.FOC_InitAdditionalMethods))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[15d]"></a>HAL_ADCEx_InjectedConfigChannel</STRONG> (Thumb, 1488 bytes, Stack size 36 bytes, stm32g4xx_hal_adc_ex.o(i.HAL_ADCEx_InjectedConfigChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_ADCEx_InjectedConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[15c]"></a>HAL_ADCEx_MultiModeConfigChannel</STRONG> (Thumb, 216 bytes, Stack size 120 bytes, stm32g4xx_hal_adc_ex.o(i.HAL_ADCEx_MultiModeConfigChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = HAL_ADCEx_MultiModeConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[15e]"></a>HAL_ADC_ConfigChannel</STRONG> (Thumb, 1196 bytes, Stack size 48 bytes, stm32g4xx_hal_adc.o(i.HAL_ADC_ConfigChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = HAL_ADC_ConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[95]"></a>HAL_ADC_Init</STRONG> (Thumb, 550 bytes, Stack size 32 bytes, stm32g4xx_hal_adc.o(i.HAL_ADC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_MspInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[96]"></a>HAL_ADC_MspInit</STRONG> (Thumb, 116 bytes, Stack size 40 bytes, stm32g4xx_hal_msp.o(i.HAL_ADC_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_ADC_MspInit &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_Init
+</UL>
+
+<P><STRONG><a name="[98]"></a>HAL_CORDIC_Init</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, stm32g4xx_hal_cordic.o(i.HAL_CORDIC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_CORDIC_Init &rArr; HAL_CORDIC_MspInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CORDIC_MspInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[99]"></a>HAL_CORDIC_MspInit</STRONG> (Thumb, 40 bytes, Stack size 4 bytes, stm32g4xx_hal_msp.o(i.HAL_CORDIC_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = HAL_CORDIC_MspInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CORDIC_Init
+</UL>
+
+<P><STRONG><a name="[aa]"></a>HAL_DMA_Init</STRONG> (Thumb, 252 bytes, Stack size 12 bytes, stm32g4xx_hal_dma.o(i.HAL_DMA_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = HAL_DMA_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+</UL>
+
+<P><STRONG><a name="[97]"></a>HAL_GPIO_Init</STRONG> (Thumb, 528 bytes, Stack size 40 bytes, stm32g4xx_hal_gpio.o(i.HAL_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_MspInit
+</UL>
+
+<P><STRONG><a name="[15b]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32g4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a1]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32g4xx_hal.o(i.HAL_GetTick))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_CheckIdleState
+</UL>
+
+<P><STRONG><a name="[10d]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32g4xx_hal.o(i.HAL_IncTick))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[9a]"></a>HAL_Init</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, stm32g4xx_hal.o(i.HAL_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = HAL_Init &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriorityGrouping
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9c]"></a>HAL_InitTick</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, stm32g4xx_hal.o(i.HAL_InitTick))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_InitTick &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+</UL>
+
+<P><STRONG><a name="[9d]"></a>HAL_MspInit</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32g4xx_hal_msp.o(i.HAL_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_MspInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriorityGrouping
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+</UL>
+
+<P><STRONG><a name="[165]"></a>HAL_NVIC_EnableIRQ</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, stm32g4xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9f]"></a>HAL_NVIC_SetPriority</STRONG> (Thumb, 96 bytes, Stack size 4 bytes, stm32g4xx_hal_cortex.o(i.HAL_NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = HAL_NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+</UL>
+
+<P><STRONG><a name="[9b]"></a>HAL_NVIC_SetPriorityGrouping</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, stm32g4xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
+</UL>
+
+<P><STRONG><a name="[159]"></a>HAL_PWREx_ControlVoltageScaling</STRONG> (Thumb, 180 bytes, Stack size 0 bytes, stm32g4xx_hal_pwr_ex.o(i.HAL_PWREx_ControlVoltageScaling))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a0]"></a>HAL_RCCEx_PeriphCLKConfig</STRONG> (Thumb, 700 bytes, Stack size 32 bytes, stm32g4xx_hal_rcc_ex.o(i.HAL_RCCEx_PeriphCLKConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = HAL_RCCEx_PeriphCLKConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a2]"></a>HAL_RCC_ClockConfig</STRONG> (Thumb, 488 bytes, Stack size 32 bytes, stm32g4xx_hal_rcc.o(i.HAL_RCC_ClockConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = HAL_RCC_ClockConfig &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[15a]"></a>HAL_RCC_EnableCSS</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32g4xx_hal_rcc.o(i.HAL_RCC_EnableCSS))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[f3]"></a>HAL_RCC_GetHCLKFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32g4xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_MotorControl_Init
+</UL>
+
+<P><STRONG><a name="[12e]"></a>HAL_RCC_GetPCLK1Freq</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32g4xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+</UL>
+
+<P><STRONG><a name="[12f]"></a>HAL_RCC_GetPCLK2Freq</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32g4xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+</UL>
+
+<P><STRONG><a name="[a3]"></a>HAL_RCC_GetSysClockFreq</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, stm32g4xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+</UL>
+
+<P><STRONG><a name="[a4]"></a>HAL_RCC_OscConfig</STRONG> (Thumb, 1226 bytes, Stack size 32 bytes, stm32g4xx_hal_rcc.o(i.HAL_RCC_OscConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = HAL_RCC_OscConfig &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a6]"></a>HAL_SYSTICK_Callback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g4xx_hal_cortex.o(i.HAL_SYSTICK_Callback))
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_IRQHandler
+</UL>
+
+<P><STRONG><a name="[9e]"></a>HAL_SYSTICK_Config</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, stm32g4xx_hal_cortex.o(i.HAL_SYSTICK_Config))
+<BR><BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_MotorControl_Init
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+</UL>
+
+<P><STRONG><a name="[a5]"></a>HAL_SYSTICK_IRQHandler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, stm32g4xx_hal_cortex.o(i.HAL_SYSTICK_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_SYSTICK_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[161]"></a>HAL_TIMEx_ConfigBreakDeadTime</STRONG> (Thumb, 178 bytes, Stack size 8 bytes, stm32g4xx_hal_tim_ex.o(i.HAL_TIMEx_ConfigBreakDeadTime))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_TIMEx_ConfigBreakDeadTime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[160]"></a>HAL_TIMEx_ConfigBreakInput</STRONG> (Thumb, 220 bytes, Stack size 16 bytes, stm32g4xx_hal_tim_ex.o(i.HAL_TIMEx_ConfigBreakInput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIMEx_ConfigBreakInput
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[15f]"></a>HAL_TIMEx_MasterConfigSynchronization</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, stm32g4xx_hal_tim_ex.o(i.HAL_TIMEx_MasterConfigSynchronization))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_TIMEx_MasterConfigSynchronization
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a7]"></a>HAL_TIM_Base_Init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32g4xx_hal_tim.o(i.HAL_TIM_Base_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a8]"></a>HAL_TIM_Base_MspInit</STRONG> (Thumb, 152 bytes, Stack size 40 bytes, stm32g4xx_hal_msp.o(i.HAL_TIM_Base_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_TIM_Base_MspInit &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+</UL>
+
+<P><STRONG><a name="[ac]"></a>HAL_TIM_MspPostInit</STRONG> (Thumb, 142 bytes, Stack size 40 bytes, stm32g4xx_hal_msp.o(i.HAL_TIM_MspPostInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_TIM_MspPostInit &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ad]"></a>HAL_TIM_PWM_ConfigChannel</STRONG> (Thumb, 860 bytes, Stack size 36 bytes, stm32g4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC2_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[af]"></a>HAL_TIM_PWM_Init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32g4xx_hal_tim.o(i.HAL_TIM_PWM_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = HAL_TIM_PWM_Init &rArr; TIM_Base_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_MspInit
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b0]"></a>HAL_TIM_PWM_MspInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g4xx_hal_tim.o(i.HAL_TIM_PWM_MspInit))
+<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
+</UL>
+
+<P><STRONG><a name="[b1]"></a>HAL_TIM_SlaveConfigSynchro</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, stm32g4xx_hal_tim.o(i.HAL_TIM_SlaveConfigSynchro))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_SlaveConfigSynchro
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_SlaveTimer_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[164]"></a>HAL_UARTEx_DisableFifoMode</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, stm32g4xx_hal_uart_ex.o(i.HAL_UARTEx_DisableFifoMode))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[17b]"></a>HAL_UARTEx_EnableFifoMode</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, stm32g4xx_hal_uart_ex.o(i.HAL_UARTEx_EnableFifoMode), UNUSED)
+
+<P><STRONG><a name="[163]"></a>HAL_UARTEx_SetRxFifoThreshold</STRONG> (Thumb, 162 bytes, Stack size 24 bytes, stm32g4xx_hal_uart_ex.o(i.HAL_UARTEx_SetRxFifoThreshold))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_UARTEx_SetRxFifoThreshold
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[162]"></a>HAL_UARTEx_SetTxFifoThreshold</STRONG> (Thumb, 162 bytes, Stack size 24 bytes, stm32g4xx_hal_uart_ex.o(i.HAL_UARTEx_SetTxFifoThreshold))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_UARTEx_SetTxFifoThreshold
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b3]"></a>HAL_UART_Init</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, stm32g4xx_hal_uart.o(i.HAL_UART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_CheckIdleState
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_AdvFeatureConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b4]"></a>HAL_UART_MspInit</STRONG> (Thumb, 92 bytes, Stack size 32 bytes, stm32g4xx_hal_msp.o(i.HAL_UART_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = HAL_UART_MspInit &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[d]"></a>HardFault_Handler</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, stm32g4xx_mc_it.o(i.HardFault_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HardFault_Handler &rArr; UFCP_RX_IRQ_Handler &rArr; UFCP_Send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SerialCommunicationTimeOutStop
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SerialCommunicationTimeOutStart
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_TX_IRQ_Handler
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_RX_IRQ_Handler
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_OVR_IRQ_Handler
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HardwareFaultTask
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[be]"></a>MCI_Clear_Iqdref</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, mc_interface.o(i.MCI_Clear_Iqdref))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MCI_Clear_Iqdref
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetDefaultIqdref
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+</UL>
+
+<P><STRONG><a name="[c0]"></a>MCI_EncoderAlign</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_EncoderAlign))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MCI_EncoderAlign &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_NextState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+</UL>
+
+<P><STRONG><a name="[c2]"></a>MCI_ExecBufferedCommands</STRONG> (Thumb, 120 bytes, Stack size 8 bytes, mc_interface.o(i.MCI_ExecBufferedCommands))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = MCI_ExecBufferedCommands &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_SetControlMode
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_ExecRamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[f1]"></a>MCI_ExecSpeedRamp</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_ExecSpeedRamp))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecSpeedRamp
+</UL>
+
+<P><STRONG><a name="[133]"></a>MCI_ExecTorqueRamp</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_ExecTorqueRamp))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecTorqueRamp
+</UL>
+
+<P><STRONG><a name="[c3]"></a>MCI_FaultAcknowledged</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_FaultAcknowledged))
+<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_FaultAcknowledged
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+</UL>
+
+<P><STRONG><a name="[c5]"></a>MCI_GetAvrgMecSpeedUnit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, mc_interface.o(i.MCI_GetAvrgMecSpeedUnit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MCI_GetAvrgMecSpeedUnit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetAvrgMecSpeedUnit
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetSpeedSensor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[138]"></a>MCI_GetControlMode</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetControlMode))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[147]"></a>MCI_GetIab</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetIab))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[148]"></a>MCI_GetIalphabeta</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetIalphabeta))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[11f]"></a>MCI_GetImposedMotorDirection</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetImposedMotorDirection))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[145]"></a>MCI_GetIqd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetIqd))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[13b]"></a>MCI_GetIqdref</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetIqdref))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[139]"></a>MCI_GetLastRampFinalSpeed</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetLastRampFinalSpeed))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[c7]"></a>MCI_GetMecSpeedRefUnit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetMecSpeedRefUnit))
+<BR><BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetMecSpeedRefUnit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[c9]"></a>MCI_GetSTMState</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetSTMState))
+<BR><BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_GetState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_GetSTMStateMotor1
+</UL>
+
+<P><STRONG><a name="[151]"></a>MCI_GetTeref</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetTeref))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+</UL>
+
+<P><STRONG><a name="[14a]"></a>MCI_GetValphabeta</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetValphabeta))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[149]"></a>MCI_GetVqd</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_GetVqd))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[ef]"></a>MCI_Init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[14e]"></a>MCI_SetCurrentReferences</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_SetCurrentReferences))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetCurrentReferences
+</UL>
+
+<P><STRONG><a name="[153]"></a>MCI_SetIdref</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_SetIdref))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+</UL>
+
+<P><STRONG><a name="[cb]"></a>MCI_StartMotor</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, mc_interface.o(i.MCI_StartMotor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MCI_StartMotor &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_NextState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_StartMotor1
+</UL>
+
+<P><STRONG><a name="[cc]"></a>MCI_StopMotor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_StopMotor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MCI_StopMotor &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_NextState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_StopMotor1
+</UL>
+
+<P><STRONG><a name="[cd]"></a>MCI_StopRamp</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_interface.o(i.MCI_StopRamp))
+<BR><BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_StopRamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+</UL>
+
+<P><STRONG><a name="[117]"></a>MCM_Clarke</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, mc_math.o(i.MCM_Clarke))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[cf]"></a>MCM_Park</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, mc_math.o(i.MCM_Park))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MCM_Park
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Trig_Functions
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[d0]"></a>MCM_Rev_Park</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, mc_math.o(i.MCM_Rev_Park))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MCM_Rev_Park
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Trig_Functions
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[69]"></a>MCM_Trig_Functions</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, mc_math.o(i.MCM_Trig_Functions))
+<BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_CalcElAngle
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Rev_Park
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Park
+</UL>
+
+<P><STRONG><a name="[d1]"></a>MCP_Init</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, motor_control_protocol.o(i.MCP_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = MCP_Init &rArr; MCP_WaitNextFrame
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FCP_SetClient
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_WaitNextFrame
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_TaskInit
+</UL>
+
+<P><STRONG><a name="[5e]"></a>MCP_OnTimeOut</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, motor_control_protocol.o(i.MCP_OnTimeOut))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MCP_OnTimeOut &rArr; MCP_WaitNextFrame
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_WaitNextFrame
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> motor_control_protocol.o(i.MCP_Init)
+</UL>
+<P><STRONG><a name="[5f]"></a>MCP_ReceivedFrame</STRONG> (Thumb, 1628 bytes, Stack size 72 bytes, motor_control_protocol.o(i.MCP_ReceivedFrame))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = MCP_ReceivedFrame &rArr; UI_SetReg &rArr; STO_SetPLLGains
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecCmd
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetRevupData
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetCurrentReferences
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetRevupData
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetMPInfo
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecTorqueRamp
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_ExecSpeedRamp
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> motor_control_protocol.o(i.MCP_Init)
+</UL>
+<P><STRONG><a name="[60]"></a>MCP_SentFrame</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, motor_control_protocol.o(i.MCP_SentFrame))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MCP_SentFrame &rArr; MCP_WaitNextFrame
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_WaitNextFrame
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> motor_control_protocol.o(i.MCP_Init)
+</UL>
+<P><STRONG><a name="[d3]"></a>MCP_WaitNextFrame</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, motor_control_protocol.o(i.MCP_WaitNextFrame))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MCP_WaitNextFrame
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_SentFrame
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_OnTimeOut
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_Init
+</UL>
+
+<P><STRONG><a name="[dd]"></a>MC_GetSTMStateMotor1</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_api.o(i.MC_GetSTMStateMotor1))
+<BR><BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetSTMState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_HandleStartStopButton_cb
+</UL>
+
+<P><STRONG><a name="[de]"></a>MC_RunMotorControlTasks</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, mc_tasks.o(i.MC_RunMotorControlTasks))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = MC_RunMotorControlTasks &rArr; MC_Scheduler &rArr; TSK_MediumFrequencyTaskM1 &rArr; RUC_Clear &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_Scheduler
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_Scheduler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[df]"></a>MC_Scheduler</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, mc_tasks.o(i.MC_Scheduler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MC_Scheduler &rArr; TSK_MediumFrequencyTaskM1 &rArr; RUC_Clear &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_TIM15_IRQHandler
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_RunMotorControlTasks
+</UL>
+
+<P><STRONG><a name="[e3]"></a>MC_StartMotor1</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_api.o(i.MC_StartMotor1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MC_StartMotor1 &rArr; MCI_StartMotor &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StartMotor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_HandleStartStopButton_cb
+</UL>
+
+<P><STRONG><a name="[e4]"></a>MC_StopMotor1</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mc_api.o(i.MC_StopMotor1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MC_StopMotor1 &rArr; MCI_StopMotor &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StopMotor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_HandleStartStopButton_cb
+</UL>
+
+<P><STRONG><a name="[e5]"></a>MCboot</STRONG> (Thumb, 366 bytes, Stack size 48 bytes, mc_tasks.o(i.MCboot))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = MCboot &rArr; R1_Init &rArr; R1_TIMxInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecSpeedRamp
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_Clear
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;startTimers
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_Init
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_Init
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_Init
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_Init
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetMecSpeedRefUnitDefault
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetDefaultIqdref
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_Init
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Init
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REMNG_Init
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_Init
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_HandleInit
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_Init
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_MotorControl_Init
+</UL>
+
+<P><STRONG><a name="[fd]"></a>MPM_CalcElMotorPower</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, motor_power_measurement.o(i.MPM_CalcElMotorPower))
+<BR><BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PQD_CalcElMotorPower
+</UL>
+
+<P><STRONG><a name="[128]"></a>MPM_Clear</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, motor_power_measurement.o(i.MPM_Clear))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[142]"></a>MPM_GetAvrgElMotorPowerW</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, motor_power_measurement.o(i.MPM_GetAvrgElMotorPowerW))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[f2]"></a>MX_MotorControl_Init</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, motorcontrol.o(i.MX_MotorControl_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = MX_MotorControl_Init &rArr; MCboot &rArr; R1_Init &rArr; R1_TIMxInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mc_lock_pins
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_TaskInit
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetHCLKFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[f6]"></a>NTC_CalcAvTemp</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, ntc_temperature_sensor.o(i.NTC_CalcAvTemp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = NTC_CalcAvTemp &rArr; RCM_ExecRegularConv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_ExecRegularConv
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_SetFaultState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+</UL>
+
+<P><STRONG><a name="[fa]"></a>NTC_Clear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, ntc_temperature_sensor.o(i.NTC_Clear))
+<BR><BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_Init
+</UL>
+
+<P><STRONG><a name="[137]"></a>NTC_GetAvTemp_C</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ntc_temperature_sensor.o(i.NTC_GetAvTemp_C))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[ed]"></a>NTC_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, ntc_temperature_sensor.o(i.NTC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NTC_Init &rArr; RCM_RegisterRegConv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_RegisterRegConv
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_Clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[f8]"></a>NTC_SetFaultState</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ntc_temperature_sensor.o(i.NTC_SetFaultState))
+<BR><BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_CalcAvTemp
+</UL>
+
+<P><STRONG><a name="[136]"></a>PID_GetKD</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_GetKD))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[82]"></a>PID_GetKI</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_GetKI))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_GetPLLGains
+</UL>
+
+<P><STRONG><a name="[87]"></a>PID_GetKIDivisor</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_GetKIDivisor))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_SetPLL
+</UL>
+
+<P><STRONG><a name="[81]"></a>PID_GetKP</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_GetKP))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_GetPLLGains
+</UL>
+
+<P><STRONG><a name="[13a]"></a>PID_GetKPDivisor</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_GetKPDivisor))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[7d]"></a>PID_HandleInit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_HandleInit))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_Init
+</UL>
+
+<P><STRONG><a name="[6c]"></a>PID_SetIntegralTerm</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_SetIntegralTerm))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_Clear
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_ResetPLL
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_Clear
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_Clear
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_OTF_ResetPLL
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_SetPLL
+</UL>
+
+<P><STRONG><a name="[150]"></a>PID_SetKD</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_SetKD))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+</UL>
+
+<P><STRONG><a name="[85]"></a>PID_SetKI</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_SetKI))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_SetPLLGains
+</UL>
+
+<P><STRONG><a name="[84]"></a>PID_SetKP</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pid_regulator.o(i.PID_SetKP))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_SetPLLGains
+</UL>
+
+<P><STRONG><a name="[6a]"></a>PI_Controller</STRONG> (Thumb, 122 bytes, Stack size 12 bytes, pid_regulator.o(i.PI_Controller))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = PI_Controller
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_CalcElAngle
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_CalcTorqueReference
+</UL>
+
+<P><STRONG><a name="[fb]"></a>PQD_CalcElMotorPower</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, pqd_motor_power_measurement.o(i.PQD_CalcElMotorPower))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PQD_CalcElMotorPower
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VBS_GetAvBusVoltage_V
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MPM_CalcElMotorPower
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[12c]"></a>PWMC_CheckOverCurrent</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm_curr_fdbk.o(i.PWMC_CheckOverCurrent))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+</UL>
+
+<P><STRONG><a name="[fe]"></a>PWMC_CurrentReadingCalibr</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, pwm_curr_fdbk.o(i.PWMC_CurrentReadingCalibr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PWMC_CurrentReadingCalibr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_SwitchOffPWM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[115]"></a>PWMC_GetPhaseCurrents</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm_curr_fdbk.o(i.PWMC_GetPhaseCurrents))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[119]"></a>PWMC_SetPhaseVoltage</STRONG> (Thumb, 474 bytes, Stack size 8 bytes, pwm_curr_fdbk.o(i.PWMC_SetPhaseVoltage))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PWMC_SetPhaseVoltage
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[76]"></a>PWMC_SwitchOffPWM</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm_curr_fdbk.o(i.PWMC_SwitchOffPWM))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_Clear
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_CurrentReadingCalibr
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_OTF_Exec
+</UL>
+
+<P><STRONG><a name="[78]"></a>PWMC_SwitchOnPWM</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm_curr_fdbk.o(i.PWMC_SwitchOnPWM), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_OTF_Exec
+</UL>
+
+<P><STRONG><a name="[77]"></a>PWMC_TurnOnLowSides</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm_curr_fdbk.o(i.PWMC_TurnOnLowSides), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_OTF_Exec
+</UL>
+
+<P><STRONG><a name="[100]"></a>R1_1ShuntMotorVarsInit</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_1ShuntMotorVarsInit))
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_Init
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_CurrentReadingPolarization
+</UL>
+
+<P><STRONG><a name="[10f]"></a>R1_BRK2_IRQHandler</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_BRK2_IRQHandler))
+<BR><BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_TIM15_IRQHandler
+</UL>
+
+<P><STRONG><a name="[10e]"></a>R1_BRK_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_BRK_IRQHandler))
+<BR><BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_TIM15_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5]"></a>R1_CalcDutyCycles</STRONG> (Thumb, 806 bytes, Stack size 36 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_CalcDutyCycles))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R1_CalcDutyCycles
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> mc_config.o(.data)
+<LI> r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+</UL>
+<P><STRONG><a name="[3]"></a>R1_CurrentReadingPolarization</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R1_CurrentReadingPolarization &rArr; R1_SwitchOnPWM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_SwitchOnPWM
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_SwitchOffPWM
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_1ShuntMotorVarsInit
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;waitForPolarizationEnd
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[0]"></a>R1_GetPhaseCurrents</STRONG> (Thumb, 346 bytes, Stack size 48 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_GetPhaseCurrents))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = R1_GetPhaseCurrents
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_OC_EnablePreload
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> mc_config.o(.data)
+<LI> r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+</UL>
+<P><STRONG><a name="[61]"></a>R1_HFCurrentsPolarization</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_HFCurrentsPolarization))
+<BR>[Address Reference Count : 1]<UL><LI> r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+</UL>
+<P><STRONG><a name="[e7]"></a>R1_Init</STRONG> (Thumb, 984 bytes, Stack size 48 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = R1_Init &rArr; R1_TIMxInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_TIMxInit
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_SetAOReferenceVoltage
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_1ShuntMotorVarsInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[6]"></a>R1_IsOverCurrentOccurred</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_IsOverCurrentOccurred))
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[62]"></a>R1_SetADCSampPointPolarization</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_SetADCSampPointPolarization))
+<BR>[Address Reference Count : 1]<UL><LI> r1_g4xx_pwm_curr_fdbk.o(i.R1_CurrentReadingPolarization)
+</UL>
+<P><STRONG><a name="[103]"></a>R1_SetAOReferenceVoltage</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_SetAOReferenceVoltage))
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_Init
+</UL>
+
+<P><STRONG><a name="[1]"></a>R1_SwitchOffPWM</STRONG> (Thumb, 132 bytes, Stack size 4 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_SwitchOffPWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R1_SwitchOffPWM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HardwareFaultTask
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_CurrentReadingPolarization
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[2]"></a>R1_SwitchOnPWM</STRONG> (Thumb, 234 bytes, Stack size 16 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_SwitchOnPWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R1_SwitchOnPWM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_OC_EnablePreload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_CurrentReadingPolarization
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[102]"></a>R1_TIMxInit</STRONG> (Thumb, 220 bytes, Stack size 16 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_TIMxInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R1_TIMxInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_OC_EnablePreload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_Init
+</UL>
+
+<P><STRONG><a name="[110]"></a>R1_TIMx_UP_IRQHandler</STRONG> (Thumb, 214 bytes, Stack size 12 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_TIMx_UP_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = R1_TIMx_UP_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_TIM16_IRQHandler
+</UL>
+
+<P><STRONG><a name="[4]"></a>R1_TurnOnLowSides</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.R1_TurnOnLowSides))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mc_config.o(.data)
+</UL>
+<P><STRONG><a name="[116]"></a>RCM_ExecNextConv</STRONG> (Thumb, 130 bytes, Stack size 16 bytes, regular_conversion_manager.o(i.RCM_ExecNextConv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = RCM_ExecNextConv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[f7]"></a>RCM_ExecRegularConv</STRONG> (Thumb, 302 bytes, Stack size 24 bytes, regular_conversion_manager.o(i.RCM_ExecRegularConv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RCM_ExecRegularConv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_CalcAvVbus
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_ExecUserConv
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_CalcAvTemp
+</UL>
+
+<P><STRONG><a name="[104]"></a>RCM_ExecUserConv</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, regular_conversion_manager.o(i.RCM_ExecUserConv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RCM_ExecUserConv &rArr; RCM_ExecRegularConv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_ExecRegularConv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask
+</UL>
+
+<P><STRONG><a name="[11a]"></a>RCM_ReadOngoingConv</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, regular_conversion_manager.o(i.RCM_ReadOngoingConv))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[f9]"></a>RCM_RegisterRegConv</STRONG> (Thumb, 288 bytes, Stack size 8 bytes, regular_conversion_manager.o(i.RCM_RegisterRegConv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RCM_RegisterRegConv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_Init
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_Init
+</UL>
+
+<P><STRONG><a name="[112]"></a>REMNG_Calc</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, ramp_ext_mngr.o(i.REMNG_Calc))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[105]"></a>REMNG_ExecRamp</STRONG> (Thumb, 130 bytes, Stack size 40 bytes, ramp_ext_mngr.o(i.REMNG_ExecRamp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = REMNG_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getScalingFactor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[ee]"></a>REMNG_Init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ramp_ext_mngr.o(i.REMNG_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[111]"></a>REMNG_RampCompleted</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ramp_ext_mngr.o(i.REMNG_RampCompleted))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[107]"></a>RVBS_CalcAvVbus</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, r_divider_bus_voltage_sensor.o(i.RVBS_CalcAvVbus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = RVBS_CalcAvVbus &rArr; RCM_ExecRegularConv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_ExecRegularConv
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_CheckFaultState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+</UL>
+
+<P><STRONG><a name="[108]"></a>RVBS_CheckFaultState</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, r_divider_bus_voltage_sensor.o(i.RVBS_CheckFaultState))
+<BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_CalcAvVbus
+</UL>
+
+<P><STRONG><a name="[109]"></a>RVBS_Clear</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, r_divider_bus_voltage_sensor.o(i.RVBS_Clear))
+<BR><BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_Init
+</UL>
+
+<P><STRONG><a name="[ec]"></a>RVBS_Init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, r_divider_bus_voltage_sensor.o(i.RVBS_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = RVBS_Init &rArr; RCM_RegisterRegConv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_RegisterRegConv
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_Clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[74]"></a>SPD_GetAvrgMecSpeedUnit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, speed_pos_fdbk.o(i.SPD_GetAvrgMecSpeedUnit))
+<BR><BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetAvrgMecSpeedUnit
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_ForceSpeedReferenceToCurrentSpeed
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_CalcTorqueReference
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Stop
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_OTF_Exec
+</UL>
+
+<P><STRONG><a name="[113]"></a>SPD_GetElAngle</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, speed_pos_fdbk.o(i.SPD_GetElAngle))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[114]"></a>SPD_GetInstElSpeedDpp</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, speed_pos_fdbk.o(i.SPD_GetInstElSpeedDpp))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[13d]"></a>SPD_GetS16Speed</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, speed_pos_fdbk.o(i.SPD_GetS16Speed))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[7f]"></a>SPD_IsMecSpeedReliable</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, speed_pos_fdbk.o(i.SPD_IsMecSpeedReliable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPD_IsMecSpeedReliable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_CalcAvrgMecSpeedUnit
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_CalcAvrgMecSpeedUnit
+</UL>
+
+<P><STRONG><a name="[92]"></a>STC_CalcTorqueReference</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, speed_torq_ctrl.o(i.STC_CalcTorqueReference))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = STC_CalcTorqueReference &rArr; PI_Controller
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetAvrgMecSpeedUnit
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PI_Controller
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_CalcCurrRef
+</UL>
+
+<P><STRONG><a name="[94]"></a>STC_Clear</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_Clear))
+<BR><BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetIntegralTerm
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_Clear
+</UL>
+
+<P><STRONG><a name="[71]"></a>STC_ExecRamp</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, speed_torq_ctrl.o(i.STC_ExecRamp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetTorqueRef
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Exec
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Clear
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecBufferedCommands
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_OTF_Exec
+</UL>
+
+<P><STRONG><a name="[10b]"></a>STC_ForceSpeedReferenceToCurrentSpeed</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, speed_torq_ctrl.o(i.STC_ForceSpeedReferenceToCurrentSpeed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = STC_ForceSpeedReferenceToCurrentSpeed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetAvrgMecSpeedUnit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[bf]"></a>STC_GetDefaultIqdref</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_GetDefaultIqdref))
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_Clear_Iqdref
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[143]"></a>STC_GetMaxAppPositiveMecSpeedUnit</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_GetMaxAppPositiveMecSpeedUnit))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[c8]"></a>STC_GetMecSpeedRefUnit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_GetMecSpeedRefUnit))
+<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetMecSpeedRefUnit
+</UL>
+
+<P><STRONG><a name="[f0]"></a>STC_GetMecSpeedRefUnitDefault</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_GetMecSpeedRefUnitDefault))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[144]"></a>STC_GetMinAppNegativeMecSpeedUnit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_GetMinAppNegativeMecSpeedUnit))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[c6]"></a>STC_GetSpeedSensor</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_GetSpeedSensor))
+<BR><BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetAvrgMecSpeedUnit
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[10a]"></a>STC_GetTorqueRef</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_GetTorqueRef))
+<BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_ExecRamp
+</UL>
+
+<P><STRONG><a name="[e9]"></a>STC_Init</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[6f]"></a>STC_SetControlMode</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_SetControlMode))
+<BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Clear
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecBufferedCommands
+</UL>
+
+<P><STRONG><a name="[122]"></a>STC_SetSpeedSensor</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_SetSpeedSensor))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[ce]"></a>STC_StopRamp</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, speed_torq_ctrl.o(i.STC_StopRamp))
+<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StopRamp
+</UL>
+
+<P><STRONG><a name="[c4]"></a>STM_FaultAcknowledged</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, state_machine.o(i.STM_FaultAcknowledged))
+<BR><BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_FaultAcknowledged
+</UL>
+
+<P><STRONG><a name="[10c]"></a>STM_FaultProcessing</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, state_machine.o(i.STM_FaultProcessing))
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HardwareFaultTask
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_NextState
+</UL>
+
+<P><STRONG><a name="[135]"></a>STM_GetFaultState</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, state_machine.o(i.STM_GetFaultState))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[ca]"></a>STM_GetState</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, state_machine.o(i.STM_GetState))
+<BR><BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetSTMState
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[e6]"></a>STM_Init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, state_machine.o(i.STM_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[c1]"></a>STM_NextState</STRONG> (Thumb, 254 bytes, Stack size 8 bytes, state_machine.o(i.STM_NextState))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_FaultProcessing
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StopMotor
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StartMotor
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_EncoderAlign
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[14]"></a>SysTick_Handler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, stm32g4xx_mc_it.o(i.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = SysTick_Handler &rArr; MC_RunMotorControlTasks &rArr; MC_Scheduler &rArr; TSK_MediumFrequencyTaskM1 &rArr; RUC_Clear &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_IRQHandler
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_RunMotorControlTasks
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[5c]"></a>SystemInit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, system_stm32g4xx.o(i.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(.text)
+</UL>
+<P><STRONG><a name="[2c]"></a>TIM1_BRK_TIM15_IRQHandler</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32g4xx_mc_it.o(i.TIM1_BRK_TIM15_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = TIM1_BRK_TIM15_IRQHandler &rArr; MC_Scheduler &rArr; TSK_MediumFrequencyTaskM1 &rArr; RUC_Clear &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_BRK_IRQHandler
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_BRK2_IRQHandler
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_Scheduler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>TIM1_UP_TIM16_IRQHandler</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32g4xx_mc_it.o(i.TIM1_UP_TIM16_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM1_UP_TIM16_IRQHandler &rArr; R1_TIMx_UP_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_TIMx_UP_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[a9]"></a>TIM_Base_SetConfig</STRONG> (Thumb, 152 bytes, Stack size 20 bytes, stm32g4xx_hal_tim.o(i.TIM_Base_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_Base_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+</UL>
+
+<P><STRONG><a name="[ae]"></a>TIM_OC2_SetConfig</STRONG> (Thumb, 136 bytes, Stack size 12 bytes, stm32g4xx_hal_tim.o(i.TIM_OC2_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_OC2_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+
+<P><STRONG><a name="[121]"></a>TSK_ChargeBootCapDelayHasElapsedM1</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mc_tasks.o(i.TSK_ChargeBootCapDelayHasElapsedM1))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[b8]"></a>TSK_HardwareFaultTask</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, mc_tasks.o(i.TSK_HardwareFaultTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TSK_HardwareFaultTask &rArr; R1_SwitchOffPWM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_FaultProcessing
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_SwitchOffPWM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+
+<P><STRONG><a name="[8f]"></a>TSK_HighFrequencyTask</STRONG> (Thumb, 316 bytes, Stack size 80 bytes, mc_tasks.o(i.TSK_HighFrequencyTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = TSK_HighFrequencyTask &rArr; STO_PLL_CalcElAngle &rArr; PI_Controller
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_CalcElAngle
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VBS_GetAvBusVoltage_d
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_ResetPLL
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_CalcElAngle
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_CalcAvrgElSpeedDpp
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_GetState
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_FaultProcessing
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetSpeedSensor
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetInstElSpeedDpp
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetElAngle
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_FirstAccelerationStageReached
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REMNG_RampCompleted
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REMNG_Calc
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_ReadOngoingConv
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_ExecNextConv
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_SetPhaseVoltage
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_GetPhaseCurrents
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PI_Controller
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Rev_Park
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Park
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Clarke
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Circle_Limitation
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[e2]"></a>TSK_MediumFrequencyTaskM1</STRONG> (Thumb, 624 bytes, Stack size 24 bytes, mc_tasks.o(i.TSK_MediumFrequencyTaskM1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = TSK_MediumFrequencyTaskM1 &rArr; RUC_Clear &rArr; STC_ExecRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetImposedMotorDirection
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_StopPermanencyTimeHasElapsedM1
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SetStopPermanencyTimeM1
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SetChargeBootCapDelayM1
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_ChargeBootCapDelayHasElapsedM1
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_InitAdditionalMethods
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_Clear
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_CalcCurrRef
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_TransitionEnded
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_SetStartTransition
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_Clear
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_CalcAvrgMecSpeedUnit
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_IsObserverConverged
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_Clear
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_CalcAvrgMecSpeedUnit
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_NextState
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_GetState
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_FaultProcessing
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_SetSpeedSensor
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_ForceSpeedReferenceToCurrentSpeed
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_CalcTorqueReference
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetElAngle
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_FirstAccelerationStageReached
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Exec
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Clear
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REMNG_Init
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REMNG_ExecRamp
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_CurrentReadingCalibr
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PQD_CalcElMotorPower
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetIntegralTerm
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKIDivisor
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MPM_Clear
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCM_Park
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecBufferedCommands
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_TurnOnLowSides
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_SwitchOnPWM
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_SwitchOffPWM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_Scheduler
+</UL>
+
+<P><STRONG><a name="[e0]"></a>TSK_SafetyTask</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, mc_tasks.o(i.TSK_SafetyTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = TSK_SafetyTask &rArr; TSK_SafetyTask_PWMOFF &rArr; RVBS_CalcAvVbus &rArr; RCM_ExecRegularConv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask_PWMOFF
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCM_ExecUserConv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_RunMotorControlTasks
+</UL>
+
+<P><STRONG><a name="[12b]"></a>TSK_SafetyTask_PWMOFF</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, mc_tasks.o(i.TSK_SafetyTask_PWMOFF))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = TSK_SafetyTask_PWMOFF &rArr; RVBS_CalcAvVbus &rArr; RCM_ExecRegularConv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_Clear
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_GetState
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_FaultProcessing
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RVBS_CalcAvVbus
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_SwitchOffPWM
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_CheckOverCurrent
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_CalcAvTemp
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MPM_Clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_SafetyTask
+</UL>
+
+<P><STRONG><a name="[120]"></a>TSK_SetChargeBootCapDelayM1</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_tasks.o(i.TSK_SetChargeBootCapDelayM1))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[129]"></a>TSK_SetStopPermanencyTimeM1</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mc_tasks.o(i.TSK_SetStopPermanencyTimeM1))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[12a]"></a>TSK_StopPermanencyTimeHasElapsedM1</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mc_tasks.o(i.TSK_StopPermanencyTimeHasElapsedM1))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[b6]"></a>UART_AdvFeatureConfig</STRONG> (Thumb, 218 bytes, Stack size 0 bytes, stm32g4xx_hal_uart.o(i.UART_AdvFeatureConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[b7]"></a>UART_CheckIdleState</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, stm32g4xx_hal_uart.o(i.UART_CheckIdleState))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = UART_CheckIdleState &rArr; UART_WaitOnFlagUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[b5]"></a>UART_SetConfig</STRONG> (Thumb, 2226 bytes, Stack size 32 bytes, stm32g4xx_hal_uart.o(i.UART_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = UART_SetConfig &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK2Freq
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[12d]"></a>UART_WaitOnFlagUntilTimeout</STRONG> (Thumb, 118 bytes, Stack size 24 bytes, stm32g4xx_hal_uart.o(i.UART_WaitOnFlagUntilTimeout))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UART_WaitOnFlagUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_CheckIdleState
+</UL>
+
+<P><STRONG><a name="[63]"></a>UFCP_AbortReceive</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usart_frame_communication_protocol.o(i.UFCP_AbortReceive))
+<BR>[Address Reference Count : 1]<UL><LI> ui_task.o(i.UI_TaskInit)
+</UL>
+<P><STRONG><a name="[130]"></a>UFCP_Init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, usart_frame_communication_protocol.o(i.UFCP_Init))
+<BR><BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FCP_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_TaskInit
+</UL>
+
+<P><STRONG><a name="[b9]"></a>UFCP_OVR_IRQ_Handler</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, usart_frame_communication_protocol.o(i.UFCP_OVR_IRQ_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = UFCP_OVR_IRQ_Handler &rArr; UFCP_Send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_Send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+
+<P><STRONG><a name="[bc]"></a>UFCP_RX_IRQ_Handler</STRONG> (Thumb, 178 bytes, Stack size 16 bytes, usart_frame_communication_protocol.o(i.UFCP_RX_IRQ_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UFCP_RX_IRQ_Handler &rArr; UFCP_Send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_Send
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FCP_CalcCRC
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+
+<P><STRONG><a name="[64]"></a>UFCP_Receive</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, usart_frame_communication_protocol.o(i.UFCP_Receive))
+<BR>[Address Reference Count : 1]<UL><LI> ui_task.o(i.UI_TaskInit)
+</UL>
+<P><STRONG><a name="[65]"></a>UFCP_Send</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, usart_frame_communication_protocol.o(i.UFCP_Send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UFCP_Send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FCP_CalcCRC
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_RX_IRQ_Handler
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_OVR_IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ui_task.o(i.UI_TaskInit)
+</UL>
+<P><STRONG><a name="[bb]"></a>UFCP_TX_IRQ_Handler</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, usart_frame_communication_protocol.o(i.UFCP_TX_IRQ_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+
+<P><STRONG><a name="[d6]"></a>UI_ExecCmd</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, user_interface.o(i.UI_ExecCmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UI_ExecCmd &rArr; MCI_StartMotor &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StopRamp
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StopMotor
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_StartMotor
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetSTMState
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_FaultAcknowledged
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_Clear_Iqdref
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_EncoderAlign
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[d7]"></a>UI_ExecSpeedRamp</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, user_interface.o(i.UI_ExecSpeedRamp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UI_ExecSpeedRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecSpeedRamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[d8]"></a>UI_ExecTorqueRamp</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, user_interface.o(i.UI_ExecTorqueRamp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UI_ExecTorqueRamp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecTorqueRamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[dc]"></a>UI_GetMPInfo</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, user_interface.o(i.UI_GetMPInfo))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[d5]"></a>UI_GetReg</STRONG> (Thumb, 1356 bytes, Stack size 32 bytes, user_interface.o(i.UI_GetReg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = UI_GetReg &rArr; STO_GetPLLGains
+</UL>
+<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetVqd
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetValphabeta
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetMecSpeedRefUnit
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetLastRampFinalSpeed
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetIqdref
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetIqd
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetIalphabeta
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetIab
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetControlMode
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetAvrgMecSpeedUnit
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_GetFaultState
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM_GetState
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetElAngle
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKIDivisor
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetSelectedMC
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VBS_GetAvBusVoltage_V
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_GetObserverGains
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_GetObservedBemfLevel
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_GetEstimatedCurrent
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_GetEstimatedBemfLevel
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_GetEstimatedBemf
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_GetPLLGains
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetMinAppNegativeMecSpeedUnit
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STC_GetMaxAppPositiveMecSpeedUnit
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_GetS16Speed
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_GetNumberOfPhases
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKPDivisor
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKP
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKI
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_GetKD
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_GetAvTemp_C
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MPM_GetAvrgElMotorPowerW
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[d9]"></a>UI_GetRevupData</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, user_interface.o(i.UI_GetRevupData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UI_GetRevupData
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_GetPhaseFinalTorque
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_GetPhaseFinalMecSpeedUnit
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_GetPhaseDurationms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[134]"></a>UI_GetSelectedMC</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, user_interface.o(i.UI_GetSelectedMC))
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[90]"></a>UI_HandleStartStopButton_cb</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, ui_task.o(i.UI_HandleStartStopButton_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UI_HandleStartStopButton_cb &rArr; MC_StartMotor1 &rArr; MCI_StartMotor &rArr; STM_NextState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_StopMotor1
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_StartMotor1
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_GetSTMStateMotor1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
+</UL>
+
+<P><STRONG><a name="[157]"></a>UI_Init</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, user_interface.o(i.UI_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_TaskInit
+</UL>
+
+<P><STRONG><a name="[e1]"></a>UI_Scheduler</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ui_task.o(i.UI_Scheduler))
+<BR><BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MC_RunMotorControlTasks
+</UL>
+
+<P><STRONG><a name="[14f]"></a>UI_SelectMC</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, user_interface.o(i.UI_SelectMC))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SetReg
+</UL>
+
+<P><STRONG><a name="[bd]"></a>UI_SerialCommunicationTimeOutStart</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ui_task.o(i.UI_SerialCommunicationTimeOutStart))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+
+<P><STRONG><a name="[ba]"></a>UI_SerialCommunicationTimeOutStop</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ui_task.o(i.UI_SerialCommunicationTimeOutStop))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+
+<P><STRONG><a name="[db]"></a>UI_SetCurrentReferences</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, user_interface.o(i.UI_SetCurrentReferences))
+<BR><BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_SetCurrentReferences
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[d4]"></a>UI_SetReg</STRONG> (Thumb, 576 bytes, Stack size 32 bytes, user_interface.o(i.UI_SetReg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = UI_SetReg &rArr; STO_SetPLLGains
+</UL>
+<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_SetIdref
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_SetCurrentReferences
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetTeref
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetMecSpeedRefUnit
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_GetIqdref
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecTorqueRamp
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCI_ExecSpeedRamp
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SelectMC
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_SetPLLGains
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_SetObserverGains
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_PLL_GetObserverGains
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STO_GetPLLGains
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKP
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKI
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_SetKD
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[da]"></a>UI_SetRevupData</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, user_interface.o(i.UI_SetRevupData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UI_SetRevupData
+</UL>
+<BR>[Calls]<UL><LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_SetPhaseFinalTorque
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_SetPhaseFinalMecSpeedUnit
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_SetPhaseDurationms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_ReceivedFrame
+</UL>
+
+<P><STRONG><a name="[f5]"></a>UI_TaskInit</STRONG> (Thumb, 82 bytes, Stack size 48 bytes, ui_task.o(i.UI_TaskInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = UI_TaskInit &rArr; MCP_Init &rArr; MCP_WaitNextFrame
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCP_Init
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_Init
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_MotorControl_Init
+</UL>
+
+<P><STRONG><a name="[3a]"></a>USART2_IRQHandler</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, stm32g4xx_mc_it.o(i.USART2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USART2_IRQHandler &rArr; UFCP_RX_IRQ_Handler &rArr; UFCP_Send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SerialCommunicationTimeOutStop
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_SerialCommunicationTimeOutStart
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_TX_IRQ_Handler
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_RX_IRQ_Handler
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UFCP_OVR_IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
+</UL>
+<P><STRONG><a name="[fc]"></a>VBS_GetAvBusVoltage_V</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, bus_voltage_sensor.o(i.VBS_GetAvBusVoltage_V))
+<BR><BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PQD_CalcElMotorPower
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_GetReg
+</UL>
+
+<P><STRONG><a name="[11c]"></a>VBS_GetAvBusVoltage_d</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, bus_voltage_sensor.o(i.VBS_GetAvBusVoltage_d))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[123]"></a>VSS_CalcAvrgMecSpeedUnit</STRONG> (Thumb, 156 bytes, Stack size 8 bytes, virtual_speed_sensor.o(i.VSS_CalcAvrgMecSpeedUnit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = VSS_CalcAvrgMecSpeedUnit &rArr; SPD_IsMecSpeedReliable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPD_IsMecSpeedReliable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[11e]"></a>VSS_CalcElAngle</STRONG> (Thumb, 158 bytes, Stack size 12 bytes, virtual_speed_sensor.o(i.VSS_CalcElAngle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = VSS_CalcElAngle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_HighFrequencyTask
+</UL>
+
+<P><STRONG><a name="[6e]"></a>VSS_Clear</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, virtual_speed_sensor.o(i.VSS_Clear))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_Init
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Clear
+</UL>
+
+<P><STRONG><a name="[ea]"></a>VSS_Init</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, virtual_speed_sensor.o(i.VSS_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = VSS_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VSS_Clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[75]"></a>VSS_SetCopyObserver</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, virtual_speed_sensor.o(i.VSS_SetCopyObserver), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_OTF_Exec
+</UL>
+
+<P><STRONG><a name="[72]"></a>VSS_SetMecAcceleration</STRONG> (Thumb, 124 bytes, Stack size 12 bytes, virtual_speed_sensor.o(i.VSS_SetMecAcceleration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = VSS_SetMecAcceleration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Exec
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Clear
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Stop
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_OTF_Exec
+</UL>
+
+<P><STRONG><a name="[70]"></a>VSS_SetMecAngle</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, virtual_speed_sensor.o(i.VSS_SetMecAngle))
+<BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RUC_Clear
+</UL>
+
+<P><STRONG><a name="[125]"></a>VSS_SetStartTransition</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, virtual_speed_sensor.o(i.VSS_SetStartTransition))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[126]"></a>VSS_TransitionEnded</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, virtual_speed_sensor.o(i.VSS_TransitionEnded))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TSK_MediumFrequencyTaskM1
+</UL>
+
+<P><STRONG><a name="[17c]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[17d]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[17e]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[106]"></a>getScalingFactor</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ramp_ext_mngr.o(i.getScalingFactor))
+<BR><BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;REMNG_ExecRamp
+</UL>
+
+<P><STRONG><a name="[5b]"></a>main</STRONG> (Thumb, 998 bytes, Stack size 144 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = main &rArr; MX_MotorControl_Init &rArr; MCboot &rArr; R1_Init &rArr; R1_TIMxInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_MotorControl_Init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_SetTxFifoThreshold
+<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_SetRxFifoThreshold
+<LI><a href="#[164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_DisableFifoMode
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_SlaveConfigSynchro
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_ConfigBreakInput
+<LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_ConfigBreakDeadTime
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_EnableCSS
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ControlVoltageScaling
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CORDIC_Init
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_Init
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_ConfigChannel
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADCEx_MultiModeConfigChannel
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADCEx_InjectedConfigChannel
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[f4]"></a>mc_lock_pins</STRONG> (Thumb, 162 bytes, Stack size 4 bytes, mc_tasks.o(i.mc_lock_pins))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = mc_lock_pins
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_MotorControl_Init
+</UL>
+
+<P><STRONG><a name="[e8]"></a>startTimers</STRONG> (Thumb, 100 bytes, Stack size 4 bytes, pwm_common.o(i.startTimers))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = startTimers
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCboot
+</UL>
+
+<P><STRONG><a name="[ff]"></a>waitForPolarizationEnd</STRONG> (Thumb, 98 bytes, Stack size 12 bytes, pwm_common.o(i.waitForPolarizationEnd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = waitForPolarizationEnd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_CurrentReadingPolarization
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[b2]"></a>TIM_SlaveTimer_SetConfig</STRONG> (Thumb, 248 bytes, Stack size 0 bytes, stm32g4xx_hal_tim.o(i.TIM_SlaveTimer_SetConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_SlaveConfigSynchro
+</UL>
+
+<P><STRONG><a name="[101]"></a>LL_TIM_OC_EnablePreload</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, r1_g4xx_pwm_curr_fdbk.o(i.LL_TIM_OC_EnablePreload))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_SwitchOnPWM
+<LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_GetPhaseCurrents
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R1_TIMxInit
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
