@@ -1,0 +1,2 @@
+CS=Curr_fdbk1,CS_RESET_U,CS_ALERT_U,Curr_fdbk2,CS_RESET_V,CS_ALERT_V,Curr_fdbk3,CS_RESET_W,CS_ALERT_W,BKIN,CURRENT REF,CPOUT
+V_Shunt=V_Shunt_U_N,V_Shunt_U_P,V_Shunt_V_N,V_Shunt_V_P,V_Shunt_W_N,V_Shunt_W_P
