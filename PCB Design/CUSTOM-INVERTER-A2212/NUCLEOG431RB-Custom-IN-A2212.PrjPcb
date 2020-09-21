@@ -22,7 +22,7 @@ DefaultPcbProtel=1
 DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=0
-PowerPortNamesTakePriority=0
+PowerPortNamesTakePriority=1
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
@@ -490,84 +490,84 @@ DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.RUL
 DItemRevisionGUID=
 
 [Parameter1]
-Name=CAGE_CODE
-Value=?????
-
-[Parameter2]
-Name=CONTRACT_NUMBER
-Value=<CONTRACT NO>
-
-[Parameter3]
-Name=DOC_NO_ASSY_DWG
-Value=<ASSY DWG NO>
-
-[Parameter4]
-Name=DOC_NO_BOM
-Value=<BOM DOC NO>
-
-[Parameter5]
-Name=DOC_NO_FAB_DWG
-Value=<FAB DWG NO>
-
-[Parameter6]
-Name=DOC_NO_SCH_DWG
-Value=<SCH DWG NO>
-
-[Parameter7]
-Name=PCB_2_DEC_TOL
-Value=+/-.01
-
-[Parameter8]
-Name=PCB_3_DEC_TOL
-Value=+/-.010
-
-[Parameter9]
-Name=PCB_ANG_TOL
-Value=+/-1/2
-
-[Parameter10]
-Name=PCB_ASSEMBLY_NO
-Value=<PCB ASSY NO>
-
-[Parameter11]
-Name=PCB_CHECKER
-Value=- -----
-
-[Parameter12]
-Name=PCB_CHECKER_APP_DATE
-Value=--/--/----
-
-[Parameter13]
-Name=PCB_DESIGNER
-Value=- -----
-
-[Parameter14]
-Name=PCB_DESIGNER_APP_DATE
-Value=--/--/----
-
-[Parameter15]
-Name=PCB_DWG_NO
-Value=<PCB DWG NO>
-
-[Parameter16]
-Name=PCB_ENGINEER_APP_DATE
-Value=--/--/----
-
-[Parameter17]
-Name=PCB_PART_NUMBER
-Value=<PCB PN>
-
-[Parameter18]
-Name=PCB_REV
+Name=SCH_REV
 Value=A
 
-[Parameter19]
+[Parameter2]
 Name=Rahul
 Value=- -----
 
-[Parameter20]
-Name=SCH_REV
+[Parameter3]
+Name=PCB_REV
 Value=A
+
+[Parameter4]
+Name=PCB_PART_NUMBER
+Value=<PCB PN>
+
+[Parameter5]
+Name=PCB_ENGINEER_APP_DATE
+Value=--/--/----
+
+[Parameter6]
+Name=PCB_DWG_NO
+Value=<PCB DWG NO>
+
+[Parameter7]
+Name=PCB_DESIGNER_APP_DATE
+Value=--/--/----
+
+[Parameter8]
+Name=PCB_DESIGNER
+Value=- -----
+
+[Parameter9]
+Name=PCB_CHECKER_APP_DATE
+Value=--/--/----
+
+[Parameter10]
+Name=PCB_CHECKER
+Value=- -----
+
+[Parameter11]
+Name=PCB_ASSEMBLY_NO
+Value=<PCB ASSY NO>
+
+[Parameter12]
+Name=PCB_ANG_TOL
+Value=+/-1/2
+
+[Parameter13]
+Name=PCB_3_DEC_TOL
+Value=+/-.010
+
+[Parameter14]
+Name=PCB_2_DEC_TOL
+Value=+/-.01
+
+[Parameter15]
+Name=DOC_NO_SCH_DWG
+Value=<SCH DWG NO>
+
+[Parameter16]
+Name=DOC_NO_FAB_DWG
+Value=<FAB DWG NO>
+
+[Parameter17]
+Name=DOC_NO_BOM
+Value=<BOM DOC NO>
+
+[Parameter18]
+Name=DOC_NO_ASSY_DWG
+Value=<ASSY DWG NO>
+
+[Parameter19]
+Name=CONTRACT_NUMBER
+Value=<CONTRACT NO>
+
+[Parameter20]
+Name=CAGE_CODE
+Value=?????
 
 [Configuration1]
 Name=Default Configuration
