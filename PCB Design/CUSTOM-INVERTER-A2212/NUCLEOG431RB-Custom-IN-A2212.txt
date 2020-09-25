@@ -1,0 +1,31 @@
+Board Information Report
+Filename     : C:\Users\Shyamanth R H\Documents\Integrated Projects\Nucleo-G431RB-Custom_inverter-V1\PCB Design\CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PcbDoc
+Date         : 25-09-2020
+Time         : 18:38:04
+Time Elapsed : 00:00:00
+
+Non-Plated Square Hole Size, Pads
+count : 0
+
+Track Width, Count
+    0.05mm, 284
+    0.1mm, 306
+    0.12mm, 216
+    0.1524mm, 187
+    0.2mm, 652
+    0.2032mm, 442
+    0.254mm, 1228
+    0.3048mm, 407
+    0.381mm, 144
+    0.508mm, 523
+    0.635mm, 29
+    0.762mm, 2
+count : 12
+
+Net Track Width, Count
+    0.254mm, 238
+count : 1
+
+Net Via Size, Count
+    0.508mm, 238
+count : 1

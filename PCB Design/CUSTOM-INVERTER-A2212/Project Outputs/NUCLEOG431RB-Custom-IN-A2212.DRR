@@ -1,0 +1,22 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: NUCLEOG431RB-Custom-IN-A2212.PcbDoc   22-09-2020  20:41:12
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : NUCLEOG431RB-Custom-IN-A2212.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             529       PTH        0.00inch (0.00mm)
+T2      30mil (0.762mm)                                           Round             38        PTH        0.00inch (0.00mm)
+T3      32mil (0.8mm)                                             Round             36        PTH        0.00inch (0.00mm)
+T4      39mil (1mm)                                               Round             18        PTH        0.00inch (0.00mm)
+T5      40mil (1.02mm)                                            Round             80        PTH        0.00inch (0.00mm)
+T6      43mil (1.1mm)                                             Round             91        PTH        0.00inch (0.00mm)
+T7      47mil (1.2mm)                                             Round             2         PTH        0.00inch (0.00mm)
+T8      79mil (2mm)                                               Round             2         PTH        0.00inch (0.00mm)
+T9      197mil (5mm)                                              Round             3         PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              799
+
+Total Processing Time (hh:mm:ss) : 00:00:01

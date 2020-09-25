@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: NUCLEOG431RB-Custom-IN-A2212.GBR   8/31/2020  2:39:35 PM
+Gerber File Extension Report For: NUCLEOG431RB-Custom-IN-A2212.GBR   22-09-2020  20:40:20
 ------------------------------------------------------------------------------------------
 
 
@@ -14,7 +14,7 @@ Layer Extension     Layer Description
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
-.GM1                Board Outline                           
+.GM1                Mechanical1                             
 .GD1                Drill Drawing                           
 .GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------
