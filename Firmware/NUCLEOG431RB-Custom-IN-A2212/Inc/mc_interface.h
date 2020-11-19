@@ -74,7 +74,7 @@ typedef struct
                                    SetCurrentReferences command.*/
   uint16_t hDurationms;       /*!< Duration in ms of last ExecSpeedRamp or
                                    ExecTorqueRamp command.*/
-  
+
   MCI_CommandState_t CommandState; /*!< The status of the buffered command.*/
   STC_Modality_t LastModalitySetByUser; /*!< The last STC_Modality_t set by the
                                              user. */

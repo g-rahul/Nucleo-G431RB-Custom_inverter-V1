@@ -190,6 +190,23 @@ typedef enum
   MC_PROTOCOL_REG_UNDEFINED
 } MC_Protocol_REG_t;
 
+/** @brief DAC channels */
+typedef enum
+{
+  DAC_CH0,
+  DAC_CH1,
+  DAC_CH2,
+  DAC_CH3,
+  DAC_MAX_Channel_nbr
+} DAC_Channel_t;
+
+/** @brief DAC user channels */
+typedef enum
+{
+  DAC_USER1,
+  DAC_USER2
+} DAC_UserChannel_t;
+
 /* @brief To configure the UI use MAIN Sensor (4bit)|AUX Sensor (4 bit) as first byte of CFG.*/
 #define UI_SCODE_NONE     0x0u
 #define UI_SCODE_HALL     0x1u /*!< This code identifies the Hall sensor.*/
@@ -257,7 +274,7 @@ typedef enum
 #define MC_PROTOCOL_CMD_SC_STOP           0x0E
 
 #define CTRBDID 29
-#define PWBDID 5
+#define PWBDID 4
 #define MC_UID 883328122
 
 /**
@@ -293,6 +310,34 @@ typedef void (*UI_Generic_Cb_t)( UI_Handle_t *pHandle);
 typedef void* (*UI_IrqHandler_Cb_t)( void *pHandle, unsigned char flag, unsigned short rx_data);
 
 /**
+  * @brief Polymorphic function. The function called can change in run-time and
+  *        is assigned by the library to the callback pointer pFctDACSetChannelConfig
+  *
+  */
+typedef void (*UI_DACSetChannelConfig_Cb_t)( UI_Handle_t *pHandle, DAC_Channel_t bChannel, MC_Protocol_REG_t bVariable);
+
+/**
+  * @brief Polymorphic function. The function called can change in run-time and
+  *        is assigned by the library to the callback pointer pFctDACGetChannelConfig
+  *
+  */
+typedef MC_Protocol_REG_t (*UI_DACGetChannelConfig_Cb_t)( UI_Handle_t *pHandle, DAC_Channel_t bChannel);
+
+/**
+  * @brief Polymorphic function. The function called can change in run-time and
+  *        is assigned by the library to the callback pointer pFctDACSetUserChannelValue
+  *
+  */
+typedef void (*UI_DACSetUserChannelValue_Cb_t)( UI_Handle_t *pHandle, uint8_t bUserChNumber, int16_t hValue);
+
+/**
+  * @brief Polymorphic function. The function called can change in run-time and
+  *        is assigned by the library to the callback pointer pFctDACGetUserChannelValue
+  *
+  */
+typedef int16_t (*UI_DACGetUserChannelValue_Cb_t)( UI_Handle_t *pHandle, uint8_t bUserChNumber);
+
+/**
   * @brief UI_Handle structure used for User Interface
   *
   */
@@ -301,6 +346,14 @@ struct UI_Handle
 
   UI_IrqHandler_Cb_t pFctIrqHandler;
 
+  /* DAC related functions */
+  UI_DACSetChannelConfig_Cb_t pFctDACSetChannelConfig;
+  UI_DACGetChannelConfig_Cb_t pFctDACGetChannelConfig;
+  UI_DACSetUserChannelValue_Cb_t pFctDACSetUserChannelValue;
+  UI_DACGetUserChannelValue_Cb_t pFctDACGetUserChannelValue;
+
+  UI_Generic_Cb_t pFct_DACInit;
+  UI_Generic_Cb_t pFct_DACExec;
   uint8_t bDriveNum;      /*!< Total number of MC objects.*/
   MCI_Handle_t** pMCI;             /*!< Pointer of MC interface list.*/
   MCT_Handle_t** pMCT;             /*!< Pointer of MC tuning list.*/
@@ -355,9 +408,9 @@ bool UI_SetReg(UI_Handle_t *pHandle, MC_Protocol_REG_t bRegID, int32_t wValue);
   * @param  pHandle pointer on the target component handle.
   * @param  bRegID Code of register to be updated. Valid code is one of the
   *         MC_PROTOCOL_REG_xxx values exported by UserInterfaceClass.
-  * @param  success if not NULL, the function sets success to true if tregister 
-  *         @p bRegID is known bby the application and false otherwise. 
-  *           
+  * @param  success if not NULL, the function sets success to true if tregister
+  *         @p bRegID is known bby the application and false otherwise.
+  *
   * @retval int32_t is the current value of register bRegID.
   *
   * If @p success is set to false by the function, then the return value is meaningless.
@@ -422,6 +475,64 @@ void UI_SetCurrentReferences(UI_Handle_t *pHandle, int16_t hIqRef, int16_t hIdRe
   * @retval true if MP is enabled, false otherwise.
   */
 bool UI_GetMPInfo(pMPInfo_t stepList, pMPInfo_t MPInfo);
+
+/**
+  * @brief  Hardware and software initialization of the DAC object. This is a
+  *         virtual function and is implemented by related object.
+  * @param  pHandle pointer on the target component handle. It must be a DACx_UI object casted
+  *         to CUI otherwise the DACInit method will have no effect.
+  * @retval none.
+  */
+void UI_DACInit(UI_Handle_t *pHandle);
+
+/**
+  * @brief  This method is used to update the DAC outputs. The selected
+  *         variables will be provided in the related output channels. This is a
+  *         virtual function and is implemented by related object.
+  * @param  pHandle pointer on the target component handle. It must be a DACx_UI object casted
+  *         to CUI otherwise the DACInit method will have no effect.
+  * @retval none.
+  */
+void UI_DACExec(UI_Handle_t *pHandle);
+
+/**
+  * @brief  This method is used to set up the DAC outputs. The selected
+  *         variables will be provided in the related output channels after next
+  *         DACExec. This is a virtual function and is implemented by related
+  *         object.
+  * @param  pHandle pointer on the target component handle. It must be a DACx_UI object casted
+  *         to CUI otherwise the DACInit method will have no effect.
+  * @param  bChannel the DAC channel to be programmed. It must be one of the
+  *         exported channels Ex. DAC_CH0.
+  * @param  bVariable the variables to be provided in out through the selected
+  *         channel. It must be one of the exported UI register Ex.
+  *         MC_PROTOCOL_REG_I_A.
+  * @retval none.
+  */
+void UI_SetDAC(UI_Handle_t *pHandle, DAC_Channel_t bChannel,
+                         MC_Protocol_REG_t bVariable);
+
+/**
+  * @brief  This method is used to get the current DAC channel selected output.
+  * @param  pHandle pointer on the target component handle. It must be a DACx_UI object casted
+  *         to CUI otherwise the method will have no effect.
+  * @param  bChannel the inspected DAC channel. It must be one of the
+  *         exported channels (Ex. DAC_CH0).
+  * @retval MC_Protocol_REG_t The variables provided in out through the inspected
+  *         channel. It will be one of the exported UI register (Ex.
+  *         MC_PROTOCOL_REG_I_A).
+  */
+MC_Protocol_REG_t UI_GetDAC(UI_Handle_t *pHandle, DAC_Channel_t bChannel);
+
+/**
+  * @brief  This method is used to set the value of the "User DAC channel".
+  * @param  pHandle pointer on the target component handle. It must be a DACx_UI object casted
+  *         to CUI otherwise the DACInit method will have no effect.
+  * @param  bUserChNumber the "User DAC channel" to be programmed.
+  * @param  hValue the value to be put in output.
+  * @retval none.
+  */
+void UI_SetUserDAC(UI_Handle_t *pHandle, DAC_UserChannel_t bUserChNumber, int16_t hValue);
 
 /**
   * @}

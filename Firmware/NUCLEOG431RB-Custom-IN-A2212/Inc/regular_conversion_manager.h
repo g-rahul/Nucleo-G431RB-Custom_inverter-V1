@@ -48,7 +48,7 @@
   * it is used by all regular_conversion_manager's client
   *
   */
-typedef struct 
+typedef struct
 {
   ADC_TypeDef * regADC;
   uint8_t  channel;
@@ -59,10 +59,10 @@ typedef enum
 {
   RCM_USERCONV_IDLE,
   RCM_USERCONV_REQUESTED,
-  RCM_USERCONV_EOC  
+  RCM_USERCONV_EOC
 }RCM_UserConvState_t;
 
-typedef void (*RCM_exec_cb_t)(uint8_t handle, uint16_t data, void *UserData); 
+typedef void (*RCM_exec_cb_t)(uint8_t handle, uint16_t data, void *UserData);
 
 /* Exported functions ------------------------------------------------------- */
 

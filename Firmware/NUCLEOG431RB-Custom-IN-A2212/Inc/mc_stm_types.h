@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    mc_stm_types.h 
+  * @file    mc_stm_types.h
   * @author  Motor Control SDK Team, ST Microelectronics
   * @brief   Includes HAL/LL headers relevant to the current configuration.
   ******************************************************************************
@@ -15,10 +15,10 @@
   *                             www.st.com/SLA0044
   *
   ******************************************************************************
-  */ 
+  */
 #ifndef __MC_STM_TYPES_H
 #define __MC_STM_TYPES_H
-  
+
 #ifndef USE_FULL_LL_DRIVER
 #define USE_FULL_LL_DRIVER
 #endif
@@ -42,8 +42,8 @@
 /**
  * @name Predefined Speed Units
  *
- * Each of the following symbols defines a rotation speed unit that can be used by the 
- * functions of the API for their speed parameter. Each Unit is defined by expressing 
+ * Each of the following symbols defines a rotation speed unit that can be used by the
+ * functions of the API for their speed parameter. Each Unit is defined by expressing
  * the value of 1 Hz in this unit.
  *
  * These symbols can be used to set the #SPEED_UNIT macro which defines the rotation speed
@@ -58,7 +58,7 @@
 #define _01HZ 10
 /** Hundreth of Hertz: 1 Hz is 100 001Hz */
 #define _001HZ 100
-/** @} */ 
+/** @} */
 
 /* USER CODE BEGIN DEFINITIONS */
 /* Definitions placed here will not be erased by code generation */

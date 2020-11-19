@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    motorcontrol.c 
+  * @file    motorcontrol.c
   * @author  Motor Control SDK Team, ST Microelectronics
   * @brief   Motor Control Subsystem initialization functions.
   ******************************************************************************
@@ -15,7 +15,7 @@
   *                             www.st.com/SLA0044
   *
   ******************************************************************************
-  */ 
+  */
 #include "main.h"
 #include "mc_tuning.h"
 #include "mc_interface.h"
@@ -44,19 +44,19 @@ uint32_t wConfig[NBR_OF_MOTORS] = {UI_CONFIG_M1,UI_CONFIG_M2};
  *  This function initializes and configures all the structures and components needed
  * for the Motor Control subsystem required by the Application. It expects that
  * all the peripherals needed for Motor Control purposes are already configured but
- * that their interrupts are not enabled yet. 
+ * that their interrupts are not enabled yet.
  *
- * CubeMX calls this function after all peripherals initializations and 
+ * CubeMX calls this function after all peripherals initializations and
  * before the NVIC is configured
  */
-__weak void MX_MotorControl_Init(void) 
+__weak void MX_MotorControl_Init(void)
 {
   /* Reconfigure the SysTick interrupt to fire every 500 us. */
   HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/SYS_TICK_FREQUENCY);
   /* Initialize the Motor Control Subsystem */
   MCboot(pMCI,pMCT);
   mc_lock_pins();
-  
+
   /* Initialize the MC User Interface */
   UI_TaskInit(wConfig,NBR_OF_MOTORS,pMCI,pMCT,s_fwVer);
 }

@@ -53,7 +53,6 @@ void MX_MotorControl_Init(void);
 #ifdef __cplusplus
 }
 #endif /* __cpluplus */
- 
 
 #endif /* __MOTORCONTROL_H */
 /******************* (C) COPYRIGHT 2019 STMicroelectronics *****END OF FILE****/

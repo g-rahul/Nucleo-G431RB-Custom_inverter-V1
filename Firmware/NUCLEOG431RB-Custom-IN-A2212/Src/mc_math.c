@@ -284,14 +284,14 @@ __weak Trig_Components MCM_Trig_Functions( int16_t hAngle )
     uint32_t CordicRdata;
     Trig_Components Components;
   } CosSin;
-  
+
   /* Configure CORDIC */
   WRITE_REG(CORDIC->CSR, CORDIC_CONFIG_COSINE);
   LL_CORDIC_WriteData(CORDIC, 0x7FFF0000 + (uint32_t) hAngle);
   /* Read angle */
   CosSin.CordicRdata = LL_CORDIC_ReadData(CORDIC);
   return (CosSin.Components);
-  
+
 }
 
 #if defined (CCMRAM)
@@ -315,7 +315,7 @@ __weak int32_t MCM_Sqrt( int32_t wInput )
   {
   uint8_t biter = 0u;
   int32_t wtemproot;
-    
+
     if ( wInput <= ( int32_t )2097152 )
     {
       wtemproot = ( int32_t )128;

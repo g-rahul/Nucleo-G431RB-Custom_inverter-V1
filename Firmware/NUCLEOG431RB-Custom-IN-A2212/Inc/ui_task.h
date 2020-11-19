@@ -22,6 +22,8 @@
 #define __UITASK_H
 
 #include "user_interface.h"
+#include "dac_rctimer_ui.h"
+#include "dac_ui.h"
 
 #include "motor_control_protocol.h"
 #include "frame_communication_protocol.h"
@@ -31,6 +33,9 @@
 /* Exported functions --------------------------------------------------------*/
 void UI_TaskInit(uint32_t* pUICfg, uint8_t bMCNum, MCI_Handle_t * pMCIList[],
                  MCT_Handle_t* pMCTList[],const char* s_fwVer);
+
+void UI_DACUpdate(uint8_t bMotorNbr);
+UI_Handle_t * GetDAC(void);
 
 void UI_Scheduler(void);
 MCP_Handle_t * GetMCP(void);

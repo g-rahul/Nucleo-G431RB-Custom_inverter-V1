@@ -29,7 +29,6 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32g4xx_hal.h"
-#include "stm32g4xx_ll_pwr.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -64,16 +63,22 @@ void Error_Handler(void);
 #define Start_Stop_Pin GPIO_PIN_13
 #define Start_Stop_GPIO_Port GPIOC
 #define Start_Stop_EXTI_IRQn EXTI15_10_IRQn
-#define M1_CURR_AMPL_Pin GPIO_PIN_1
-#define M1_CURR_AMPL_GPIO_Port GPIOC
+#define M1_CURR_AMPL_W_Pin GPIO_PIN_0
+#define M1_CURR_AMPL_W_GPIO_Port GPIOC
+#define M1_CURR_AMPL_V_Pin GPIO_PIN_1
+#define M1_CURR_AMPL_V_GPIO_Port GPIOC
 #define M1_TEMPERATURE_Pin GPIO_PIN_2
 #define M1_TEMPERATURE_GPIO_Port GPIOC
+#define M1_CURR_AMPL_U_Pin GPIO_PIN_0
+#define M1_CURR_AMPL_U_GPIO_Port GPIOA
 #define M1_BUS_VOLTAGE_Pin GPIO_PIN_1
 #define M1_BUS_VOLTAGE_GPIO_Port GPIOA
 #define UART_TX_Pin GPIO_PIN_2
 #define UART_TX_GPIO_Port GPIOA
 #define UART_RX_Pin GPIO_PIN_3
 #define UART_RX_GPIO_Port GPIOA
+#define DBG_DAC_CH1_Pin GPIO_PIN_4
+#define DBG_DAC_CH1_GPIO_Port GPIOA
 #define LD2_Pin GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
 #define M1_PWM_UL_Pin GPIO_PIN_7
