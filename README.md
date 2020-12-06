@@ -14,7 +14,7 @@ This repository includes **Field Oriented Control (FOC)** firmware based on **ST
 
 ### Table of Contents :
 =======================
-* [Progres](#hardware)
+* [Progress](#hardware)
 * [Firmware Desicription](#hardware)
 * [Hardware Description](#foc-firmware)
 * [Example Variants ](#example-variants)
