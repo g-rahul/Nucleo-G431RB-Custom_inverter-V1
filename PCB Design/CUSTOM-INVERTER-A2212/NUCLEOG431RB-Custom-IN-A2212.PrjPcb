@@ -23,11 +23,13 @@ DefaultPcbPcad=0
 ReorderDocumentsOnCompile=1
 NameNetsHierarchically=0
 PowerPortNamesTakePriority=1
+AutoSheetNumbering=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
+IsProjectConflictPreventionWarningsEnabled=1
 OutputPath=Project Outputs
 LogFolderPath=..\Panel Templates\Project Logs
 ManagedProjectGUID=
@@ -455,126 +457,130 @@ VariationCount=0
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.DRR
+DocumentPath=Project Outputs\Design Rule Check - NUCLEOG431RB-Custom-IN-A2212.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.EXTREP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.G1
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.G2
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.G1
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBL
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.G2
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBO
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBS
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GD1
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GG1
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM1
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM3
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM4
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM3
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM5
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM4
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM6
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM5
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM8
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM6
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM13
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM8
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM14
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM15
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM14
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM16
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM24
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM16
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPB
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM24
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPT
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTL
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTO
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTS
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.LDP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.REP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.RUL
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.REP
 DItemRevisionGUID=
 
 [GeneratedDocument31]
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument32]
 DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.TXT
 DItemRevisionGUID=
 
@@ -1667,6 +1673,8 @@ MultiChannelAlternate=2
 AlternateItemFail=3
 Type122=2
 Type123=1
+Type124=1
+Type125=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -1741,12 +1749,12 @@ Net4=NetName=60V|NetColor=$00FF6EFF
 Net5=NetName=NetC44_2|NetColor=clYellow
 
 [Comparison Options]
-ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=0|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=0|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
-ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|Confirm=0|UseName=-1|InclAllRules=0
-ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=0|Confirm=-1|UseName=-1|InclAllRules=0
+ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
+ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
+ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
+ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
+ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|UseName=-1|InclAllRules=0
+ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
 
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
