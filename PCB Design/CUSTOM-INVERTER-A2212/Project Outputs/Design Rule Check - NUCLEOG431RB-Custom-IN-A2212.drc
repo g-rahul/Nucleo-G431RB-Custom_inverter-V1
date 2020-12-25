@@ -1,17 +1,17 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rahul\Documents\Integrated Projects\Motor Control FOC\MC_FOC_V1\PCB Design\CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PcbDoc
-Date     : 12/18/2020
-Time     : 7:43:09 PM
+Date     : 12/22/2020
+Time     : 6:04:34 PM
 
 WARNING: 3 Net Ties failed verification
-   SMT SIP Component R42-0.001 (146.5mm,18mm) on Bottom Layer, SMT SIP Component R42-0.001 (146.5mm,18mm) on Bottom Layer, has isolated copper
-   SMT SIP Component R41-0.001 (97.673mm,18mm) on Bottom Layer, SMT SIP Component R41-0.001 (97.673mm,18mm) on Bottom Layer, has isolated copper
-   SMT SIP Component R40-0.001 (49.594mm,18mm) on Bottom Layer, SMT SIP Component R40-0.001 (49.594mm,18mm) on Bottom Layer, has isolated copper
+   SMT SIP Component R42-0.001 (5767.717mil,708.662mil) on Bottom Layer, SMT SIP Component R42-0.001 (5767.717mil,708.662mil) on Bottom Layer, has isolated copper
+   SMT SIP Component R41-0.001 (3845.393mil,708.662mil) on Bottom Layer, SMT SIP Component R41-0.001 (3845.393mil,708.662mil) on Bottom Layer, has isolated copper
+   SMT SIP Component R40-0.001 (1952.52mil,708.663mil) on Bottom Layer, SMT SIP Component R40-0.001 (1952.52mil,708.663mil) on Bottom Layer, has isolated copper
 
-Processing Rule : Clearance Constraint (Gap=0.762mm) (InNetClass('HV')),(All)
+Processing Rule : Clearance Constraint (Gap=30mil) (InNetClass('HV')),(All)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
@@ -23,52 +23,52 @@ Rule Violations :0
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.254mm) (Max=2.54mm) (Preferred=0.254mm) (All)
+Processing Rule : Width Constraint (Min=10mil) (Max=100mil) (Preferred=10mil) (All)
 Rule Violations :0
 
 Processing Rule : Routing Layers(All)
 Rule Violations :0
 
-Processing Rule : Routing Via (MinHoleWidth=0.254mm) (MaxHoleWidth=1mm) (PreferredHoleWidth=0.254mm) (MinWidth=0.508mm) (MaxWidth=2mm) (PreferedWidth=0.508mm) (All)
+Processing Rule : Routing Via (MinHoleWidth=10mil) (MaxHoleWidth=39.37mil) (PreferredHoleWidth=10mil) (MinWidth=20mil) (MaxWidth=78.74mil) (PreferedWidth=20mil) (All)
 Rule Violations :0
 
-Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm) (All)
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=10mil) (Max=10mil) (Prefered=10mil)  and Width Constraints (Min=10mil) (Max=10mil) (Prefered=10mil) (All)
 Rule Violations :0
 
 Processing Rule : SMD Neck-Down Constraint (Percent=102%) (All)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=0.13mm) (All)
+Processing Rule : Minimum Annular Ring (Minimum=5.118mil) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=0.254mm) (Max=7.62mm) (All)
+Processing Rule : Hole Size Constraint (Min=10mil) (Max=300mil) (All)
 Rule Violations :0
 
 Processing Rule : Pads and Vias to follow the Drill pairs settings
 Rule Violations :0
 
-Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (HasFootprint('garudalogo6mm_circle')),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (HasFootprint('garudalogo6mm_circle')),(All)
 Rule Violations :0
 
-Processing Rule : Silk to Silk (Clearance=0.15mm) (All),(All)
+Processing Rule : Silk to Silk (Clearance=5.906mil) (All),(All)
 Rule Violations :0
 
-Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
 Rule Violations :0
 
-Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) 
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 10mil, Vertical Gap = 10mil ) (All),(All) 
 Rule Violations :0
 
-Processing Rule : Height Constraint (Min=0mm) (Max=100mm) (Prefered=12.7mm) (All)
+Processing Rule : Height Constraint (Min=0mil) (Max=3937.008mil) (Prefered=500mil) (All)
 Rule Violations :0
 
 
