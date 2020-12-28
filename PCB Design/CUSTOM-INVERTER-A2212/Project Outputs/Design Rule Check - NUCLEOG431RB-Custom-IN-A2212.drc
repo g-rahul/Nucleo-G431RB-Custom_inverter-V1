@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\rahul\Documents\Integrated Projects\Motor Control FOC\MC_FOC_V1\PCB Design\CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PcbDoc
 Date     : 12/28/2020
-Time     : 5:18:46 PM
+Time     : 5:21:58 PM
 
 WARNING: 3 Net Ties failed verification
    SMT SIP Component R42-0.001 (146.5mm,18mm) on Bottom Layer, SMT SIP Component R42-0.001 (146.5mm,18mm) on Bottom Layer, has isolated copper
@@ -74,4 +74,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:03
+Time Elapsed        : 00:00:04

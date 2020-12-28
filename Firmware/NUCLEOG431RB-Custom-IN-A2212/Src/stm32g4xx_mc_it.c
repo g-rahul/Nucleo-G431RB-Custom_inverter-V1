@@ -61,6 +61,7 @@ void ADC1_2_IRQHandler(void);
 void TIMx_UP_M1_IRQHandler(void);
 void TIMx_BRK_M1_IRQHandler(void);
 
+void SPD_TIM_M1_IRQHandler(void);
 void USART_IRQHandler(void);
 void HardFault_Handler(void);
 void SysTick_Handler(void);
@@ -145,6 +146,48 @@ void TIMx_BRK_M1_IRQHandler(void)
   /* USER CODE BEGIN TIMx_BRK_M1_IRQn 1 */
 
   /* USER CODE END TIMx_BRK_M1_IRQn 1 */
+}
+
+/**
+  * @brief  This function handles TIMx global interrupt request for M1 Speed Sensor.
+  * @param  None
+  * @retval None
+  */
+void SPD_TIM_M1_IRQHandler(void)
+{
+  /* USER CODE BEGIN SPD_TIM_M1_IRQn 0 */
+
+  /* USER CODE END SPD_TIM_M1_IRQn 0 */
+
+  /* HALL Timer Update IT always enabled, no need to check enable UPDATE state */
+  if (LL_TIM_IsActiveFlag_UPDATE(HALL_M1.TIMx) != 0)
+  {
+    LL_TIM_ClearFlag_UPDATE(HALL_M1.TIMx);
+    HALL_TIMx_UP_IRQHandler(&HALL_M1);
+    /* USER CODE BEGIN M1 HALL_Update */
+
+    /* USER CODE END M1 HALL_Update   */
+  }
+  else
+  {
+    /* Nothing to do */
+  }
+  /* HALL Timer CC1 IT always enabled, no need to check enable CC1 state */
+  if (LL_TIM_IsActiveFlag_CC1 (HALL_M1.TIMx))
+  {
+    LL_TIM_ClearFlag_CC1(HALL_M1.TIMx);
+    HALL_TIMx_CC_IRQHandler(&HALL_M1);
+    /* USER CODE BEGIN M1 HALL_CC1 */
+
+    /* USER CODE END M1 HALL_CC1 */
+  }
+  else
+  {
+  /* Nothing to do */
+  }
+  /* USER CODE BEGIN SPD_TIM_M1_IRQn 1 */
+
+  /* USER CODE END SPD_TIM_M1_IRQn 1 */
 }
 
 /* This section is present only when serial communication is used */

@@ -87,6 +87,8 @@ void Error_Handler(void);
 #define M1_PWM_VL_GPIO_Port GPIOB
 #define M1_PWM_WL_Pin GPIO_PIN_1
 #define M1_PWM_WL_GPIO_Port GPIOB
+#define M1_HALL_H3_Pin GPIO_PIN_10
+#define M1_HALL_H3_GPIO_Port GPIOB
 #define M1_PWM_UH_Pin GPIO_PIN_8
 #define M1_PWM_UH_GPIO_Port GPIOA
 #define M1_PWM_VH_Pin GPIO_PIN_9
@@ -99,6 +101,10 @@ void Error_Handler(void);
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
+#define M1_HALL_H1_Pin GPIO_PIN_15
+#define M1_HALL_H1_GPIO_Port GPIOA
+#define M1_HALL_H2_Pin GPIO_PIN_3
+#define M1_HALL_H2_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
