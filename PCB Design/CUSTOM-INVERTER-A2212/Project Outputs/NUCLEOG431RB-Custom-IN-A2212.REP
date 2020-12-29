@@ -2,127 +2,21 @@
 FileName = NUCLEOG431RB-Custom-IN-A2212.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Courtyard
-      File : NUCLEOG431RB-Custom-IN-A2212.GM16
-
-    Adding Layer      : Bottom Courtyard
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D16
-    D18
-    D173
-*************************************************************
-
-*************************************************************
-Generating : Bottom Assembly
-      File : NUCLEOG431RB-Custom-IN-A2212.GM14
-
-    Adding Layer      : Bottom Assembly
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D16
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Top 3D Body
-      File : NUCLEOG431RB-Custom-IN-A2212.GM4
-
-    Adding Layer      : Top 3D Body
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D16
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Dimensions
-      File : NUCLEOG431RB-Custom-IN-A2212.GM3
-
-    Adding Layer      : Dimensions
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D12
-    D13
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Bottom Designator
-      File : NUCLEOG431RB-Custom-IN-A2212.GM8
-
-    Adding Layer      : Bottom Designator
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Bottom Component Center
-      File : NUCLEOG431RB-Custom-IN-A2212.GM24
-
-    Adding Layer      : Bottom Component Center
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Mechanical1
-      File : NUCLEOG431RB-Custom-IN-A2212.GM1
-
-    Adding Layer      : Mechanical1
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D18
-*************************************************************
-
-*************************************************************
 Generating : Bottom Overlay
       File : NUCLEOG431RB-Custom-IN-A2212.GBO
 
     Adding Layer      : Bottom Overlay
 
-    Adding Layer      : Mechanical1
-
 
 Used DCodes :
     D10
+    D11
     D12
     D13
     D14
     D15
-    D16
-    D18
-    D171
-    D172
+    D173
+    D174
 *************************************************************
 
 *************************************************************
@@ -131,31 +25,26 @@ Generating : Bottom Paste
 
     Adding Layer      : Bottom Paste
 
-    Adding Layer      : Mechanical1
-
     Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D13
+    D17
     D18
     D19
     D20
     D21
+    D22
+    D24
     D25
-    D28
+    D27
     D29
-    D30
-    D31
-    D32
-    D35
-    D36
-    D41
+    D34
+    D38
+    D39
     D86
-    D152
-    D153
     D154
     D155
     D156
@@ -173,6 +62,95 @@ Used DCodes :
     D168
     D169
     D170
+    D171
+    D172
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : NUCLEOG431RB-Custom-IN-A2212.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D24
+    D38
+    D59
+    D61
+    D62
+    D68
+    D80
+    D81
+    D82
+    D83
+    D85
+    D86
+    D87
+    D89
+    D94
+    D96
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D121
+    D123
+    D124
+    D125
+    D126
+    D127
+    D128
+    D129
+    D130
+    D131
+    D132
+    D133
+    D134
+    D135
+    D136
+    D137
+*************************************************************
+
+*************************************************************
+Generating : POWER1
+      File : NUCLEOG431RB-Custom-IN-A2212.G1
+
+    Adding Layer      : POWER1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D62
+    D89
+    D100
+    D105
+    D106
+    D112
+    D114
+    D115
+    D116
+    D117
+    D118
+    D120
+    D121
 *************************************************************
 
 *************************************************************
@@ -181,28 +159,26 @@ Generating : Bottom Solder
 
     Adding Layer      : Bottom Solder
 
-    Adding Layer      : Mechanical1
-
     Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D13
-    D18
-    D35
+    D14
+    D38
+    D41
     D42
     D43
     D44
+    D45
     D46
+    D48
     D49
     D50
-    D51
     D52
-    D53
-    D55
-    D60
+    D57
+    D59
     D61
     D62
     D63
@@ -222,13 +198,9 @@ Used DCodes :
     D77
     D78
     D79
-    D80
-    D81
-    D82
     D86
-    D121
-    D122
-    D137
+    D129
+    D135
     D138
     D139
     D140
@@ -243,6 +215,112 @@ Used DCodes :
     D149
     D150
     D151
+    D152
+    D153
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : NUCLEOG431RB-Custom-IN-A2212.GM3
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : NUCLEOG431RB-Custom-IN-A2212.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D15
+    D19
+    D24
+    D38
+    D59
+    D61
+    D62
+    D68
+    D80
+    D81
+    D82
+    D83
+    D85
+    D86
+    D87
+    D89
+    D94
+    D96
+    D98
+    D99
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+    D122
+    D123
+    D124
+    D125
+    D126
+    D127
+    D128
+    D129
+    D130
+    D131
+    D132
+    D133
+    D134
+    D135
+    D136
+    D137
+*************************************************************
+
+*************************************************************
+Generating : POWER2
+      File : NUCLEOG431RB-Custom-IN-A2212.G2
+
+    Adding Layer      : POWER2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D62
+    D89
+    D100
+    D105
+    D106
+    D112
+    D115
+    D117
+    D118
+    D120
+    D121
 *************************************************************
 
 *************************************************************
@@ -251,20 +329,18 @@ Generating : Top Solder
 
     Adding Layer      : Top Solder
 
-    Adding Layer      : Mechanical1
-
     Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D13
-    D18
-    D23
-    D24
-    D34
+    D14
+    D26
     D35
+    D37
+    D38
+    D41
     D42
     D43
     D44
@@ -303,9 +379,61 @@ Used DCodes :
     D77
     D78
     D79
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : NUCLEOG431RB-Custom-IN-A2212.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D24
+    D26
+    D35
+    D37
+    D38
+    D61
+    D62
+    D68
     D80
     D81
     D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
 *************************************************************
 
 *************************************************************
@@ -314,15 +442,13 @@ Generating : Top Paste
 
     Adding Layer      : Top Paste
 
-    Adding Layer      : Mechanical1
-
     Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D13
+    D17
     D18
     D19
     D20
@@ -346,7 +472,72 @@ Used DCodes :
     D38
     D39
     D40
-    D41
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : NUCLEOG431RB-Custom-IN-A2212.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D15
+    D19
+    D24
+    D26
+    D35
+    D37
+    D38
+    D61
+    D62
+    D68
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+    D122
 *************************************************************
 
 *************************************************************
@@ -354,8 +545,6 @@ Generating : Top Overlay
       File : NUCLEOG431RB-Custom-IN-A2212.GTO
 
     Adding Layer      : Top Overlay
-
-    Adding Layer      : Mechanical1
 
 
 Used DCodes :
@@ -366,414 +555,5 @@ Used DCodes :
     D14
     D15
     D16
-    D17
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Top Assembly
-      File : NUCLEOG431RB-Custom-IN-A2212.GM13
-
-    Adding Layer      : Top Assembly
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D16
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : NUCLEOG431RB-Custom-IN-A2212.GPT
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D18
-    D21
-    D23
-    D24
-    D31
-    D34
-    D35
-    D71
-    D72
-    D74
-    D83
-    D84
-    D85
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-    D93
-    D94
-    D95
-    D96
-    D97
-    D98
-    D99
-    D104
-    D105
-    D106
-    D107
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
-    D114
-    D115
-    D116
-    D117
-    D118
-*************************************************************
-
-*************************************************************
-Generating : Bottom Pad Master
-      File : NUCLEOG431RB-Custom-IN-A2212.GPB
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D18
-    D21
-    D31
-    D35
-    D55
-    D71
-    D72
-    D74
-    D83
-    D84
-    D86
-    D89
-    D90
-    D91
-    D92
-    D94
-    D99
-    D104
-    D105
-    D106
-    D107
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
-    D114
-    D115
-    D116
-    D117
-    D118
-    D120
-    D121
-    D122
-    D123
-    D124
-    D125
-    D126
-    D127
-    D128
-    D129
-    D130
-    D131
-    D132
-    D133
-    D134
-    D135
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : NUCLEOG431RB-Custom-IN-A2212.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Mechanical1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-    D15
-    D18
-    D21
-    D31
-    D35
-    D55
-    D71
-    D72
-    D74
-    D80
-    D83
-    D84
-    D86
-    D89
-    D90
-    D91
-    D92
-    D94
-    D99
-    D101
-    D102
-    D103
-    D104
-    D105
-    D106
-    D107
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
-    D114
-    D115
-    D116
-    D117
-    D118
-    D119
-    D120
-    D121
-    D122
-    D123
-    D124
-    D125
-    D126
-    D127
-    D128
-    D129
-    D130
-    D131
-    D132
-    D133
-    D134
-    D135
-    D136
-*************************************************************
-
-*************************************************************
-Generating : POWER1
-      File : NUCLEOG431RB-Custom-IN-A2212.G1
-
-    Adding Layer      : POWER1
-
-    Adding Layer      : Mechanical1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-    D18
-    D71
-    D80
-    D90
-    D100
-    D104
-    D105
-    D107
-    D108
-    D110
-    D111
-    D112
-    D114
-    D120
-*************************************************************
-
-*************************************************************
-Generating : Top Courtyard
-      File : NUCLEOG431RB-Custom-IN-A2212.GM15
-
-    Adding Layer      : Top Courtyard
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D16
-    D18
-    D173
-*************************************************************
-
-*************************************************************
-Generating : POWER2
-      File : NUCLEOG431RB-Custom-IN-A2212.G2
-
-    Adding Layer      : POWER2
-
-    Adding Layer      : Mechanical1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-    D18
-    D71
-    D80
-    D90
-    D100
-    D104
-    D105
-    D107
-    D111
-    D112
-    D114
-    D120
-*************************************************************
-
-*************************************************************
-Generating : Top Layer
-      File : NUCLEOG431RB-Custom-IN-A2212.GTL
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Mechanical1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-    D15
-    D18
-    D21
-    D23
-    D24
-    D31
-    D34
-    D35
-    D71
-    D72
-    D74
-    D80
-    D83
-    D84
-    D85
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-    D93
-    D94
-    D95
-    D96
-    D97
-    D98
-    D99
-    D100
-    D101
-    D102
-    D103
-    D104
-    D105
-    D106
-    D107
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
-    D114
-    D115
-    D116
-    D117
-    D118
-    D119
-    D120
-*************************************************************
-
-*************************************************************
-Generating : Drill Drawing
-      File : NUCLEOG431RB-Custom-IN-A2212.GD1
-
-    Adding Layer      : Mechanical1
-
-    Adding Drill Pair : Top Layer-Bottom Layer
-
-    Adding Layer      : Drill Drawing
-
-
-Used DCodes :
-    D13
-    D18
-    D101
-    D174
-    D175
-*************************************************************
-
-*************************************************************
-Generating : Drill Guide
-      File : NUCLEOG431RB-Custom-IN-A2212.GG1
-
-    Adding Layer      : Mechanical1
-
-    Adding Drill Pair : Top Layer-Bottom Layer
-
-    Adding Layer      : Drill Guide
-
-
-Used DCodes :
-    D13
-    D18
-    D174
-*************************************************************
-
-*************************************************************
-Generating : Bottom 3D Body
-      File : NUCLEOG431RB-Custom-IN-A2212.GM5
-
-    Adding Layer      : Bottom 3D Body
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D16
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Top Component Center
-      File : NUCLEOG431RB-Custom-IN-A2212.GM6
-
-    Adding Layer      : Top Component Center
-
-    Adding Layer      : Mechanical1
-
-
-Used DCodes :
-    D13
-    D18
 *************************************************************
 

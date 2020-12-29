@@ -415,23 +415,6 @@ GenerateClassCluster=0
 DocumentUniqueId=SUOMUNWH
 
 [Document23]
-DocumentPath=CAMtastic1.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document24]
 DocumentPath=NUCLEOG431RB-Custom-IN-A2212.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -448,8 +431,42 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document24]
 DocumentPath=NUCLEOG431RB-Custom-IN-A2212.PCBDwf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document25]
+DocumentPath=CAM_Layer_291220.Cam
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document26]
+DocumentPath=CAM_NC_Drill_291220.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -518,86 +535,90 @@ DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM1
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM3
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM4
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM3
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM5
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM4
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM6
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM5
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM8
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM6
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM13
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM8
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM14
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM15
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM14
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM16
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM24
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM16
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPB
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GM24
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPT
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTL
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTO
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTS
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.LDP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.REP
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.RUL
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.REP
 DItemRevisionGUID=
 
 [GeneratedDocument32]
+DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument33]
 DocumentPath=Project Outputs\NUCLEOG431RB-Custom-IN-A2212.TXT
 DItemRevisionGUID=
 
@@ -1062,7 +1083,7 @@ OutputDefault6=0
 Configuration6_Name1=ForceUpdateSettings
 Configuration6_Item1=False
 Configuration6_Name2=OutputConfigurationParameter1
-Configuration6_Item2=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=4|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressLeadingZeroes
+Configuration6_Item2=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=4|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressLeadingZeroes|DocumentPath=C:\Users\rahul\Documents\Integrated Projects\Motor Control FOC\MC_FOC_V1\PCB Design\CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PcbDoc
 OutputType7=Drill
 OutputName7=Drill Drawing/Guides
 OutputDocumentPath7=
@@ -1100,7 +1121,7 @@ OutputDefault12=0
 Configuration12_Name1=ForceUpdateSettings
 Configuration12_Item1=False
 Configuration12_Name2=OutputConfigurationParameter1
-Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16908289~1|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16777218~1,16777219~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908312~1,16908291~1,16908292~1,16908293~1,16908294~1,16908296~1,16908301~1,16908302~1,16908303~1,16908304~1,16973848~1,16973849~1|PlotDrillDrawingLayerPair0_Backdrill=False|PlotDrillDrawingLayerPair0_DrillType=Regular|PlotDrillDrawingLayerPair0_HighLayer=Bottom Layer|PlotDrillDrawingLayerPair0_LowLayer=Top Layer|PlotDrillGuideLayerPair0_Backdrill=False|PlotDrillGuideLayerPair0_DrillType=Regular|PlotDrillGuideLayerPair0_HighLayer=Bottom Layer|PlotDrillGuideLayerPair0_LowLayer=Top Layer|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False
+Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16777218~1,16777219~1,16842751~1,16973835~1,16973833~1,16973831~1,16908291~1,16973848~1,16973849~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=True|Sorted=False|Sorted=False|DocumentPath=C:\Users\rahul\Documents\Integrated Projects\Motor Control FOC\MC_FOC_V1\PCB Design\CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PcbDoc
 
 [OutputGroup6]
 Name=Report Outputs
