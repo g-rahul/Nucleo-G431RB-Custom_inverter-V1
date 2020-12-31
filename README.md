@@ -14,7 +14,8 @@ This repository includes **Field Oriented Control (FOC)** firmware based on **ST
 
 ### Table of Contents :
 =======================
-* [About Project](#about-project)
+* [About Project](#About-Project)
+> <b> Coming Up Soon 📢:</b> 
 * [Firmware Desicription](#hardware)
 * [Hardware Description](#foc-firmware)
 * [Example Variants ](#example-variants)
@@ -27,4 +28,12 @@ This repository includes **Field Oriented Control (FOC)** firmware based on **ST
 
   ---
 ## About Project
+Fan of ST-micorelectronics ? Trying to rig up you'r own >1kw BLDC/PMSM Controller, this repository might just come very handy. Its been years since i started working on 
+three phase motor controllers, took lot of effort and time to get here. Why reinvent the wheel ? out there are tons of open source projects as well as application notes from
+various semiconductor manufacturers, you can just buy a plug and play type controller-inverter development kits like https://www.st.com/en/ecosystems/x-nucleo-ihm08m1.html with any Nucleo-64 board from St-micro or Insta-spin series from Texas Instruments https://www.ti.com/tool/BOOSTXL-DRV8305EVM.
 
+#### So what's the point of this repository and who can benefit ?
+
+* If you dont find **>1kw 48-80V Foc inverter**  out there or one costs greater than 100$. (Design in this rep can become way cheaper!)
+* If you are a student team/technical club who wants custom made inverter/controller for events or competitions. (Just put you'r stuff on the PCB overlay and you'r good to go)
+* If you want to test effects **boot-strap** v/s **isolated gate driving** topology on efficiency of inverter. 
