@@ -4,7 +4,7 @@
 
 This repository includes **Field Oriented Control (FOC)** firmware based on **STM32G431-RB**, **3-Phase Inverter** Design files with **STM32 morpho connector** for **Nucleo 64 Expansion Boards**.The Inverter Design is based on **X-NUCLEO-IHM08M1** from ST-Micro.
 
-This PCB's in this Project was sponsored by **JLCPCB (JiaLiChuang (HongKong) Co., Limited)**,They are a worldwide leading PCB prototype enterprise and a high-tech manufacturer specializing in quick PCB prototype and small-batch PCB production.The quality of PCB's are remarkable at extremely low prototyping price. Get your's done at as low as 2$ @ https://jlcpcb.com/. If you'r interested in manufacturing PCB's in this project, download the gerber from the rep and follow instruction for ordering at the end of this article.
+The PCB's in this Project was sponsored by **JLCPCB (JiaLiChuang (HongKong) Co., Limited)**,They are a worldwide leading PCB prototype enterprise and a high-tech manufacturer specializing in quick PCB prototype and small-batch PCB production.The quality of PCB's are remarkable at extremely low prototyping price. Get your's done at as low as 2$ @ https://jlcpcb.com/. If you'r interested in manufacturing PCB's in this project, download the gerber from the rep and follow instruction for ordering at the end of this article.
 
 #### Required Development Environments are :
 * STM32- Cube IDE
