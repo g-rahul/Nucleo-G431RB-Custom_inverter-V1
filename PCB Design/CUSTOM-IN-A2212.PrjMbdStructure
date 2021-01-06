@@ -1,0 +1,4 @@
+Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PrjPcb
+Record=SubProject|SourceDocument=Schematic.MbsDoc|ProjectPath=CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PrjPcb
+Record=DiagramHierarchy|SourceDocument=CUSTOM-IN-A2212.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PrjPcb
+Record=SubProject|SourceDocument=CUSTOM-IN-A2212.MbsDoc|ProjectPath=CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PrjPcb

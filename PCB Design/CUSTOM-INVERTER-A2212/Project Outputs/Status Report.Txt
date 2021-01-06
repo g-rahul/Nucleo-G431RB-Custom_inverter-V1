@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [NUCLEOG431RB-Custom-IN-A2212.PrjPcb]
+   Generated File[NUCLEOG431RB-Custom-IN-A2212.TXT]
+   Generated File[NUCLEOG431RB-Custom-IN-A2212.LDP]
+   Generated File[NUCLEOG431RB-Custom-IN-A2212.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:02:51 PM On 12/29/2020

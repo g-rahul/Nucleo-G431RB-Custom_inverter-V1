@@ -1,0 +1,9 @@
+DRC Rules Export File for PCB: C:\Users\rahul\Documents\Integrated Projects\Motor Control FOC\MC_FOC_V1\PCB Design\CUSTOM-INVERTER-A2212\NUCLEOG431RB-Custom-IN-A2212.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=Via Expansion|Scope=Board|Minimum=4.00
+RuleKind=SolderMaskExpansion|RuleName=Via_Stitching|Scope=Board|Minimum=0.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_1|Scope=Board|Minimum=30.00
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.12
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00

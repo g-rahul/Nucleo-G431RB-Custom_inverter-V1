@@ -36,16 +36,16 @@
   * of UI Componentes:
   *
   * - Some connect the application with the Motor Conrol Monitor tool via a UART link. The Motor
-  *   Control Monitor can control the motor(s) driven by the application and also read and write  
-  *   internal variables of the Motor Control subsystem. 
-  * - Others UI components allow for using the DAC(s) peripherals in 
+  *   Control Monitor can control the motor(s) driven by the application and also read and write
+  *   internal variables of the Motor Control subsystem.
+  * - Others UI components allow for using the DAC(s) peripherals in
   *   order to output internal variables of the Motor Control subsystem for debug purposes.
   *
   * @{
   */
 
 /**
-  * @brief  Initialize the user interface component. 
+  * @brief  Initialize the user interface component.
   *
   * Perform the link between the UI, MC interface and MC tuning components.
 
@@ -53,7 +53,7 @@
   * @param  bMCNum  Number of MC instance present in the list.
   * @param  pMCI Pointer on the list of MC interface component to inked with UI.
   * @param  pMCT Pointer on the list of MC tuning component to inked with UI.
-  * @param  pUICfg Pointer on the user interface configuration list. 
+  * @param  pUICfg Pointer on the user interface configuration list.
   *         Each element of the list must be a bit field containing one (or more) of
   *         the exported configuration option UI_CFGOPT_xxx (eventually OR-ed).
   * @retval none.
@@ -306,6 +306,27 @@ __weak bool UI_SetReg(UI_Handle_t *pHandle, MC_Protocol_REG_t bRegID, int32_t wV
     }
     break;
 
+  case MC_PROTOCOL_REG_FLUXWK_KP:
+    {
+      PID_SetKP(pMCT->pPIDFluxWeakening,(int16_t)wValue);
+    }
+    break;
+
+  case MC_PROTOCOL_REG_FLUXWK_KI:
+    {
+      PID_SetKI(pMCT->pPIDFluxWeakening,(int16_t)wValue);
+    }
+    break;
+
+  case MC_PROTOCOL_REG_FLUXWK_BUS:
+    {
+      if (pMCT->pFW)
+      {
+        FW_SetVref(pMCT->pFW,(uint16_t)wValue);
+      }
+    }
+    break;
+
   case MC_PROTOCOL_REG_IQ_SPEEDMODE:
     {
       MCI_SetIdref(pMCI,(int16_t)wValue);
@@ -328,7 +349,7 @@ __weak int32_t UI_GetReg(UI_Handle_t *pHandle, MC_Protocol_REG_t bRegID, bool * 
 
   int32_t bRetVal = 0;
 
-  if ( success != (bool *) 0 ) 
+  if ( success != (bool *) 0 )
   {
     *success = true;
   }
@@ -746,9 +767,121 @@ __weak int32_t UI_GetReg(UI_Handle_t *pHandle, MC_Protocol_REG_t bRegID, bool * 
     }
     break;
 
+    case MC_PROTOCOL_REG_FLUXWK_KP:
+    {
+      bRetVal = PID_GetKP(pMCT->pPIDFluxWeakening);
+    }
+    break;
+
+    case MC_PROTOCOL_REG_FLUXWK_KI:
+    {
+      bRetVal = PID_GetKI(pMCT->pPIDFluxWeakening);
+    }
+    break;
+
+    case MC_PROTOCOL_REG_FLUXWK_BUS:
+    {
+      if (pMCT->pFW)
+      {
+        bRetVal = (int32_t)FW_GetVref(pMCT->pFW);
+      }
+    }
+    break;
+
+    case MC_PROTOCOL_REG_FLUXWK_BUS_MEAS:
+    {
+      if (pMCT->pFW)
+      {
+        bRetVal = ((int32_t)FW_GetAvVPercentage(pMCT->pFW));
+      }
+    }
+    break;
+
     case MC_PROTOCOL_REG_MOTOR_POWER:
     {
       bRetVal = MPM_GetAvrgElMotorPowerW(pMCT->pMPM);
+    }
+    break;
+
+    case MC_PROTOCOL_REG_DAC_OUT1:
+    {
+      MC_Protocol_REG_t value = UI_GetDAC(pHandle, DAC_CH0);
+      bRetVal = value;
+    }
+    break;
+
+    case MC_PROTOCOL_REG_DAC_OUT2:
+    {
+      MC_Protocol_REG_t value = UI_GetDAC(pHandle, DAC_CH1);
+      bRetVal = value;
+    }
+    break;
+
+    case MC_PROTOCOL_REG_DAC_USER1:
+    {
+      if (pHandle->pFctDACGetUserChannelValue)
+      {
+        bRetVal = (int32_t) pHandle->pFctDACGetUserChannelValue(pHandle, 0);
+      }
+      else
+      {
+        bRetVal = (uint32_t) 0;
+      }
+    }
+    break;
+
+    case MC_PROTOCOL_REG_DAC_USER2:
+    {
+      if (pHandle->pFctDACGetUserChannelValue)
+      {
+        bRetVal = (int32_t) pHandle->pFctDACGetUserChannelValue(pHandle, 1);
+      }
+      else
+      {
+        bRetVal = (uint32_t) 0;
+      }
+    }
+    break;
+
+    case MC_PROTOCOL_REG_MEAS_EL_ANGLE:
+    {
+      uint32_t hUICfg = pHandle->pUICfg[pHandle->bSelectedDrive];
+      SpeednPosFdbk_Handle_t* pSPD = MC_NULL;
+      if ((MAIN_SCFG_VALUE(hUICfg) == UI_SCODE_ENC) ||
+          (MAIN_SCFG_VALUE(hUICfg) == UI_SCODE_HALL))
+      {
+        pSPD = pMCT->pSpeedSensorMain;
+      }
+      if ((AUX_SCFG_VALUE(hUICfg) == UI_SCODE_ENC) ||
+          (AUX_SCFG_VALUE(hUICfg) == UI_SCODE_HALL))
+      {
+        pSPD = pMCT->pSpeedSensorAux;
+      }
+      if (pSPD != MC_NULL)
+      {
+        bRetVal = SPD_GetElAngle(pSPD);
+      }
+    }
+    break;
+
+    case MC_PROTOCOL_REG_MEAS_ROT_SPEED:
+    {
+      uint32_t hUICfg = pHandle->pUICfg[pHandle->bSelectedDrive];
+      SpeednPosFdbk_Handle_t* pSPD = MC_NULL;
+      if ((MAIN_SCFG_VALUE(hUICfg) == UI_SCODE_ENC) ||
+          (MAIN_SCFG_VALUE(hUICfg) == UI_SCODE_HALL))
+      {
+        pSPD = pMCT->pSpeedSensorMain;
+      }
+      if ((AUX_SCFG_VALUE(hUICfg) == UI_SCODE_ENC) ||
+          (AUX_SCFG_VALUE(hUICfg) == UI_SCODE_HALL))
+      {
+        pSPD = pMCT->pSpeedSensorAux;
+      }
+      if (pSPD != MC_NULL)
+      {
+        bRetVal = SPD_GetS16Speed(pSPD);
+      }
     }
     break;
 
@@ -853,7 +986,7 @@ __weak int32_t UI_GetReg(UI_Handle_t *pHandle, MC_Protocol_REG_t bRegID, bool * 
 
     default:
 	{
-      if ( success != (bool *) 0 ) 
+      if ( success != (bool *) 0 )
       {
         *success = false;
       }
@@ -959,7 +1092,7 @@ __weak bool UI_ExecCmd(UI_Handle_t *pHandle, uint8_t bCmdID)
   * @brief  Allow to execute a speed ramp command coming from the user.
   * @param  pHandle: Pointer on Handle structure of UI component.
   * @param  wFinalMecSpeedUnit: Final speed value expressed in the unit defined by #SPEED_UNIT.
-  * @param  hDurationms: Duration of the ramp expressed in milliseconds. 
+  * @param  hDurationms: Duration of the ramp expressed in milliseconds.
   *         It is possible to set 0 to perform an instantaneous change in the value.
   *  @retval Return true if the command executed succesfully, otherwise false.
   */
@@ -1001,9 +1134,9 @@ __weak bool UI_ExecTorqueRamp(UI_Handle_t *pHandle, int16_t hTargetFinal, uint16
   *         retrieve the mechanical speed at the end of that stage. Expressed in
   *         the unit defined by #SPEED_UNIT.
   * @param  pFinalTorque Pointer to an int16_t variable used to
-  *         retrieve the value of motor torque at the end of that stage. 
+  *         retrieve the value of motor torque at the end of that stage.
   *         This value represents actually the Iq current expressed in digit.
-  *         
+  *
   *  @retval Returns true if the command executed successfully, false otherwise.
   */
 __weak bool UI_GetRevupData(UI_Handle_t *pHandle, uint8_t bStage, uint16_t* pDurationms,
@@ -1050,11 +1183,11 @@ __weak bool UI_SetRevupData(UI_Handle_t *pHandle, uint8_t bStage, uint16_t hDura
 /**
   * @brief  Allow to execute a set current reference command coming from the user.
   * @param  pHandle: Pointer on Handle structure of UI component.
-  * @param  hIqRef: Current Iq reference on qd reference frame. 
-  *         This value is expressed in digit. 
+  * @param  hIqRef: Current Iq reference on qd reference frame.
+  *         This value is expressed in digit.
   * @note   current convertion formula (from digit to Amps):
   *               Current(Amps) = [Current(digit) * Vdd micro] / [65536 * Rshunt * Aop]
-  * @param  hIdRef: Current Id reference on qd reference frame. 
+  * @param  hIdRef: Current Id reference on qd reference frame.
   *         This value is expressed in digit. See hIqRef param description.
   * @retval none.
   */
@@ -1070,7 +1203,7 @@ __weak void UI_SetCurrentReferences(UI_Handle_t *pHandle, int16_t hIqRef, int16_
 
 /**
   * @brief  Allow to get information about MP registers available for each step.
-  *         PC send to the FW the list of steps to get the available registers. 
+  *         PC send to the FW the list of steps to get the available registers.
   *         The FW returs the list of available registers for that steps.
   * @param  stepList: List of requested steps.
   * @param  pMPInfo: The returned list of register.
@@ -1080,6 +1213,84 @@ __weak void UI_SetCurrentReferences(UI_Handle_t *pHandle, int16_t hIqRef, int16_
 __weak bool UI_GetMPInfo(pMPInfo_t stepList, pMPInfo_t pMPInfo)
 {
     return false;
+}
+
+/**
+  * @brief  Hardware and software DAC initialization.
+  * @param  pHandle: Pointer on Handle structure of DACx UI component.
+  * @retval none.
+  */
+__weak void UI_DACInit(UI_Handle_t *pHandle)
+{
+  if (pHandle->pFct_DACInit)
+  {
+	  pHandle->pFct_DACInit(pHandle);
+  }
+}
+
+/**
+  * @brief  Allow to update the DAC outputs.
+  * @param  pHandle: Pointer on Handle structure of DACx UI component.
+  * @retval none.
+  */
+void UI_DACExec(UI_Handle_t *pHandle)
+{
+  if (pHandle->pFct_DACExec)
+  {
+    pHandle->pFct_DACExec(pHandle);
+  }
+}
+
+/**
+  * @brief  Allow to set up the DAC outputs.
+  *         Selected variables will be provided in the related output channels after next DACExec.
+  * @param  pHandle: Pointer on Handle structure of DACx UI component.
+  * @param  bChannel: DAC channel to program.
+  *         It must be one of the exported channels (Example: DAC_CH0).
+  * @param  bVariable: Value to be provided in out through the selected channel.
+  *         It must be one of the exported UI register (Example: MC_PROTOCOL_REG_I_A).
+  * @retval none.
+  */
+void UI_SetDAC(UI_Handle_t *pHandle, DAC_Channel_t bChannel,
+                         MC_Protocol_REG_t bVariable)
+{
+  if (pHandle->pFctDACSetChannelConfig)
+  {
+	  pHandle->pFctDACSetChannelConfig(pHandle, bChannel, bVariable);
+  }
+}
+
+/**
+  * @brief  Allow to get the current DAC channel selected output.
+  * @param  pHandle: Pointer on Handle structure of DACx UI component.
+  * @param  bChannel: Inspected DAC channel.
+  *         It must be one of the exported channels (Example: DAC_CH0).
+  * @retval MC_Protocol_REG_t: Variables provided in out through the inspected channel.
+  *         It must be one of the exported UI register (Example: MC_PROTOCOL_REG_I_A).
+  */
+__weak MC_Protocol_REG_t UI_GetDAC(UI_Handle_t *pHandle, DAC_Channel_t bChannel)
+{
+  MC_Protocol_REG_t retVal = MC_PROTOCOL_REG_UNDEFINED;
+  if (pHandle->pFctDACGetChannelConfig)
+  {
+    retVal = pHandle->pFctDACGetChannelConfig(pHandle, bChannel);
+  }
+  return retVal;
+}
+
+/**
+  * @brief  Allow to set the value of the user DAC channel.
+  * @param  pHandle: Pointer on Handle structure of DACx UI component.
+  * @param  bUserChNumber: user DAC channel to program.
+  * @param  hValue: Value to be put in output.
+  * @retval none.
+  */
+__weak void UI_SetUserDAC(UI_Handle_t *pHandle, DAC_UserChannel_t bUserChNumber, int16_t hValue)
+{
+  if (pHandle->pFctDACSetUserChannelValue)
+  {
+	  pHandle->pFctDACSetUserChannelValue(pHandle, bUserChNumber, hValue);
+  }
 }
 
 /**

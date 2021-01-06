@@ -479,9 +479,9 @@ __weak int16_t MCI_GetAvrgMecSpeedUnit( MCI_Handle_t * pHandle )
 
 /**
   * @brief  Returns the current mechanical rotor speed reference expressed in the unit defined by #SPEED_UNIT
-  *         
+  *
   * @param  pHandle Pointer on the component instance to work on.
-  *         
+  *
   */
 __weak int16_t MCI_GetMecSpeedRefUnit( MCI_Handle_t * pHandle )
 {

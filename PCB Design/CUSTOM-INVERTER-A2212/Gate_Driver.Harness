@@ -1,0 +1,2 @@
+G_Signal=G_U_HSig,G_U_LSig,G_V_HSig,G_V_LSig,G_W_HSig,G_W_LSig
+G_SignalFet=G_U_HO,PH_U,G_U_LO,G_V_HO,PH_V,G_V_LO,G_W_HO,PH_W,G_W_LO

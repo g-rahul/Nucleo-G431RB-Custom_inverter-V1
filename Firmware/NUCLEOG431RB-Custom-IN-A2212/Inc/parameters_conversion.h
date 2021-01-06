@@ -18,7 +18,7 @@
   *
   ******************************************************************************
   */
-  
+
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __PARAMETERS_CONVERSION_H
 #define __PARAMETERS_CONVERSION_H
@@ -34,11 +34,11 @@
 /************************* CONTROL FREQUENCIES & DELAIES **********************/
 #define TF_REGULATION_RATE 	(uint32_t) ((uint32_t)(PWM_FREQUENCY)/(REGULATION_EXECUTION_RATE))
 
-/* TF_REGULATION_RATE_SCALED is TF_REGULATION_RATE divided by PWM_FREQ_SCALING to allow more dynamic */ 
+/* TF_REGULATION_RATE_SCALED is TF_REGULATION_RATE divided by PWM_FREQ_SCALING to allow more dynamic */
 #define TF_REGULATION_RATE_SCALED (uint16_t) ((uint32_t)(PWM_FREQUENCY)/(REGULATION_EXECUTION_RATE*PWM_FREQ_SCALING))
 
 /* DPP_CONV_FACTOR is introduce to compute the right DPP with TF_REGULATOR_SCALED  */
-#define DPP_CONV_FACTOR (65536/PWM_FREQ_SCALING) 
+#define DPP_CONV_FACTOR (65536/PWM_FREQ_SCALING)
 
 #define REP_COUNTER 			(uint16_t) ((REGULATION_EXECUTION_RATE *2u)-1u)
 
@@ -62,10 +62,10 @@
 #define MAX_BEMF_VOLTAGE  (uint16_t)((MAX_APPLICATION_SPEED_RPM * 1.2 *\
                            MOTOR_VOLTAGE_CONSTANT*SQRT_2)/(1000u*SQRT_3))
 /*max phase voltage, 0-peak Volts*/
-#define MAX_VOLTAGE (int16_t)((ADC_REFERENCE_VOLTAGE/SQRT_3)/VBUS_PARTITIONING_FACTOR) 
+#define MAX_VOLTAGE (int16_t)((ADC_REFERENCE_VOLTAGE/SQRT_3)/VBUS_PARTITIONING_FACTOR)
 
 #define MAX_CURRENT (ADC_REFERENCE_VOLTAGE/(2*RSHUNT*AMPLIFICATION_GAIN))
-#define OBS_MINIMUM_SPEED_UNIT    (uint16_t) ((OBS_MINIMUM_SPEED_RPM*SPEED_UNIT)/_RPM)  
+#define OBS_MINIMUM_SPEED_UNIT    (uint16_t) ((OBS_MINIMUM_SPEED_RPM*SPEED_UNIT)/_RPM)
 
 #define MAX_APPLICATION_SPEED_UNIT ((MAX_APPLICATION_SPEED_RPM*SPEED_UNIT)/_RPM)
 #define MIN_APPLICATION_SPEED_UNIT ((MIN_APPLICATION_SPEED_RPM*SPEED_UNIT)/_RPM)
@@ -77,7 +77,7 @@
 #define C4 (int32_t) GAIN2
 #define C5 (int32_t)((((int16_t)F1)*MAX_VOLTAGE)/(LS*MAX_CURRENT*TF_REGULATION_RATE))
 
-#define PERCENTAGE_FACTOR    (uint16_t)(VARIANCE_THRESHOLD*128u)      
+#define PERCENTAGE_FACTOR    (uint16_t)(VARIANCE_THRESHOLD*128u)
 #define HFI_MINIMUM_SPEED    (uint16_t) (HFI_MINIMUM_SPEED_RPM/6u)
 
 #define MAX_APPLICATION_SPEED_UNIT2 ((MAX_APPLICATION_SPEED_RPM2*SPEED_UNIT)/_RPM)
@@ -129,18 +129,11 @@
 /* MOTOR 1 ADC Timing */
 /**********************/
 #define SAMPLING_TIME ((ADC_SAMPLING_CYCLES * ADV_TIM_CLK_MHz) / ADC_CLK_MHz) /* In ADV_TIMER CLK cycles*/
-#define TRISE ((TRISE_NS * ADV_TIM_CLK_MHz)/1000uL)
-#define TDEAD ((uint16_t)((DEADTIME_NS * ADV_TIM_CLK_MHz)/1000uL))
-#define TAFTER ((uint16_t)(TDEAD + TRISE))
-#define TBEFORE ((uint16_t)((ADC_TRIG_CONV_LATENCY_CYCLES + ADC_SAMPLING_CYCLES) * ADV_TIM_CLK_MHz) / ADC_CLK_MHz  + 1u)
-#define TMIN ((uint16_t)( TAFTER + TBEFORE ))
-#define HTMIN ((uint16_t)(TMIN >> 1))
-#define CHTMIN ((uint16_t)(TMIN/(REGULATION_EXECUTION_RATE*2)))
-#if (TRISE > SAMPLING_TIME)
-#define MAX_TRTS (2 * TRISE)
-#else
-#define MAX_TRTS (2 * SAMPLING_TIME)
-#endif
+#define HTMIN 1 /* Required for main.c compilation only, CCR4 is overwritten at runtime */
+#define TW_BEFORE ((uint16_t)((ADC_TRIG_CONV_LATENCY_CYCLES + ADC_SAMPLING_CYCLES) * ADV_TIM_CLK_MHz) / ADC_CLK_MHz  + 1u)
+#define TW_BEFORE_R3_1 ((uint16_t)((ADC_TRIG_CONV_LATENCY_CYCLES + ADC_SAMPLING_CYCLES*2 + ADC_SAR_CYCLES) * ADV_TIM_CLK_MHz) / ADC_CLK_MHz  + 1u)
+#define TW_AFTER ((uint16_t)(((DEADTIME_NS+MAX_TNTR_NS)*ADV_TIM_CLK_MHz)/1000ul))
+#define MAX_TWAIT ((uint16_t)((TW_AFTER - SAMPLING_TIME)/2))
 
 /* USER CODE BEGIN temperature */
 
@@ -148,6 +141,10 @@
 #define M1_TEMP_SW_FILTER_BW_FACTOR      250u
 
 /* USER CODE END temperature */
+
+/* Flux Weakening - Feed forward */
+#define M1_VQD_SW_FILTER_BW_FACTOR       128u
+#define M1_VQD_SW_FILTER_BW_FACTOR_LOG LOG2(M1_VQD_SW_FILTER_BW_FACTOR)
 
 #define PQD_CONVERSION_FACTOR (int32_t)(( 1000 * 3 * ADC_REFERENCE_VOLTAGE ) /\
              ( 1.732 * RSHUNT * AMPLIFICATION_GAIN ))
@@ -157,26 +154,26 @@
 /****** Prepares the UI configurations according the MCconfxx settings ********/
 #define COM_ENABLE | OPT_COM
 
-#define DAC_ENABLE
-#define DAC_OP_ENABLE
+#define DAC_ENABLE | OPT_DAC
+#define DAC_OP_ENABLE | UI_CFGOPT_DAC
 
 /* Motor 1 settings */
-#define FW_ENABLE
+#define FW_ENABLE | UI_CFGOPT_FW
 
 #define DIFFTERM_ENABLE
 
 /* Sensors setting */
 #define MAIN_SCFG UI_SCODE_STO_PLL
 
-#define AUX_SCFG 0x0
+#define AUX_SCFG UI_SCODE_HALL
 
 #define PLLTUNING_ENABLE
 
 #define UI_CFGOPT_PFC_ENABLE
 
-/******************************************************************************* 
-  * UI configurations settings. It can be manually overwritten if special 
-  * configuartion is required. 
+/*******************************************************************************
+  * UI configurations settings. It can be manually overwritten if special
+  * configuartion is required.
 *******************************************************************************/
 
 /* Specific options of UI */
@@ -191,17 +188,22 @@
 #define DOUT_ACTIVE_HIGH   DOutputActiveHigh
 #define DOUT_ACTIVE_LOW    DOutputActiveLow
 
-/* MMI Table Motor 1 MAX_MODULATION_96_PER_CENT */
-#define START_INDEX 58
-#define MAX_MODULE 31456
+/**********  AUXILIARY HALL TIMER MOTOR 1 *************/
+#define M1_HALL_TIM_PERIOD 65535
+#define M1_HALL_IC_FILTER  14
+#define SPD_TIM_M1_IRQHandler TIM2_IRQHandler
+
+/* MMI Table Motor 1 MAX_MODULATION_100_PER_CENT */
+#define START_INDEX 63
+#define MAX_MODULE 32767
 #define MMITABLE  {\
-32619,32472,32184,31904,31631,31365,31106,30853,30728,30484,\
-30246,30013,29785,29563,29345,29238,29028,28822,28620,28423,\
-28229,28134,27946,27762,27582,27405,27231,27061,26977,26811,\
-26649,26489,26332,26178,26027,25952,25804,25659,25517,25376,\
-25238,25103,25035,24903,24772,24644,24518,24393,24270,24210,\
-24090,23972,23855,23741,23627,23516,23461,23352,23244,23138,\
-23033,22930,22828,22777,22677,22579,22481,22385,22290,22196\
+32767,32390,32146,31907,31673,31444,31220,31001,30787,30577,30371,\
+30169,29971,29777,29587,29400,29217,29037,28861,28687,28517,\
+28350,28185,28024,27865,27709,27555,27404,27256,27110,26966,\
+26824,26685,26548,26413,26280,26149,26019,25892,25767,25643,\
+25521,25401,25283,25166,25051,24937,24825,24715,24606,24498,\
+24392,24287,24183,24081,23980,23880,23782,23684,23588,23493,\
+23400,23307,23215,23125\
 }
 
 #define SAMPLING_CYCLE_CORRECTION 0.5 /* Add half cycle required by STM32G431RBTx ADC */

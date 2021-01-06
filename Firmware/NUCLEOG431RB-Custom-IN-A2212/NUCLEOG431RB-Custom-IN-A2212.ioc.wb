@@ -64,8 +64,8 @@
 # CubeMX versions                                                                                                      #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 File.Version=6
-MxCube.Version=5.6.1
-MxDb.Version=DB.5.0.60
+MxCube.Version=6.1.0
+MxDb.Version=DB.6.0.10
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -80,7 +80,7 @@ PinOutPanel.RotationAngle=0
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 ProjectManager.ProjectFileName=NUCLEOG431RB-Custom-IN-A2212.ioc
 ProjectManager.ProjectName=NUCLEOG431RB-Custom-IN-A2212
-ProjectManager.TargetToolchain=MDK-ARM V5
+ProjectManager.TargetToolchain=STM32CubeIDE
 ProjectManager.AskForMigrate=true
 ProjectManager.BackupPrevious=false
 ProjectManager.ComputerToolchain=false
@@ -89,7 +89,7 @@ ProjectManager.CompilerOptimize=5
 ProjectManager.LibraryCopy=0
 
 ProjectManager.LastFirmware=false
-ProjectManager.FirmwarePackage=STM32Cube FW_G4 V1.1.0
+ProjectManager.FirmwarePackage=STM32Cube FW_G4 V1.3.0
 
 ProjectManager.DefaultFWLocation=true
 ProjectManager.DeletePrevious=true
@@ -281,29 +281,8 @@ ExtraMW.MotorControl.Root=MCSDK_v5.4.4/MotorControl
 ########################################################################################################################
 # MOTOR:  1                                                                                                            #
 # DEVICE: STM32G431RB                                                                                                  #
-# SENSE:  SINGLE_SHUNT                                                                                                 #
-# MACRO:  R1___G4XX_PWMCurrFdbk                                                                                        #
-# R1___G4XX_PWMCurrFdbk M1 STM32G431RB SINGLE_SHUNT                                                                    #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-# OPAMP                                                                                                                #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#                                                   General Settings                                                   #
-#......................................................................................................................#
-# INTERNAL_OPAMP NOT ENABLE                                                                                            #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-# ADC                                                                                                                  #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#                                           ADC1 settings for Current Sensing                                          #
-#......................................................................................................................#
-# The ADC1 settings section was POSTPONED.                                                                             #
-# It will be part of a cumulative section dedicated to all ADCs                                                        #
-#......................................................................................................................#
-#                                                       ADC1 IRQ                                                       #
-#......................................................................................................................#
-NVIC.ADC1_2_IRQn=true\:2\:0\:true\:true\:false\:1\:true
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#                                                                                                                      #
+# SENSE:  THREE_SHUNT_INDEPENDENT_RESOURCES                                                                            #
+# MACRO:  R3_4_G4XX_PWMCurrFdbk                                                                                        #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # OVER CURRENT PROTECTION                                                                                              #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -382,36 +361,23 @@ TIM1.Channel-PWM\ Generation3\ CH3\ CH3N=TIM_CHANNEL_3
 TIM1.Channel-PWM\ Generation4\ No\ Output=TIM_CHANNEL_4
 VP_TIM1_VS_no_output4.Mode=PWM Generation4 No Output
 VP_TIM1_VS_no_output4.Signal=TIM1_VS_no_output4
-
-TIM1.Channel-PWM\ Generation5\ No\ Output=TIM_CHANNEL_5
-VP_TIM1_VS_no_output5.Mode=PWM Generation5 No Output
-VP_TIM1_VS_no_output5.Signal=TIM1_VS_no_output5
-
-TIM1.Channel-PWM\ Generation6\ No\ Output=TIM_CHANNEL_6
-VP_TIM1_VS_no_output6.Mode=PWM Generation6 No Output
-VP_TIM1_VS_no_output6.Signal=TIM1_VS_no_output6
 TIM1.OCMode_PWM-PWM\ Generation1\ CH1\ CH1N=TIM_OCMODE_PWM1
 TIM1.OCMode_PWM-PWM\ Generation2\ CH2\ CH2N=TIM_OCMODE_PWM1
 TIM1.OCMode_PWM-PWM\ Generation3\ CH3\ CH3N=TIM_OCMODE_PWM1
 
 TIM1.OCMode_PWM-PWM\ Generation4\ No\ Output=TIM_OCMODE_PWM2
 
-TIM1.OCMode_PWM-PWM\ Generation5\ No\ Output=TIM_OCMODE_PWM2
-
-TIM1.OCMode_PWM-PWM\ Generation6\ No\ Output=TIM_OCMODE_PWM2
-
-TIM1.Channel=TIM_CHANNEL_6
-TIM1.CounterMode=TIM_COUNTERMODE_CENTERALIGNED3
-TIM1.TIM_MasterOutputTrigger=TIM_TRGO_RESET
-TIM1.TIM_MasterOutputTrigger2=TIM_TRGO2_OC5REF_RISING_OC6REF_RISING
-TIM1.PulseNoDither_4=(((PWM_PERIOD_CYCLES) / 2) - (HTMIN))
-TIM1.IPParameters=AutoReloadPreload,AutomaticOutput,BreakFilter,BreakState,BreakPolarity,Break2Filter,Break2State,Break2Polarity,SourceBRK2DigInput,OffStateRunMode,LockLevel,ClearInputSource,ClockDivision,OCFastMode_PWM,OCIdleState_1,OCIdleState_2,OCIdleState_3,OCIdleState_4,OCIdleState_5,OCIdleState_6,OCPolarity_1,OCPolarity_2,OCPolarity_3,OCPolarity_4,OCPolarity_5,OCPolarity_6,OffStateIDLEMode,TIM_MasterSlaveMode,TIM_SlaveMode,SourceBRK2DigInputPolarity,OCNPolarity_1,OCNPolarity_2,OCNPolarity_3,OCNIdleState_1,OCNIdleState_2,OCNIdleState_3,Channel-PWM\ Generation1\ CH1\ CH1N,Channel-PWM\ Generation2\ CH2\ CH2N,Channel-PWM\ Generation3\ CH3\ CH3N,Channel-PWM\ Generation4\ No\ Output,Channel-PWM\ Generation5\ No\ Output,Channel-PWM\ Generation6\ No\ Output,OCMode_PWM-PWM\ Generation1\ CH1\ CH1N,OCMode_PWM-PWM\ Generation2\ CH2\ CH2N,OCMode_PWM-PWM\ Generation3\ CH3\ CH3N,OCMode_PWM-PWM\ Generation4\ No\ Output,OCMode_PWM-PWM\ Generation5\ No\ Output,OCMode_PWM-PWM\ Generation6\ No\ Output,Channel,CounterMode,TIM_MasterOutputTrigger,TIM_MasterOutputTrigger2,DeadTime,Period,PeriodNoDither,Prescaler,Pulse-PWM\ Generation1\ CH1,Pulse-PWM\ Generation2\ CH2,Pulse-PWM\ Generation3\ CH3,Pulse-PWM\ Generation4\ No\ Output,Pulse-PWM\ Generation5\ No\ Output,Pulse-PWM\ Generation6\ No\ Output,RepetitionCounter,PulseNoDither_4
-TIM1.IPParametersWithoutCheck=DeadTime,Period,PeriodNoDither,Prescaler,Pulse-PWM\ Generation1\ CH1,Pulse-PWM\ Generation2\ CH2,Pulse-PWM\ Generation3\ CH3,Pulse-PWM\ Generation4\ No\ Output,Pulse-PWM\ Generation5\ No\ Output,Pulse-PWM\ Generation6\ No\ Output,RepetitionCounter,PulseNoDither_4
+TIM1.Channel=TIM_CHANNEL_4
+TIM1.CounterMode=TIM_COUNTERMODE_CENTERALIGNED1
+TIM1.TIM_MasterOutputTrigger=TIM_TRGO_OC4REF
+TIM1.TIM_MasterOutputTrigger2=TIM_TRGO2_RESET
+TIM1.IPParameters=AutoReloadPreload,AutomaticOutput,BreakFilter,BreakState,BreakPolarity,Break2Filter,Break2State,Break2Polarity,SourceBRK2DigInput,OffStateRunMode,LockLevel,ClearInputSource,ClockDivision,OCFastMode_PWM,OCIdleState_1,OCIdleState_2,OCIdleState_3,OCIdleState_4,OCIdleState_5,OCIdleState_6,OCPolarity_1,OCPolarity_2,OCPolarity_3,OCPolarity_4,OCPolarity_5,OCPolarity_6,OffStateIDLEMode,TIM_MasterSlaveMode,TIM_SlaveMode,SourceBRK2DigInputPolarity,OCNPolarity_1,OCNPolarity_2,OCNPolarity_3,OCNIdleState_1,OCNIdleState_2,OCNIdleState_3,Channel-PWM\ Generation1\ CH1\ CH1N,Channel-PWM\ Generation2\ CH2\ CH2N,Channel-PWM\ Generation3\ CH3\ CH3N,Channel-PWM\ Generation4\ No\ Output,OCMode_PWM-PWM\ Generation1\ CH1\ CH1N,OCMode_PWM-PWM\ Generation2\ CH2\ CH2N,OCMode_PWM-PWM\ Generation3\ CH3\ CH3N,OCMode_PWM-PWM\ Generation4\ No\ Output,Channel,CounterMode,TIM_MasterOutputTrigger,TIM_MasterOutputTrigger2,DeadTime,Period,PeriodNoDither,Prescaler,Pulse-PWM\ Generation1\ CH1,Pulse-PWM\ Generation2\ CH2,Pulse-PWM\ Generation3\ CH3,Pulse-PWM\ Generation4\ No\ Output,Pulse-PWM\ Generation5\ No\ Output,Pulse-PWM\ Generation6\ No\ Output,RepetitionCounter
+TIM1.IPParametersWithoutCheck=DeadTime,Period,PeriodNoDither,Prescaler,Pulse-PWM\ Generation1\ CH1,Pulse-PWM\ Generation2\ CH2,Pulse-PWM\ Generation3\ CH3,Pulse-PWM\ Generation4\ No\ Output,Pulse-PWM\ Generation5\ No\ Output,Pulse-PWM\ Generation6\ No\ Output,RepetitionCounter
 
 #......................................................................................................................#
 #                                                       TIM1 IRQ                                                       #
 #......................................................................................................................#
-NVIC.TIM1_BRK_TIM15_IRQn=true\:4\:1\:true\:true\:false\:2\:true
+NVIC.TIM1_BRK_TIM15_IRQn=true\:4\:1\:true\:true\:false\:1\:true
 #......................................................................................................................#
 #                                                TIM1 TriggerSource_ITR1                                               #
 #......................................................................................................................#
@@ -420,25 +386,39 @@ VP_TIM1_VS_ClockSourceITR.Signal=TIM1_VS_ClockSourceITR
 VP_TIM1_VS_ControllerModeTrigger.Mode=Trigger Mode
 VP_TIM1_VS_ControllerModeTrigger.Signal=TIM1_VS_ControllerModeTrigger
 #......................................................................................................................#
-#                           Extra TIM1_UP IRQ ([Ticket 64499]Change policy Irq and priority)                           #
+#                                    Extra TIM1_UP IRQ (Required in conf: G4 R3_4 )                                    #
 #......................................................................................................................#
-NVIC.TIM1_UP_TIM16_IRQn=true\:0\:0\:false\:true\:false\:3\:true
+NVIC.TIM1_UP_TIM16_IRQn=true\:0\:0\:false\:true\:false\:2\:true
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #                                                                                                                      #
-# DMA settings for motor M1 was postponed, see below                                                                   #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# OPAMP                                                                                                                #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                                   General Settings                                                   #
+#......................................................................................................................#
+# INTERNAL_OPAMP NOT ENABLE                                                                                            #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# ADC                                                                                                                  #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                      ADC1 and ADC2 settings for Current Sensing                                      #
+#......................................................................................................................#
+# The ADC1 and ADC2 settings section was POSTPONED.                                                                    #
+# It will be part of a cumulative section dedicated to all ADCs                                                        #
+#......................................................................................................................#
+#                                                   ADC1 and ADC2 IRQ                                                  #
+#......................................................................................................................#
+NVIC.ADC1_2_IRQn=true\:2\:0\:true\:true\:false\:3\:true
+#......................................................................................................................#
+#                                          ADC2 Channel_18 OPAMP3 Virtual Pin                                          #
+#......................................................................................................................#
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #                                                                                                                      #
 
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx#
 # CONSOLIDATED PIN SETTING for MOTOR 1                                                                                 #
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx#
-# M1_CURR_AMPL                                                                                                         #
-PC1.GPIOParameters=GPIO_Label
-PC1.GPIO_Label=M1_CURR_AMPL
-PC1.Locked=true
-PC1.Signal=wbsh_ADC1_IN7_PC1
-SH.wbsh_ADC1_IN7_PC1.0=ADC1_IN7,IN7-Single-Ended
-SH.wbsh_ADC1_IN7_PC1.ConfNb=1
-
 #......................................................................................................................#
 #                                             PWM_pin_setting PHASE_UH TIM1                                            #
 #......................................................................................................................#
@@ -520,6 +500,31 @@ PB1.Locked=true
 PB1.Mode=PWM Generation3 CH3 CH3N
 PB1.Signal=TIM1_CH3N
 
+# M1_CURR_AMPL_U                                                                                                       #
+PA0.GPIOParameters=GPIO_Label
+PA0.GPIO_Label=M1_CURR_AMPL_U
+PA0.Locked=true
+PA0.Signal=wbsh_ADC1_IN1_PA0
+SH.wbsh_ADC1_IN1_PA0.0=ADC1_IN1,IN1-Single-Ended
+SH.wbsh_ADC1_IN1_PA0.ConfNb=1
+
+# Shared Pin among: ADC1(IN7) and ADC2(IN7)                                                                            #
+PC1.GPIOParameters=GPIO_Label
+PC1.GPIO_Label=M1_CURR_AMPL_V
+PC1.Locked=true
+PC1.Signal=SharedAnalog_PC1
+SH.SharedAnalog_PC1.ConfNb=2
+SH.SharedAnalog_PC1.0=ADC1_IN7,IN7-Single-Ended
+SH.SharedAnalog_PC1.1=ADC2_IN7,IN7-Single-Ended
+
+# M1_CURR_AMPL_W                                                                                                       #
+PC0.GPIOParameters=GPIO_Label
+PC0.GPIO_Label=M1_CURR_AMPL_W
+PC0.Locked=true
+PC0.Signal=wbsh_ADC2_IN6_PC0
+SH.wbsh_ADC2_IN6_PC0.0=ADC2_IN6,IN6-Single-Ended
+SH.wbsh_ADC2_IN6_PC0.ConfNb=1
+
 #                                                                                                                      #
 ########################################################################################################################
 
@@ -528,23 +533,7 @@ PB1.Signal=TIM1_CH3N
 ########################################################################################################################
 #                                                     DMA settings                                                     #
 #......................................................................................................................#
-Dma.RequestsNb=1
-
-Dma.Request0=TIM1_CH4
-Dma.TIM1_CH4.0.Instance=DMA1_Channel1
-
-Dma.TIM1_CH4.0.MemInc=DMA_MINC_ENABLE
-Dma.TIM1_CH4.0.PeriphDataAlignment=DMA_PDATAALIGN_HALFWORD
-Dma.TIM1_CH4.0.MemDataAlignment=DMA_MDATAALIGN_HALFWORD
-Dma.TIM1_CH4.0.Mode=DMA_CIRCULAR
-
-Dma.TIM1_CH4.0.Direction=DMA_MEMORY_TO_PERIPH
-Dma.TIM1_CH4.0.PeriphInc=DMA_PINC_DISABLE
-Dma.TIM1_CH4.0.Priority=DMA_PRIORITY_HIGH
-Dma.TIM1_CH4.0.RequestParameters=Instance,Direction,PeriphInc,MemInc,PeriphDataAlignment,MemDataAlignment,Mode,Priority
-
-# DMA1_Channel1 IRQ                                                                                                    #
-NVIC.DMA1_Channel1_IRQn=true\:0\:0\:true\:true\:false\:4\:true
+#                                                      NO requests                                                     #
 ########################################################################################################################
 
 ########################################################################################################################
@@ -552,17 +541,57 @@ NVIC.DMA1_Channel1_IRQn=true\:0\:0\:true\:true\:false\:4\:true
 ########################################################################################################################
 # NO SPEED SENSING REQUIRED for M1 on sensor MAIN                                                                      #
 #======================================================================================================================#
-# NO SPEED SENSING REQUIRED for M1 on sensor AUXI                                                                      #
+# AUXI HALL SENSOR for motor 1                                                                                         #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# Interrupt setting                                                                                                    #
+NVIC.TIM2_IRQn=true\:3\:0\:false\:true\:false\:4\:true
+#                                                                                                                      #
+# TIM2 settings                                                                                                        #
+TIM2.IC1Filter=M1_HALL_IC_FILTER
+TIM2.Period=M1_HALL_TIM_PERIOD
+TIM2.IPParameters=IC1Filter,Period
+TIM2.IPParametersWithoutCheck=IC1Filter,Period
+#                                                                                                                      #
+# TIM clock config                                                                                                     #
+VP_TIM2_VS_ClockSourceINT.Mode=Internal
+VP_TIM2_VS_ClockSourceINT.Signal=TIM2_VS_ClockSourceINT
+#                                                                                                                      #
+# HALL SENSOR - PA15 for M1 TIM2 CH1                                                                                   #
+PA15.GPIOParameters=GPIO_Label,GPIO_Speed
+PA15.GPIO_Label=M1_HALL_H1
+PA15.GPIO_Speed=GPIO_SPEED_FREQ_HIGH
+PA15.Locked=true
+PA15.Signal=S_TIM2_CH1_ETR
+SH.S_TIM2_CH1_ETR.0=TIM2_CH1,Xored_Inputs_Hall_Sensor_Interface
+SH.S_TIM2_CH1_ETR.ConfNb=1
+#                                                                                                                      #
+# HALL SENSOR - PB3 for M1 TIM2 CH2                                                                                    #
+PB3.GPIOParameters=GPIO_Label,GPIO_Speed
+PB3.GPIO_Label=M1_HALL_H2
+PB3.GPIO_Speed=GPIO_SPEED_FREQ_HIGH
+PB3.Locked=true
+PB3.Signal=S_TIM2_CH2
+SH.S_TIM2_CH2.0=TIM2_CH2,Xored_Inputs_Hall_Sensor_Interface
+SH.S_TIM2_CH2.ConfNb=1
+#                                                                                                                      #
+# HALL SENSOR - PB10 for M1 TIM2 CH3                                                                                   #
+PB10.GPIOParameters=GPIO_Label,GPIO_Speed
+PB10.GPIO_Label=M1_HALL_H3
+PB10.GPIO_Speed=GPIO_SPEED_FREQ_HIGH
+PB10.Locked=true
+PB10.Signal=S_TIM2_CH3
+SH.S_TIM2_CH3.0=TIM2_CH3,Xored_Inputs_Hall_Sensor_Interface
+SH.S_TIM2_CH3.ConfNb=1
 ########################################################################################################################
 
 ########################################################################################################################
 # TEMPERATURE and BUS VOLTAGE SENSING                                                                                  #
 ########################################################################################################################
-# sensing section for ADC1                                                                                             #
+# sensing section for ADC2                                                                                             #
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx#
 #     M1_BUS_VOLTAGE                                                                                                   #
 #         pin            : PA1                                                                                         #
-#         ip             : ADC1                                                                                        #
+#         ip             : ADC2                                                                                        #
 #         channel        : ADC_CHANNEL_2                                                                               #
 #         isChShared     : false                                                                                       #
 #         sampling_time  : 47                                                                                          #
@@ -571,14 +600,14 @@ NVIC.DMA1_Channel1_IRQn=true\:0\:0\:true\:true\:false\:4\:true
 #......................................................................................................................#
 #     M1_TEMPERATURE                                                                                                   #
 #         pin            : PC2                                                                                         #
-#         ip             : ADC1                                                                                        #
+#         ip             : ADC2                                                                                        #
 #         channel        : ADC_CHANNEL_8                                                                               #
 #         isChShared     : false                                                                                       #
 #         sampling_time  : 47                                                                                          #
 #         sampling_cycles: 5                                                                                           #
 #         motor          : 1                                                                                           #
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx#
-#                                ADC1 M1_BUS_VOLTAGE and M1_TEMPERATURE Sensing settings                               #
+#                                ADC2 M1_BUS_VOLTAGE and M1_TEMPERATURE Sensing settings                               #
 #......................................................................................................................#
 # The ADC settings section was POSTPONED. Will be part of a cumulative section dedicated to all ADCs                   #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -588,9 +617,9 @@ NVIC.DMA1_Channel1_IRQn=true\:0\:0\:true\:true\:false\:4\:true
 PA1.GPIOParameters=GPIO_Label
 PA1.GPIO_Label=M1_BUS_VOLTAGE
 PA1.Locked=true
-PA1.Signal=wbsh_ADC1_IN2_PA1
-SH.wbsh_ADC1_IN2_PA1.0=ADC1_IN2,IN2-Single-Ended
-SH.wbsh_ADC1_IN2_PA1.ConfNb=1
+PA1.Signal=wbsh_ADC2_IN2_PA1
+SH.wbsh_ADC2_IN2_PA1.0=ADC2_IN2,IN2-Single-Ended
+SH.wbsh_ADC2_IN2_PA1.ConfNb=1
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #                                       GPIO settings for M1_TEMPERATURE Sensing                                       #
 #......................................................................................................................#
@@ -598,9 +627,9 @@ SH.wbsh_ADC1_IN2_PA1.ConfNb=1
 PC2.GPIOParameters=GPIO_Label
 PC2.GPIO_Label=M1_TEMPERATURE
 PC2.Locked=true
-PC2.Signal=wbsh_ADC1_IN8_PC2
-SH.wbsh_ADC1_IN8_PC2.0=ADC1_IN8,IN8-Single-Ended
-SH.wbsh_ADC1_IN8_PC2.ConfNb=1
+PC2.Signal=wbsh_ADC2_IN8_PC2
+SH.wbsh_ADC2_IN8_PC2.0=ADC2_IN8,IN8-Single-Ended
+SH.wbsh_ADC2_IN8_PC2.ConfNb=1
 ########################################################################################################################
 
 ########################################################################################################################
@@ -637,7 +666,12 @@ SH.wbsh_ADC1_IN8_PC2.ConfNb=1
 ########################################################################################################################
 # DAC                                                                                                                  #
 ########################################################################################################################
-
+PA4.GPIOParameters=GPIO_Label
+PA4.GPIO_Label=DBG_DAC_CH1
+PA4.Locked=true
+PA4.Signal=COMP_DAC11_group
+SH.COMP_DAC11_group.0=DAC1_OUT1,Enable_DAC1_OUT1
+SH.COMP_DAC11_group.ConfNb=1
 ########################################################################################################################
 
 ########################################################################################################################
@@ -738,17 +772,17 @@ ADC1.EnableInjectedConversion=ENABLE
 
 ADC1.InjectedConvMode=None
 ADC1.ExternalTrigInjecConv=ADC_EXTERNALTRIGINJEC_T1_TRGO
-ADC1.ExternalTrigInjecConvEdge=ADC_EXTERNALTRIGINJECCONV_EDGE_RISINGFALLING
+ADC1.ExternalTrigInjecConvEdge=ADC_EXTERNALTRIGINJECCONV_EDGE_RISING
 ADC1.InjNumberOfConversion=2
 
-# SAMPLING 1 --> M1 PHASE_CURRENTS
+# SAMPLING 1 --> M1 PHASE_U_CURR
 ADC1.InjectedRank-1\#ChannelInjectedConversion=1
-ADC1.InjectedChannel-1\#ChannelInjectedConversion=ADC_CHANNEL_7
+ADC1.InjectedChannel-1\#ChannelInjectedConversion=ADC_CHANNEL_1
 ADC1.InjectedSamplingTime-1\#ChannelInjectedConversion=ADC_SAMPLETIME_6CYCLES_5
 ADC1.InjectedOffsetNumber-1\#ChannelInjectedConversion=ADC_OFFSET_NONE
 ADC1.InjectedOffset-1\#ChannelInjectedConversion=0
 
-# SAMPLING 2 --> M1 PHASE_CURRENTS
+# SAMPLING 2 --> M1 PHASE_V_CURR
 ADC1.InjectedRank-2\#ChannelInjectedConversion=2
 ADC1.InjectedChannel-2\#ChannelInjectedConversion=ADC_CHANNEL_7
 ADC1.InjectedSamplingTime-2\#ChannelInjectedConversion=ADC_SAMPLETIME_6CYCLES_5
@@ -756,40 +790,114 @@ ADC1.InjectedOffsetNumber-2\#ChannelInjectedConversion=ADC_OFFSET_NONE
 ADC1.InjectedOffset-2\#ChannelInjectedConversion=0
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#                                ADC1 M1_BUS_VOLTAGE and M1_TEMPERATURE Sensing settings                               #
+#          ADC1 - Extra Regular Conversion - [Ticket 43328](https://intbugzilla.st.com/show_bug.cgi?id=43328)          #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-ADC1.EnableRegularConversion=ENABLE
-
-ADC1.ExternalTrigConv=ADC_SOFTWARE_START
-ADC1.ExternalTrigConvEdge=ADC_EXTERNALTRIGCONVEDGE_NONE
-
-ADC1.ScanConvMode=ADC_SCAN_ENABLE
-ADC1.NbrOfConversionFlag=1
-ADC1.NbrOfConversion=2
-
-# M1_BUS_VOLTAGE
-ADC1.Rank-1\#ChannelRegularConversion=1
-ADC1.Channel-1\#ChannelRegularConversion=ADC_CHANNEL_2
-ADC1.SamplingTime-1\#ChannelRegularConversion=ADC_SAMPLETIME_47CYCLES_5
-ADC1.OffsetNumber-1\#ChannelRegularConversion=ADC_OFFSET_NONE
-ADC1.Offset-1\#ChannelRegularConversion=0
-
-# M1_TEMPERATURE
-ADC1.Rank-2\#ChannelRegularConversion=2
-ADC1.Channel-2\#ChannelRegularConversion=ADC_CHANNEL_8
-ADC1.SamplingTime-2\#ChannelRegularConversion=ADC_SAMPLETIME_47CYCLES_5
-ADC1.OffsetNumber-2\#ChannelRegularConversion=ADC_OFFSET_NONE
-ADC1.Offset-2\#ChannelRegularConversion=0
+ADC1.EnableRegularConversion=DISABLE
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#                                 Recovery ScanConvMode for ADC1: 2 InjConv - 2 RegConv                                #
+#                                 Recovery ScanConvMode for ADC1: 2 InjConv - 0 RegConv                                #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 ADC1.ScanConvMode=ADC_SCAN_ENABLE
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #                                                   ADC1 IPParameters                                                  #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-ADC1.IPParameters=ClockPrescaler,DataAlign,Resolution,ContinuousConvMode,DiscontinuousConvMode,DMAContinuousRequests,EOCSelection,Overrun,LowPowerAutoWait,master,EnableAnalogWatchDog1,EnableAnalogWatchDog2,EnableAnalogWatchDog3,EnableInjectedConversion,InjectedConvMode,ExternalTrigInjecConv,ExternalTrigInjecConvEdge,InjNumberOfConversion,InjectedRank-1\#ChannelInjectedConversion,InjectedChannel-1\#ChannelInjectedConversion,InjectedSamplingTime-1\#ChannelInjectedConversion,InjectedOffsetNumber-1\#ChannelInjectedConversion,InjectedOffset-1\#ChannelInjectedConversion,InjectedRank-2\#ChannelInjectedConversion,InjectedChannel-2\#ChannelInjectedConversion,InjectedSamplingTime-2\#ChannelInjectedConversion,InjectedOffsetNumber-2\#ChannelInjectedConversion,InjectedOffset-2\#ChannelInjectedConversion,EnableRegularConversion,ExternalTrigConv,ExternalTrigConvEdge,ScanConvMode,NbrOfConversionFlag,NbrOfConversion,Rank-1\#ChannelRegularConversion,Channel-1\#ChannelRegularConversion,SamplingTime-1\#ChannelRegularConversion,OffsetNumber-1\#ChannelRegularConversion,Offset-1\#ChannelRegularConversion,Rank-2\#ChannelRegularConversion,Channel-2\#ChannelRegularConversion,SamplingTime-2\#ChannelRegularConversion,OffsetNumber-2\#ChannelRegularConversion,Offset-2\#ChannelRegularConversion
+ADC1.IPParameters=ClockPrescaler,DataAlign,Resolution,ContinuousConvMode,DiscontinuousConvMode,DMAContinuousRequests,EOCSelection,Overrun,LowPowerAutoWait,master,EnableAnalogWatchDog1,EnableAnalogWatchDog2,EnableAnalogWatchDog3,EnableInjectedConversion,InjectedConvMode,ExternalTrigInjecConv,ExternalTrigInjecConvEdge,InjNumberOfConversion,InjectedRank-1\#ChannelInjectedConversion,InjectedChannel-1\#ChannelInjectedConversion,InjectedSamplingTime-1\#ChannelInjectedConversion,InjectedOffsetNumber-1\#ChannelInjectedConversion,InjectedOffset-1\#ChannelInjectedConversion,InjectedRank-2\#ChannelInjectedConversion,InjectedChannel-2\#ChannelInjectedConversion,InjectedSamplingTime-2\#ChannelInjectedConversion,InjectedOffsetNumber-2\#ChannelInjectedConversion,InjectedOffset-2\#ChannelInjectedConversion,EnableRegularConversion,ScanConvMode
+########################################################################################################################
+
+########################################################################################################################
+# ADC2                                                                                                                 #
+########################################################################################################################
+#                                                 ADC2 Common settings                                                 #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+ADC2.ClockPrescaler=ADC_CLOCK_ASYNC_DIV4
+ADC2.DataAlign=ADC_DATAALIGN_LEFT
+ADC2.Resolution=ADC_RESOLUTION_12B
+ADC2.ContinuousConvMode=DISABLE
+ADC2.DiscontinuousConvMode=DISABLE
+ADC2.DMAContinuousRequests=DISABLE
+ADC2.EOCSelection=ADC_EOC_SINGLE_CONV
+ADC2.Overrun=ADC_OVR_DATA_PRESERVED
+ADC2.LowPowerAutoWait=DISABLE
+ADC2.master=1
+
+ADC2.EnableAnalogWatchDog1=false
+ADC2.EnableAnalogWatchDog2=false
+ADC2.EnableAnalogWatchDog3=false
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                           ADC2 settings for Current Sensing                                          #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+ADC2.EnableInjectedConversion=ENABLE
+
+ADC2.InjectedConvMode=None
+ADC2.ExternalTrigInjecConv=ADC_EXTERNALTRIGINJEC_T1_TRGO
+ADC2.ExternalTrigInjecConvEdge=ADC_EXTERNALTRIGINJECCONV_EDGE_RISING
+ADC2.InjNumberOfConversion=2
+
+# SAMPLING 1 --> M1 PHASE_V_CURR
+ADC2.InjectedRank-1\#ChannelInjectedConversion=1
+ADC2.InjectedChannel-1\#ChannelInjectedConversion=ADC_CHANNEL_7
+ADC2.InjectedSamplingTime-1\#ChannelInjectedConversion=ADC_SAMPLETIME_6CYCLES_5
+ADC2.InjectedOffsetNumber-1\#ChannelInjectedConversion=ADC_OFFSET_NONE
+ADC2.InjectedOffset-1\#ChannelInjectedConversion=0
+
+# SAMPLING 2 --> M1 PHASE_W_CURR
+ADC2.InjectedRank-2\#ChannelInjectedConversion=2
+ADC2.InjectedChannel-2\#ChannelInjectedConversion=ADC_CHANNEL_6
+ADC2.InjectedSamplingTime-2\#ChannelInjectedConversion=ADC_SAMPLETIME_6CYCLES_5
+ADC2.InjectedOffsetNumber-2\#ChannelInjectedConversion=ADC_OFFSET_NONE
+ADC2.InjectedOffset-2\#ChannelInjectedConversion=0
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                ADC2 M1_BUS_VOLTAGE and M1_TEMPERATURE Sensing settings                               #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+ADC2.EnableRegularConversion=ENABLE
+
+ADC2.ExternalTrigConv=ADC_SOFTWARE_START
+ADC2.ExternalTrigConvEdge=ADC_EXTERNALTRIGCONVEDGE_NONE
+
+ADC2.ScanConvMode=ADC_SCAN_ENABLE
+ADC2.NbrOfConversionFlag=1
+ADC2.NbrOfConversion=2
+
+# M1_BUS_VOLTAGE
+ADC2.Rank-1\#ChannelRegularConversion=1
+ADC2.Channel-1\#ChannelRegularConversion=ADC_CHANNEL_2
+ADC2.SamplingTime-1\#ChannelRegularConversion=ADC_SAMPLETIME_47CYCLES_5
+ADC2.OffsetNumber-1\#ChannelRegularConversion=ADC_OFFSET_NONE
+ADC2.Offset-1\#ChannelRegularConversion=0
+
+# M1_TEMPERATURE
+ADC2.Rank-2\#ChannelRegularConversion=2
+ADC2.Channel-2\#ChannelRegularConversion=ADC_CHANNEL_8
+ADC2.SamplingTime-2\#ChannelRegularConversion=ADC_SAMPLETIME_47CYCLES_5
+ADC2.OffsetNumber-2\#ChannelRegularConversion=ADC_OFFSET_NONE
+ADC2.Offset-2\#ChannelRegularConversion=0
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                 Recovery ScanConvMode for ADC2: 2 InjConv - 2 RegConv                                #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+ADC2.ScanConvMode=ADC_SCAN_ENABLE
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                                   ADC2 IPParameters                                                  #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+ADC2.IPParameters=ClockPrescaler,DataAlign,Resolution,ContinuousConvMode,DiscontinuousConvMode,DMAContinuousRequests,EOCSelection,Overrun,LowPowerAutoWait,master,EnableAnalogWatchDog1,EnableAnalogWatchDog2,EnableAnalogWatchDog3,EnableInjectedConversion,InjectedConvMode,ExternalTrigInjecConv,ExternalTrigInjecConvEdge,InjNumberOfConversion,InjectedRank-1\#ChannelInjectedConversion,InjectedChannel-1\#ChannelInjectedConversion,InjectedSamplingTime-1\#ChannelInjectedConversion,InjectedOffsetNumber-1\#ChannelInjectedConversion,InjectedOffset-1\#ChannelInjectedConversion,InjectedRank-2\#ChannelInjectedConversion,InjectedChannel-2\#ChannelInjectedConversion,InjectedSamplingTime-2\#ChannelInjectedConversion,InjectedOffsetNumber-2\#ChannelInjectedConversion,InjectedOffset-2\#ChannelInjectedConversion,EnableRegularConversion,ExternalTrigConv,ExternalTrigConvEdge,ScanConvMode,NbrOfConversionFlag,NbrOfConversion,Rank-1\#ChannelRegularConversion,Channel-1\#ChannelRegularConversion,SamplingTime-1\#ChannelRegularConversion,OffsetNumber-1\#ChannelRegularConversion,Offset-1\#ChannelRegularConversion,Rank-2\#ChannelRegularConversion,Channel-2\#ChannelRegularConversion,SamplingTime-2\#ChannelRegularConversion,OffsetNumber-2\#ChannelRegularConversion,Offset-2\#ChannelRegularConversion
+########################################################################################################################
+
+########################################################################################################################
+# DAC1                                                                                                                 #
+########################################################################################################################
+#                                                DAC1 Settings for DAC1                                                #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+DAC1.DAC_Trigger_OUT1=DAC_TRIGGER_SOFTWARE
+DAC1.DAC_OutputBuffer=DAC_OUTPUTBUFFER_DISABLE
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                                   DAC1 IPParameters                                                  #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+DAC1.IPParameters=DAC_Trigger_OUT1,DAC_OutputBuffer
 ########################################################################################################################
 
 ########################################################################################################################
@@ -803,25 +911,30 @@ Mcu.Pin4=PA14 (JTCK-SWCLK)
 Mcu.Pin5=PA5
 Mcu.Pin6=VP_CORDIC_VS_CORDIC
 Mcu.Pin7=VP_MotorControl_MC_ENABLED
-Mcu.Pin8=PC1
-Mcu.Pin9=PA11
-Mcu.Pin10=VP_TIM1_VS_no_output4
-Mcu.Pin11=VP_TIM1_VS_no_output5
-Mcu.Pin12=VP_TIM1_VS_no_output6
-Mcu.Pin13=VP_TIM1_VS_ClockSourceITR
-Mcu.Pin14=VP_TIM1_VS_ControllerModeTrigger
-Mcu.Pin15=PA8
-Mcu.Pin16=PA7
-Mcu.Pin17=PA9
-Mcu.Pin18=PB0
-Mcu.Pin19=PA10
-Mcu.Pin20=PB1
-Mcu.Pin21=PA1
-Mcu.Pin22=PC2
-Mcu.Pin23=PA2
-Mcu.Pin24=PA3
-Mcu.Pin25=PC13
-Mcu.PinsNb=26
+Mcu.Pin8=PA11
+Mcu.Pin9=VP_TIM1_VS_no_output4
+Mcu.Pin10=VP_TIM1_VS_ClockSourceITR
+Mcu.Pin11=VP_TIM1_VS_ControllerModeTrigger
+Mcu.Pin12=PA8
+Mcu.Pin13=PA7
+Mcu.Pin14=PA9
+Mcu.Pin15=PB0
+Mcu.Pin16=PA10
+Mcu.Pin17=PB1
+Mcu.Pin18=PA0
+Mcu.Pin19=PC1
+Mcu.Pin20=PC0
+Mcu.Pin21=VP_TIM2_VS_ClockSourceINT
+Mcu.Pin22=PA15
+Mcu.Pin23=PB3
+Mcu.Pin24=PB10
+Mcu.Pin25=PA1
+Mcu.Pin26=PC2
+Mcu.Pin27=PA4
+Mcu.Pin28=PA2
+Mcu.Pin29=PA3
+Mcu.Pin30=PC13
+Mcu.PinsNb=31
 ########################################################################################################################
 
 ########################################################################################################################
@@ -832,11 +945,13 @@ Mcu.IP1=RCC
 Mcu.IP2=SYS
 Mcu.IP3=CORDIC
 Mcu.IP4=MotorControl
-Mcu.IP5=ADC1
-Mcu.IP6=TIM1
-Mcu.IP7=DMA
-Mcu.IP8=USART2
-Mcu.IPNb=9
+Mcu.IP5=TIM1
+Mcu.IP6=ADC1
+Mcu.IP7=ADC2
+Mcu.IP8=TIM2
+Mcu.IP9=DAC1
+Mcu.IP10=USART2
+Mcu.IPNb=11
 ########################################################################################################################
 
 ########################################################################################################################
@@ -845,7 +960,7 @@ Mcu.IPNb=9
 
 
 
-MotorControl.IPParameters=ADC_1_PERIPH,ADC_2_PERIPH,ADC_AHBPERIPH,ADC_CLOCK_WB_DIV,ADC_CLOCK_WB_FREQ,ADC_PERIPH,ADC_REFERENCE_VOLTAGE,ALIGNMENT_ANGLE_DEG,ALIGNMENT_DURATION,AMPLIFICATION_GAIN,ANGC,BEMF_CONSISTENCY_GAIN,BEMF_CONSISTENCY_TOL,BKIN_MODE,BKIN1_FILTER,BKIN2_FILTER,BKIN2_MODE,BOARD,BRKIN_GPIO_AF,BRKIN2_GPIO_AF,BUS_VOLTAGE_READING,CCMRAM_ENABLED,CLOCK_FREQUENCY,CLOCK_SOURCE,CONSTANT1_D,CONSTANT1_Q,CONSTANT2_QD,CORD_BEMF_CONSISTENCY_GAIN,CORD_BEMF_CONSISTENCY_TOL,CORD_F1,CORD_F2,CORD_FIFO_DEPTH_01HZ,CORD_FIFO_DEPTH_DPP,CORD_GAIN1,CORD_GAIN2,CORD_MAX_ACCEL_DPPP,CORD_MEAS_ERRORS_BEFORE_FAULTS,CORD_VARIANCE_THRESHOLD,CPU_CLK_170_MHZ,CTRBDID,CUBE_MX_VER,CURR_SAMPLING_TIME,CURRENT_READING_TOPOLOGY,DAC_EMULATED,DAC_FUNCTIONALITY,DAC_TIMER_CH1_GPIO_PIN,DAC_TIMER_CH1_GPIO_PORT,DAC_TIMER_CH2_GPIO_PIN,DAC_TIMER_CH2_GPIO_PORT,DAC_TIMER_SELECTION,DC_CURRENT_RS_MEAS,DEBUG_DAC_CH1,DEBUG_DAC_CH2,DEFAULT_CONTROL_MODE,DEFAULT_DAC_CHANNEL_1,DEFAULT_DAC_CHANNEL_2,DEFAULT_DAC_MOTOR,DEFAULT_FLUX_COMPONENT,DEFAULT_TARGET_SPEED_RPM,DEFAULT_TORQUE_COMPONENT,DISSIPATIVE_BRAKE_POLARITY,DRIVES_NUMBER_SELECTION,dV_dT,EMERGENCY_STOP_GPIO_PIN,EMERGENCY_STOP_GPIO_PORT,EMERGENCY2_STOP_GPIO_PIN,EMERGENCY2_STOP_GPIO_PORT,ENABLE_SL_ALGO_FROM_PHASE,ENC_A_GPIO_PIN,ENC_A_GPIO_PORT,ENC_AVERAGING_FIFO_DEPTH,ENC_B_GPIO_PIN,ENC_B_GPIO_PORT,ENC_ICx_FILTER,ENC_INVERT_SPEED,ENC_MEAS_ERRORS_BEFORE_FAULTS,ENC_TIMER_REMAPPING,ENC_TIMER_SELECTION,ENC_USE_CH3,ENCODER_AVAILABLE,ENCODER_PPR,EXT_CLK_24_MHZ,EXT_CLOCK_FREQUENCY,F1,F2,FEED_FORWARD_CURRENT_REG_ENABLING,FEEDBACK_NET_FILTERING,FINAL_I_ALIGNMENT,FLUX_WEAKENING_ENABLING,FW_KI_GAIN,FW_KIDIV,FW_KP_GAIN,FW_KPDIV,FW_VOLTAGE_REF,GAIN1,GAIN2,H1_GPIO_PIN,H1_GPIO_PORT,H2_GPIO_PIN,H2_GPIO_PORT,H3_GPIO_PIN,H3_GPIO_PORT,HALL_AVERAGING_FIFO_DEPTH,HALL_ICx_FILTER,HALL_MEAS_ERRORS_BEFORE_FAULTS,HALL_MTPA,HALL_PHASE_SHIFT,HALL_SENSORS_AVAILABLE,HALL_SENSORS_PLACEMENT,HALL_TIMER_REMAPPING,HALL_TIMER_SELECTION,HFI_AMPLITUDE,HFI_DC_0_COEFF,HFI_DC_1_COEFF,HFI_DC_2_COEFF,HFI_DC_3_COEFF,HFI_DC_4_COEFF,HFI_DEBUG_MODE,HFI_FREQUENCY,HFI_HIFRAMPLSCAN,HFI_HP_ID_0_COEFF,HFI_HP_ID_1_COEFF,HFI_HP_ID_2_COEFF,HFI_HP_ID_3_COEFF,HFI_HP_ID_4_COEFF,HFI_IDH_DELAY,HFI_LOCKFREQ,HFI_LP_ID_0_COEFF,HFI_LP_ID_1_COEFF,HFI_LP_ID_2_COEFF,HFI_LP_ID_3_COEFF,HFI_LP_ID_4_COEFF,HFI_MAXANGLEDIFF,HFI_MINIMUM_SPEED_RPM,HFI_NOTCH_IQD_0_COEFF,HFI_NOTCH_IQD_1_COEFF,HFI_NOTCH_IQD_2_COEFF,HFI_NOTCH_IQD_3_COEFF,HFI_NOTCH_IQD_4_COEFF,HFI_NS_MIN_SAT_DIFF,HFI_NSDETPOINTSSKIP,HFI_NSMAXDETPOINTS,HFI_PID_KI_DEFAULT,HFI_PID_KIDIV,HFI_PID_KP_DEFAULT,HFI_PID_KPDIV,HFI_PLL_KI_DEFAULT,HFI_PLL_KP_DEFAULT,HFI_RESTART_RPM_TH,HFI_RESTARTTIMESEC,HFI_REVERT_DIRECTION,HFI_SCANROTATIONSNO,HFI_SPD_BUFFER_DEPTH_01HZ,HFI_STEPANGLE,HFI_STO_RPM_TH,HFI_WAITAFTERNS2,HFI_WAITBEFORESN,HFI_WAITSYNCH,HFI_WAITTRACK,HIGH_SIDE_BRAKE_STATE,HIGH_SIDE_IDLE_STATE,HW_COMPLEMENTED_LOW_SIDE,HW_DEAD_TIME_NS,HW_OV_CURRENT_PROT_BYPASS,ID_DEMAG,INRUSH_CURR_LIMITER_POLARITY,INRUSH_CURRLIMIT_AT_POWER_ON,INRUSH_CURRLIMIT_CHANGE_AFTER_MS,INRUSH_CURRLIMIT_ENABLING,INRUSH_CURRLIMIT_GPIO_PIN,INRUSH_CURRLIMIT_GPIO_PORT,INTERNAL_OVERCURRENTPROTECTION,INTERNAL_OVERVOLTAGEPROTECTION,IPs,IQMAX,LCD_JOYSTICK_FUNCTIONALITY,LCD_MODE,LDLQ_RATIO,LOW_SIDE_BRAKE_STATE,LOW_SIDE_IDLE_STATE,LOW_SIDE_SIGNALS_ENABLING,LS,MAX_APPLICATION_SPEED,MAX_MODULATION_96_PER_CENT,MAX_MODULATION_INDEX,MC_WORKBENCH_VERSION,MCU,MCU_TYPE,MEAS_ERRORS_BEFORE_FAULTS,MIN_APPLICATION_SPEED,MOTOR_MAX_SPEED_RPM,MOTOR_TYPE,MOTOR_VOLTAGE_CONSTANT,MTPA_ENABLING,NB_CONSECUTIVE_TESTS,NOMINAL_BUS_VOLTAGE_V,NOMINAL_CURRENT,OBS_MEAS_ERRORS_BEFORE_FAULTS,OBS_MINIMUM_SPEED_RPM,OCP_COMP_THRESHOLD,OCP_FILTER,OCP_INVERTINGINPUT,OCP_INVERTINGINPUT_GPIO_PIN,OCP_INVERTINGINPUT_GPIO_PORT,OCP_INVERTINGINPUT_MODE,OCP_NONINVERTINGINPUT,OCP_NONINVERTINGINPUT_GPIO_PIN,OCP_NONINVERTINGINPUT_GPIO_PORT,OCP_OUTPUT,OCP_OUTPUT_GPIO_AF,OCP_OUTPUT_GPIO_PIN,OCP_OUTPUT_GPIO_PORT,OCP_OUTPUT_MODE,OCP_OUTPUTPOL,OCP_SELECTION,OCPA_INVERTINGINPUT,OCPA_INVERTINGINPUT_GPIO_PIN,OCPA_INVERTINGINPUT_GPIO_PORT,OCPA_INVERTINGINPUT_MODE,OCPA_NONINVERTINGINPUT,OCPA_NONINVERTINGINPUT_GPIO_PIN,OCPA_NONINVERTINGINPUT_GPIO_PORT,OCPA_OUTPUT,OCPA_OUTPUT_GPIO_AF,OCPA_OUTPUT_GPIO_PIN,OCPA_OUTPUT_GPIO_PORT,OCPA_OUTPUT_MODE,OCPA_OUTPUTPOL,OCPA_SELECTION,OCPB_INVERTINGINPUT,OCPB_INVERTINGINPUT_GPIO_PIN,OCPB_INVERTINGINPUT_GPIO_PORT,OCPB_INVERTINGINPUT_MODE,OCPB_NONINVERTINGINPUT,OCPB_NONINVERTINGINPUT_GPIO_PIN,OCPB_NONINVERTINGINPUT_GPIO_PORT,OCPB_OUTPUT,OCPB_OUTPUT_GPIO_AF,OCPB_OUTPUT_GPIO_PIN,OCPB_OUTPUT_GPIO_PORT,OCPB_OUTPUT_MODE,OCPB_OUTPUTPOL,OCPB_SELECTION,OCPC_INVERTINGINPUT,OCPC_INVERTINGINPUT_GPIO_PIN,OCPC_INVERTINGINPUT_GPIO_PORT,OCPC_INVERTINGINPUT_MODE,OCPC_NONINVERTINGINPUT,OCPC_NONINVERTINGINPUT_GPIO_PIN,OCPC_NONINVERTINGINPUT_GPIO_PORT,OCPC_OUTPUT,OCPC_OUTPUT_GPIO_AF,OCPC_OUTPUT_GPIO_PIN,OCPC_OUTPUT_GPIO_PORT,OCPC_OUTPUT_MODE,OCPC_OUTPUTPOL,OCPC_SELECTION,OCPREF,OFST,ON_OVER_VOLTAGE,OPAMP_INVERTINGINPUT,OPAMP_INVERTINGINPUT_GPIO_PIN,OPAMP_INVERTINGINPUT_GPIO_PORT,OPAMP_INVERTINGINPUT_MODE,OPAMP_NONINVERTINGINPUT,OPAMP_NONINVERTINGINPUT_GPIO_PIN,OPAMP_NONINVERTINGINPUT_GPIO_PORT,OPAMP_OUT_GPIO_PIN,OPAMP_OUT_GPIO_PORT,OPAMP_PGACONNECT,OPAMP_PGAGAIN,OPAMP_SELECTION,OPAMP_TYPE_GAIN,OPAMP1_INVERTINGINPUT,OPAMP1_INVERTINGINPUT_GPIO_PIN,OPAMP1_INVERTINGINPUT_GPIO_PORT,OPAMP1_INVERTINGINPUT_MODE,OPAMP1_NONINVERTINGINPUT_PHA,OPAMP1_NONINVERTINGINPUT_PHA_GPIO_PIN,OPAMP1_NONINVERTINGINPUT_PHA_GPIO_PORT,OPAMP1_NONINVERTINGINPUT_PHB,OPAMP1_NONINVERTINGINPUT_PHB_GPIO_PIN,OPAMP1_NONINVERTINGINPUT_PHB_GPIO_PORT,OPAMP1_OUT_GPIO_PIN,OPAMP1_OUT_GPIO_PORT,OPAMP1_SELECTION,OPAMP2_INVERTINGINPUT,OPAMP2_INVERTINGINPUT_GPIO_PIN,OPAMP2_INVERTINGINPUT_GPIO_PORT,OPAMP2_INVERTINGINPUT_MODE,OPAMP2_NONINVERTINGINPUT_PHA,OPAMP2_NONINVERTINGINPUT_PHA_GPIO_PIN,OPAMP2_NONINVERTINGINPUT_PHA_GPIO_PORT,OPAMP2_NONINVERTINGINPUT_PHB,OPAMP2_NONINVERTINGINPUT_PHB_GPIO_PIN,OPAMP2_NONINVERTINGINPUT_PHB_GPIO_PORT,OPAMP2_NONINVERTINGINPUT_PHC,OPAMP2_NONINVERTINGINPUT_PHC_GPIO_PIN,OPAMP2_NONINVERTINGINPUT_PHC_GPIO_PORT,OPAMP2_OUT_GPIO_PIN,OPAMP2_OUT_GPIO_PORT,OPAMP2_SELECTION,OPAMP3_INVERTINGINPUT,OPAMP3_INVERTINGINPUT_GPIO_PIN,OPAMP3_INVERTINGINPUT_GPIO_PORT,OPAMP3_INVERTINGINPUT_MODE,OPAMP3_SELECTION,OPEN_LOOP_FOC,OPEN_LOOP_K,OPEN_LOOP_OFF,OPEN_LOOP_SPEED_RAMP_DURATION_MS,OPEN_LOOP_SPEED_RPM,OPEN_LOOP_VF,OPEN_LOOP_VOLTAGE_d,OV_CURR_BYPASS_GPIO_PIN,OV_CURR_BYPASS_GPIO_PORT,OV_TEMPERATURE_HYSTERESIS_C,OV_TEMPERATURE_PROT_ENABLING,OV_TEMPERATURE_THRESHOLD_C,OV_VOLTAGE_PROT_ENABLING,OV_VOLTAGE_THRESHOLD_V,OVERCURR_FEEDBACK_POLARITY,OVERCURR_PROTECTION_HW_DISABLING,OVP_FILTER,OVP_INVERTINGINPUT,OVP_INVERTINGINPUT_GPIO_PIN,OVP_INVERTINGINPUT_GPIO_PORT,OVP_INVERTINGINPUT_MODE,OVP_NONINVERTINGINPUT,OVP_NONINVERTINGINPUT_GPIO_PIN,OVP_NONINVERTINGINPUT_GPIO_PORT,OVP_OUTPUT,OVP_OUTPUT_GPIO_AF,OVP_OUTPUT_GPIO_PIN,OVP_OUTPUT_GPIO_PORT,OVP_OUTPUT_MODE,OVP_OUTPUTPOL,OVP_SELECTION,OVPREF,PHASE_CURRENTS_ADC,PHASE_CURRENTS_CHANNEL,PHASE_CURRENTS_GPIO_PIN,PHASE_CURRENTS_GPIO_PORT,PHASE_U_CURR_ADC,PHASE_U_CURR_CHANNEL,PHASE_U_GPIO_PIN,PHASE_U_GPIO_PORT,PHASE_UH_GPIO_AF,PHASE_UH_GPIO_PIN,PHASE_UH_GPIO_PORT,PHASE_UH_POLARITY,PHASE_UL_GPIO_AF,PHASE_UL_GPIO_PIN,PHASE_UL_GPIO_PORT,PHASE_UL_POLARITY,PHASE_V_CURR_ADC,PHASE_V_CURR_CHANNEL,PHASE_V_GPIO_PIN,PHASE_V_GPIO_PORT,PHASE_VH_GPIO_AF,PHASE_VH_GPIO_PIN,PHASE_VH_GPIO_PORT,PHASE_VH_POLARITY,PHASE_VL_GPIO_AF,PHASE_VL_GPIO_PIN,PHASE_VL_GPIO_PORT,PHASE_VL_POLARITY,PHASE_W_CURR_ADC,PHASE_W_CURR_CHANNEL,PHASE_W_GPIO_PIN,PHASE_W_GPIO_PORT,PHASE_WH_GPIO_AF,PHASE_WH_GPIO_PIN,PHASE_WH_GPIO_PORT,PHASE_WH_POLARITY,PHASE_WL_GPIO_AF,PHASE_WL_GPIO_PIN,PHASE_WL_GPIO_PORT,PHASE_WL_POLARITY,PHASE1_DURATION,PHASE1_FINAL_CURRENT,PHASE1_FINAL_SPEED_RPM,PHASE2_DURATION,PHASE2_FINAL_CURRENT,PHASE2_FINAL_SPEED_RPM,PHASE3_DURATION,PHASE3_FINAL_CURRENT,PHASE3_FINAL_SPEED_RPM,PHASE4_DURATION,PHASE4_FINAL_CURRENT,PHASE4_FINAL_SPEED_RPM,PHASE5_DURATION,PHASE5_FINAL_CURRENT,PHASE5_FINAL_SPEED_RPM,PID_FLUX_KD_DEFAULT,PID_FLUX_KI_DEFAULT,PID_FLUX_KP_DEFAULT,PID_SPEED_KD_DEFAULT,PID_SPEED_KI_DEFAULT,PID_SPEED_KP_DEFAULT,PID_TORQUE_KD_DEFAULT,PID_TORQUE_KI_DEFAULT,PID_TORQUE_KP_DEFAULT,PLL_KI_GAIN,PLL_KP_GAIN,POLE_PAIR_NUM,POSITION_CTRL_ENABLING,PWBDID,PWM_FREQUENCY,PWM_TIMER_REMAPPING,PWM_TIMER_SELECTION,R_BRAKE_GPIO_PIN,R_BRAKE_GPIO_PORT,R_BRAKE_SWITCH_OFF_THRES_V,REGCONVADC,REGULATION_EXECUTION_RATE,RS,RSHUNT,RTOS,SEGDIV,SERIAL_COM_CHANNEL1,SERIAL_COM_CHANNEL2,SERIAL_COM_MODE,SERIAL_COM_MOTOR,SERIAL_COMMUNICATION,SHARED_SIGNAL_ENABLE,SINGLE_SHUNT,SINGLEDRIVE,SP_KDDIV,SP_KIDIV,SP_KPDIV,SPD_DIFFERENTIAL_TERM_ENABLING,SPEED_BAND_LOWER_LIMIT,SPEED_BAND_UPPER_LIMIT,SPEED_LOOP_FREQUENCY_HZ,SPEED_SENSOR_SELECTION,START_STOP_BTN,START_STOP_GPIO_PIN,START_STOP_GPIO_PORT,START_STOP_POLARITY,START_STOP_POLARITY_EDGE,STARTING_ANGLE_DEG,STATE_OBSERVER_PLL,STM32G431RB,STO_FIFO_DEPTH_01HZ,STO_FIFO_DEPTH_DPP,STO_HFI_RPM_TH,SW_DEADTIME_NS,SW_OV_CURRENT_PROT_ENABLING,T_MAX,T0_C,TEMP_ADC_SAMPLING_TIME,TEMP_FDBK_ADC,TEMP_FDBK_CHANNEL,TEMP_FDBK_GPIO_PIN,TEMP_FDBK_GPIO_PORT,TEMPERATURE_READING,TF_KDDIV,TF_KIDIV,TF_KPDIV,TFDIFFERENTIAL_TERM_ENABLING,TNOISE_NS,TRANSITION_DURATION,TRISE_NS,UD_VOLTAGE_THRESHOLD_V,USART_REMAPPING,USART_RX_GPIO_PIN,USART_RX_GPIO_PORT,USART_SELECTION,USART_SPEED,USART_TX_GPIO_PIN,USART_TX_GPIO_PORT,USE_3OPAMPS,USE_INTERNAL_OPAMP,UV_VOLTAGE_PROT_ENABLING,V0_V,VARIANCE_THRESHOLD,VBUS_ADC,VBUS_ADC_SAMPLING_TIME,VBUS_CHANNEL,VBUS_GPIO_PIN,VBUS_GPIO_PORT,VBUS_PARTITIONING_FACTOR,WB_to_Mx_template_version,WB_to_Mx_version
+MotorControl.IPParameters=ADC_1_PERIPH,ADC_2_PERIPH,ADC_AHBPERIPH,ADC_CLOCK_WB_DIV,ADC_CLOCK_WB_FREQ,ADC_PERIPH,ADC_REFERENCE_VOLTAGE,ALIGNMENT_ANGLE_DEG,ALIGNMENT_DURATION,AMPLIFICATION_GAIN,ANGC,AUX_HALL_SENSORS,AUXILIARY_SPEED_MEASUREMENT_SELECTION,BEMF_CONSISTENCY_GAIN,BEMF_CONSISTENCY_TOL,BKIN_MODE,BKIN1_FILTER,BKIN2_FILTER,BKIN2_MODE,BOARD,BRKIN_GPIO_AF,BRKIN2_GPIO_AF,BUS_VOLTAGE_READING,CCMRAM_ENABLED,CLOCK_FREQUENCY,CLOCK_SOURCE,CONSTANT1_D,CONSTANT1_Q,CONSTANT2_QD,CORD_BEMF_CONSISTENCY_GAIN,CORD_BEMF_CONSISTENCY_TOL,CORD_F1,CORD_F2,CORD_FIFO_DEPTH_01HZ,CORD_FIFO_DEPTH_DPP,CORD_GAIN1,CORD_GAIN2,CORD_MAX_ACCEL_DPPP,CORD_MEAS_ERRORS_BEFORE_FAULTS,CORD_VARIANCE_THRESHOLD,CPU_CLK_170_MHZ,CTRBDID,CUBE_MX_VER,CURR_SAMPLING_TIME,CURRENT_READING_TOPOLOGY,DAC_EMULATED,DAC_FUNCTIONALITY,DAC_TIMER_CH1_GPIO_PIN,DAC_TIMER_CH1_GPIO_PORT,DAC_TIMER_CH2_GPIO_PIN,DAC_TIMER_CH2_GPIO_PORT,DAC_TIMER_SELECTION,DC_CURRENT_RS_MEAS,DEBUG_DAC_CH1,DEBUG_DAC_CH2,DEFAULT_CONTROL_MODE,DEFAULT_DAC_CHANNEL_1,DEFAULT_DAC_CHANNEL_2,DEFAULT_DAC_MOTOR,DEFAULT_FLUX_COMPONENT,DEFAULT_TARGET_SPEED_RPM,DEFAULT_TORQUE_COMPONENT,DISSIPATIVE_BRAKE_POLARITY,DRIVES_NUMBER_SELECTION,dV_dT,EMERGENCY_STOP_GPIO_PIN,EMERGENCY_STOP_GPIO_PORT,EMERGENCY2_STOP_GPIO_PIN,EMERGENCY2_STOP_GPIO_PORT,ENABLE_SL_ALGO_FROM_PHASE,ENC_A_GPIO_PIN,ENC_A_GPIO_PORT,ENC_AVERAGING_FIFO_DEPTH,ENC_B_GPIO_PIN,ENC_B_GPIO_PORT,ENC_ICx_FILTER,ENC_INVERT_SPEED,ENC_MEAS_ERRORS_BEFORE_FAULTS,ENC_TIMER_REMAPPING,ENC_TIMER_SELECTION,ENC_USE_CH3,ENCODER_AVAILABLE,ENCODER_PPR,EXT_CLK_24_MHZ,EXT_CLOCK_FREQUENCY,F1,F2,FEED_FORWARD_CURRENT_REG_ENABLING,FEEDBACK_NET_FILTERING,FINAL_I_ALIGNMENT,FLUX_WEAKENING_ENABLING,FW_KI_GAIN,FW_KIDIV,FW_KP_GAIN,FW_KPDIV,FW_VOLTAGE_REF,GAIN1,GAIN2,H1_GPIO_PIN,H1_GPIO_PORT,H2_GPIO_PIN,H2_GPIO_PORT,H3_GPIO_PIN,H3_GPIO_PORT,HALL_AVERAGING_FIFO_DEPTH,HALL_ICx_FILTER,HALL_MEAS_ERRORS_BEFORE_FAULTS,HALL_MTPA,HALL_PHASE_SHIFT,HALL_SENSORS_AVAILABLE,HALL_SENSORS_PLACEMENT,HALL_TIMER_REMAPPING,HALL_TIMER_SELECTION,HFI_AMPLITUDE,HFI_DC_0_COEFF,HFI_DC_1_COEFF,HFI_DC_2_COEFF,HFI_DC_3_COEFF,HFI_DC_4_COEFF,HFI_DEBUG_MODE,HFI_FREQUENCY,HFI_HIFRAMPLSCAN,HFI_HP_ID_0_COEFF,HFI_HP_ID_1_COEFF,HFI_HP_ID_2_COEFF,HFI_HP_ID_3_COEFF,HFI_HP_ID_4_COEFF,HFI_IDH_DELAY,HFI_LOCKFREQ,HFI_LP_ID_0_COEFF,HFI_LP_ID_1_COEFF,HFI_LP_ID_2_COEFF,HFI_LP_ID_3_COEFF,HFI_LP_ID_4_COEFF,HFI_MAXANGLEDIFF,HFI_MINIMUM_SPEED_RPM,HFI_NOTCH_IQD_0_COEFF,HFI_NOTCH_IQD_1_COEFF,HFI_NOTCH_IQD_2_COEFF,HFI_NOTCH_IQD_3_COEFF,HFI_NOTCH_IQD_4_COEFF,HFI_NS_MIN_SAT_DIFF,HFI_NSDETPOINTSSKIP,HFI_NSMAXDETPOINTS,HFI_PID_KI_DEFAULT,HFI_PID_KIDIV,HFI_PID_KP_DEFAULT,HFI_PID_KPDIV,HFI_PLL_KI_DEFAULT,HFI_PLL_KP_DEFAULT,HFI_RESTART_RPM_TH,HFI_RESTARTTIMESEC,HFI_REVERT_DIRECTION,HFI_SCANROTATIONSNO,HFI_SPD_BUFFER_DEPTH_01HZ,HFI_STEPANGLE,HFI_STO_RPM_TH,HFI_WAITAFTERNS2,HFI_WAITBEFORESN,HFI_WAITSYNCH,HFI_WAITTRACK,HIGH_SIDE_BRAKE_STATE,HIGH_SIDE_IDLE_STATE,HW_COMPLEMENTED_LOW_SIDE,HW_DEAD_TIME_NS,HW_OV_CURRENT_PROT_BYPASS,ID_DEMAG,INRUSH_CURR_LIMITER_POLARITY,INRUSH_CURRLIMIT_AT_POWER_ON,INRUSH_CURRLIMIT_CHANGE_AFTER_MS,INRUSH_CURRLIMIT_ENABLING,INRUSH_CURRLIMIT_GPIO_PIN,INRUSH_CURRLIMIT_GPIO_PORT,INTERNAL_OVERCURRENTPROTECTION,INTERNAL_OVERVOLTAGEPROTECTION,IPs,IQMAX,LCD_JOYSTICK_FUNCTIONALITY,LCD_MODE,LDLQ_RATIO,LOW_SIDE_BRAKE_STATE,LOW_SIDE_IDLE_STATE,LOW_SIDE_SIGNALS_ENABLING,LS,MAX_APPLICATION_SPEED,MAX_MODULATION_100_PER_CENT,MAX_MODULATION_INDEX,MC_WORKBENCH_VERSION,MCU,MCU_TYPE,MEAS_ERRORS_BEFORE_FAULTS,MIN_APPLICATION_SPEED,MOTOR_MAX_SPEED_RPM,MOTOR_TYPE,MOTOR_VOLTAGE_CONSTANT,MTPA_ENABLING,NB_CONSECUTIVE_TESTS,NOMINAL_BUS_VOLTAGE_V,NOMINAL_CURRENT,OBS_MEAS_ERRORS_BEFORE_FAULTS,OBS_MINIMUM_SPEED_RPM,OCP_COMP_THRESHOLD,OCP_FILTER,OCP_INVERTINGINPUT,OCP_INVERTINGINPUT_GPIO_PIN,OCP_INVERTINGINPUT_GPIO_PORT,OCP_INVERTINGINPUT_MODE,OCP_NONINVERTINGINPUT,OCP_NONINVERTINGINPUT_GPIO_PIN,OCP_NONINVERTINGINPUT_GPIO_PORT,OCP_OUTPUT,OCP_OUTPUT_GPIO_AF,OCP_OUTPUT_GPIO_PIN,OCP_OUTPUT_GPIO_PORT,OCP_OUTPUT_MODE,OCP_OUTPUTPOL,OCP_SELECTION,OCPA_INVERTINGINPUT,OCPA_INVERTINGINPUT_GPIO_PIN,OCPA_INVERTINGINPUT_GPIO_PORT,OCPA_INVERTINGINPUT_MODE,OCPA_NONINVERTINGINPUT,OCPA_NONINVERTINGINPUT_GPIO_PIN,OCPA_NONINVERTINGINPUT_GPIO_PORT,OCPA_OUTPUT,OCPA_OUTPUT_GPIO_AF,OCPA_OUTPUT_GPIO_PIN,OCPA_OUTPUT_GPIO_PORT,OCPA_OUTPUT_MODE,OCPA_OUTPUTPOL,OCPA_SELECTION,OCPB_INVERTINGINPUT,OCPB_INVERTINGINPUT_GPIO_PIN,OCPB_INVERTINGINPUT_GPIO_PORT,OCPB_INVERTINGINPUT_MODE,OCPB_NONINVERTINGINPUT,OCPB_NONINVERTINGINPUT_GPIO_PIN,OCPB_NONINVERTINGINPUT_GPIO_PORT,OCPB_OUTPUT,OCPB_OUTPUT_GPIO_AF,OCPB_OUTPUT_GPIO_PIN,OCPB_OUTPUT_GPIO_PORT,OCPB_OUTPUT_MODE,OCPB_OUTPUTPOL,OCPB_SELECTION,OCPC_INVERTINGINPUT,OCPC_INVERTINGINPUT_GPIO_PIN,OCPC_INVERTINGINPUT_GPIO_PORT,OCPC_INVERTINGINPUT_MODE,OCPC_NONINVERTINGINPUT,OCPC_NONINVERTINGINPUT_GPIO_PIN,OCPC_NONINVERTINGINPUT_GPIO_PORT,OCPC_OUTPUT,OCPC_OUTPUT_GPIO_AF,OCPC_OUTPUT_GPIO_PIN,OCPC_OUTPUT_GPIO_PORT,OCPC_OUTPUT_MODE,OCPC_OUTPUTPOL,OCPC_SELECTION,OCPREF,OFST,ON_OVER_VOLTAGE,OPAMP_INVERTINGINPUT,OPAMP_INVERTINGINPUT_GPIO_PIN,OPAMP_INVERTINGINPUT_GPIO_PORT,OPAMP_INVERTINGINPUT_MODE,OPAMP_NONINVERTINGINPUT,OPAMP_NONINVERTINGINPUT_GPIO_PIN,OPAMP_NONINVERTINGINPUT_GPIO_PORT,OPAMP_OUT_GPIO_PIN,OPAMP_OUT_GPIO_PORT,OPAMP_PGACONNECT,OPAMP_PGAGAIN,OPAMP_SELECTION,OPAMP_TYPE_GAIN,OPAMP1_INVERTINGINPUT,OPAMP1_INVERTINGINPUT_GPIO_PIN,OPAMP1_INVERTINGINPUT_GPIO_PORT,OPAMP1_INVERTINGINPUT_MODE,OPAMP1_NONINVERTINGINPUT_PHA,OPAMP1_NONINVERTINGINPUT_PHA_GPIO_PIN,OPAMP1_NONINVERTINGINPUT_PHA_GPIO_PORT,OPAMP1_NONINVERTINGINPUT_PHB,OPAMP1_NONINVERTINGINPUT_PHB_GPIO_PIN,OPAMP1_NONINVERTINGINPUT_PHB_GPIO_PORT,OPAMP1_OUT_GPIO_PIN,OPAMP1_OUT_GPIO_PORT,OPAMP1_SELECTION,OPAMP2_INVERTINGINPUT,OPAMP2_INVERTINGINPUT_GPIO_PIN,OPAMP2_INVERTINGINPUT_GPIO_PORT,OPAMP2_INVERTINGINPUT_MODE,OPAMP2_NONINVERTINGINPUT_PHA,OPAMP2_NONINVERTINGINPUT_PHA_GPIO_PIN,OPAMP2_NONINVERTINGINPUT_PHA_GPIO_PORT,OPAMP2_NONINVERTINGINPUT_PHB,OPAMP2_NONINVERTINGINPUT_PHB_GPIO_PIN,OPAMP2_NONINVERTINGINPUT_PHB_GPIO_PORT,OPAMP2_NONINVERTINGINPUT_PHC,OPAMP2_NONINVERTINGINPUT_PHC_GPIO_PIN,OPAMP2_NONINVERTINGINPUT_PHC_GPIO_PORT,OPAMP2_OUT_GPIO_PIN,OPAMP2_OUT_GPIO_PORT,OPAMP2_SELECTION,OPAMP3_INVERTINGINPUT,OPAMP3_INVERTINGINPUT_GPIO_PIN,OPAMP3_INVERTINGINPUT_GPIO_PORT,OPAMP3_INVERTINGINPUT_MODE,OPAMP3_SELECTION,OPEN_LOOP_FOC,OPEN_LOOP_K,OPEN_LOOP_OFF,OPEN_LOOP_SPEED_RAMP_DURATION_MS,OPEN_LOOP_SPEED_RPM,OPEN_LOOP_VF,OPEN_LOOP_VOLTAGE_d,OV_CURR_BYPASS_GPIO_PIN,OV_CURR_BYPASS_GPIO_PORT,OV_TEMPERATURE_HYSTERESIS_C,OV_TEMPERATURE_PROT_ENABLING,OV_TEMPERATURE_THRESHOLD_C,OV_VOLTAGE_PROT_ENABLING,OV_VOLTAGE_THRESHOLD_V,OVERCURR_FEEDBACK_POLARITY,OVERCURR_PROTECTION_HW_DISABLING,OVP_FILTER,OVP_INVERTINGINPUT,OVP_INVERTINGINPUT_GPIO_PIN,OVP_INVERTINGINPUT_GPIO_PORT,OVP_INVERTINGINPUT_MODE,OVP_NONINVERTINGINPUT,OVP_NONINVERTINGINPUT_GPIO_PIN,OVP_NONINVERTINGINPUT_GPIO_PORT,OVP_OUTPUT,OVP_OUTPUT_GPIO_AF,OVP_OUTPUT_GPIO_PIN,OVP_OUTPUT_GPIO_PORT,OVP_OUTPUT_MODE,OVP_OUTPUTPOL,OVP_SELECTION,OVPREF,PHASE_CURRENTS_ADC,PHASE_CURRENTS_CHANNEL,PHASE_CURRENTS_GPIO_PIN,PHASE_CURRENTS_GPIO_PORT,PHASE_U_CURR_ADC,PHASE_U_CURR_CHANNEL,PHASE_U_GPIO_PIN,PHASE_U_GPIO_PORT,PHASE_UH_GPIO_AF,PHASE_UH_GPIO_PIN,PHASE_UH_GPIO_PORT,PHASE_UH_POLARITY,PHASE_UL_GPIO_AF,PHASE_UL_GPIO_PIN,PHASE_UL_GPIO_PORT,PHASE_UL_POLARITY,PHASE_V_CURR_ADC,PHASE_V_CURR_CHANNEL,PHASE_V_GPIO_PIN,PHASE_V_GPIO_PORT,PHASE_VH_GPIO_AF,PHASE_VH_GPIO_PIN,PHASE_VH_GPIO_PORT,PHASE_VH_POLARITY,PHASE_VL_GPIO_AF,PHASE_VL_GPIO_PIN,PHASE_VL_GPIO_PORT,PHASE_VL_POLARITY,PHASE_W_CURR_ADC,PHASE_W_CURR_CHANNEL,PHASE_W_GPIO_PIN,PHASE_W_GPIO_PORT,PHASE_WH_GPIO_AF,PHASE_WH_GPIO_PIN,PHASE_WH_GPIO_PORT,PHASE_WH_POLARITY,PHASE_WL_GPIO_AF,PHASE_WL_GPIO_PIN,PHASE_WL_GPIO_PORT,PHASE_WL_POLARITY,PHASE1_DURATION,PHASE1_FINAL_CURRENT,PHASE1_FINAL_SPEED_RPM,PHASE2_DURATION,PHASE2_FINAL_CURRENT,PHASE2_FINAL_SPEED_RPM,PHASE3_DURATION,PHASE3_FINAL_CURRENT,PHASE3_FINAL_SPEED_RPM,PHASE4_DURATION,PHASE4_FINAL_CURRENT,PHASE4_FINAL_SPEED_RPM,PHASE5_DURATION,PHASE5_FINAL_CURRENT,PHASE5_FINAL_SPEED_RPM,PID_FLUX_KD_DEFAULT,PID_FLUX_KI_DEFAULT,PID_FLUX_KP_DEFAULT,PID_SPEED_KD_DEFAULT,PID_SPEED_KI_DEFAULT,PID_SPEED_KP_DEFAULT,PID_TORQUE_KD_DEFAULT,PID_TORQUE_KI_DEFAULT,PID_TORQUE_KP_DEFAULT,PLL_KI_GAIN,PLL_KP_GAIN,POLE_PAIR_NUM,POSITION_CTRL_ENABLING,PWBDID,PWM_FREQUENCY,PWM_TIMER_REMAPPING,PWM_TIMER_SELECTION,R_BRAKE_GPIO_PIN,R_BRAKE_GPIO_PORT,R_BRAKE_SWITCH_OFF_THRES_V,REGCONVADC,REGULATION_EXECUTION_RATE,RS,RSHUNT,RTOS,SEGDIV,SERIAL_COM_CHANNEL1,SERIAL_COM_CHANNEL2,SERIAL_COM_MODE,SERIAL_COM_MOTOR,SERIAL_COMMUNICATION,SHARED_SIGNAL_ENABLE,SINGLEDRIVE,SP_KDDIV,SP_KIDIV,SP_KPDIV,SPD_DIFFERENTIAL_TERM_ENABLING,SPEED_BAND_LOWER_LIMIT,SPEED_BAND_UPPER_LIMIT,SPEED_FEEDBACK_CHECK,SPEED_LOOP_FREQUENCY_HZ,SPEED_SENSOR_SELECTION,START_STOP_BTN,START_STOP_GPIO_PIN,START_STOP_GPIO_PORT,START_STOP_POLARITY,START_STOP_POLARITY_EDGE,STARTING_ANGLE_DEG,STATE_OBSERVER_PLL,STM32G431RB,STO_FIFO_DEPTH_01HZ,STO_FIFO_DEPTH_DPP,STO_HFI_RPM_TH,SW_DEADTIME_NS,SW_OV_CURRENT_PROT_ENABLING,T_MAX,T0_C,TEMP_ADC_SAMPLING_TIME,TEMP_FDBK_ADC,TEMP_FDBK_CHANNEL,TEMP_FDBK_GPIO_PIN,TEMP_FDBK_GPIO_PORT,TEMPERATURE_READING,TF_KDDIV,TF_KIDIV,TF_KPDIV,TFDIFFERENTIAL_TERM_ENABLING,THREE_SHUNT_INDEPENDENT_RESOURCES,TNOISE_NS,TRANSITION_DURATION,TRISE_NS,UD_VOLTAGE_THRESHOLD_V,USART_REMAPPING,USART_RX_GPIO_PIN,USART_RX_GPIO_PORT,USART_SELECTION,USART_SPEED,USART_TX_GPIO_PIN,USART_TX_GPIO_PORT,USE_3OPAMPS,USE_INTERNAL_OPAMP,UV_VOLTAGE_PROT_ENABLING,V0_V,VARIANCE_THRESHOLD,VBUS_ADC,VBUS_ADC_SAMPLING_TIME,VBUS_CHANNEL,VBUS_GPIO_PIN,VBUS_GPIO_PORT,VBUS_PARTITIONING_FACTOR,WB_to_Mx_template_version,WB_to_Mx_version
 MotorControl.ADC_1_PERIPH=ADC1
 MotorControl.ADC_2_PERIPH=ADC2
 MotorControl.ADC_AHBPERIPH=RCC_AHBPeriph_ADC12
@@ -857,6 +972,8 @@ MotorControl.ALIGNMENT_ANGLE_DEG=90
 MotorControl.ALIGNMENT_DURATION=700
 MotorControl.AMPLIFICATION_GAIN=5.18
 MotorControl.ANGC={0,0,0,0,0,0,0,0}
+MotorControl.AUX_HALL_SENSORS=true
+MotorControl.AUXILIARY_SPEED_MEASUREMENT_SELECTION=AUX_HALL_SENSORS
 MotorControl.BEMF_CONSISTENCY_GAIN=64
 MotorControl.BEMF_CONSISTENCY_TOL=64
 MotorControl.BKIN_MODE=NONE
@@ -870,41 +987,41 @@ MotorControl.BUS_VOLTAGE_READING=true
 MotorControl.CCMRAM_ENABLED=false
 MotorControl.CLOCK_FREQUENCY=CPU_CLK_170_MHZ
 MotorControl.CLOCK_SOURCE=EXTERNAL
-MotorControl.CONSTANT1_D=2176812
-MotorControl.CONSTANT1_Q=2176812
-MotorControl.CONSTANT2_QD=73740
+MotorControl.CONSTANT1_D=6219463
+MotorControl.CONSTANT1_Q=6219463
+MotorControl.CONSTANT2_QD=158581
 MotorControl.CORD_BEMF_CONSISTENCY_GAIN=64
 MotorControl.CORD_BEMF_CONSISTENCY_TOL=64
 MotorControl.CORD_F1=16384
-MotorControl.CORD_F2=1024
+MotorControl.CORD_F2=2048
 MotorControl.CORD_FIFO_DEPTH_01HZ=64
 MotorControl.CORD_FIFO_DEPTH_DPP=64
-MotorControl.CORD_GAIN1=-24401
-MotorControl.CORD_GAIN2=25809
-MotorControl.CORD_MAX_ACCEL_DPPP=17
+MotorControl.CORD_GAIN1=-24285
+MotorControl.CORD_GAIN2=22644
+MotorControl.CORD_MAX_ACCEL_DPPP=241
 MotorControl.CORD_MEAS_ERRORS_BEFORE_FAULTS=3
 MotorControl.CORD_VARIANCE_THRESHOLD=4
 MotorControl.CPU_CLK_170_MHZ=true
 MotorControl.CTRBDID=29
-MotorControl.CUBE_MX_VER=5.6.1
+MotorControl.CUBE_MX_VER=6.1.0
 MotorControl.CURR_SAMPLING_TIME=6
-MotorControl.CURRENT_READING_TOPOLOGY=SINGLE_SHUNT
+MotorControl.CURRENT_READING_TOPOLOGY=THREE_SHUNT_INDEPENDENT_RESOURCES
 MotorControl.DAC_EMULATED=false
-MotorControl.DAC_FUNCTIONALITY=false
-MotorControl.DAC_TIMER_CH1_GPIO_PIN=LL_GPIO_PIN_0
+MotorControl.DAC_FUNCTIONALITY=true
+MotorControl.DAC_TIMER_CH1_GPIO_PIN=LL_GPIO_PIN_4
 MotorControl.DAC_TIMER_CH1_GPIO_PORT=GPIOA
 MotorControl.DAC_TIMER_CH2_GPIO_PIN=LL_GPIO_PIN_0
 MotorControl.DAC_TIMER_CH2_GPIO_PORT=GPIOA
 MotorControl.DAC_TIMER_SELECTION=TIM3
-MotorControl.DC_CURRENT_RS_MEAS=4.60
-MotorControl.DEBUG_DAC_CH1=false
+MotorControl.DC_CURRENT_RS_MEAS=4.00
+MotorControl.DEBUG_DAC_CH1=true
 MotorControl.DEBUG_DAC_CH2=false
 MotorControl.DEFAULT_CONTROL_MODE=STC_SPEED_MODE
 MotorControl.DEFAULT_DAC_CHANNEL_1=MC_PROTOCOL_REG_I_A
 MotorControl.DEFAULT_DAC_CHANNEL_2=MC_PROTOCOL_REG_I_B
 MotorControl.DEFAULT_DAC_MOTOR=0
 MotorControl.DEFAULT_FLUX_COMPONENT=0
-MotorControl.DEFAULT_TARGET_SPEED_RPM=3000
+MotorControl.DEFAULT_TARGET_SPEED_RPM=1500
 MotorControl.DEFAULT_TORQUE_COMPONENT=0
 MotorControl.DISSIPATIVE_BRAKE_POLARITY=DOUT_ACTIVE_HIGH
 MotorControl.DRIVES_NUMBER_SELECTION=SINGLEDRIVE
@@ -913,7 +1030,7 @@ MotorControl.EMERGENCY_STOP_GPIO_PIN=LL_GPIO_PIN_11
 MotorControl.EMERGENCY_STOP_GPIO_PORT=GPIOA
 MotorControl.EMERGENCY2_STOP_GPIO_PIN=LL_GPIO_PIN_11
 MotorControl.EMERGENCY2_STOP_GPIO_PORT=GPIOA
-MotorControl.ENABLE_SL_ALGO_FROM_PHASE=2
+MotorControl.ENABLE_SL_ALGO_FROM_PHASE=3
 MotorControl.ENC_A_GPIO_PIN=LL_GPIO_PIN_15
 MotorControl.ENC_A_GPIO_PORT=GPIOA
 MotorControl.ENC_AVERAGING_FIFO_DEPTH=16
@@ -930,18 +1047,18 @@ MotorControl.ENCODER_PPR=400
 MotorControl.EXT_CLK_24_MHZ=true
 MotorControl.EXT_CLOCK_FREQUENCY=EXT_CLK_24_MHZ
 MotorControl.F1=16384
-MotorControl.F2=1024
+MotorControl.F2=2048
 MotorControl.FEED_FORWARD_CURRENT_REG_ENABLING=false
 MotorControl.FEEDBACK_NET_FILTERING=false
 MotorControl.FINAL_I_ALIGNMENT=2005
-MotorControl.FLUX_WEAKENING_ENABLING=false
+MotorControl.FLUX_WEAKENING_ENABLING=true
 MotorControl.FW_KI_GAIN=5000
 MotorControl.FW_KIDIV=32768
 MotorControl.FW_KP_GAIN=3000
 MotorControl.FW_KPDIV=32768
 MotorControl.FW_VOLTAGE_REF=985
-MotorControl.GAIN1=-24401
-MotorControl.GAIN2=25809
+MotorControl.GAIN1=-24285
+MotorControl.GAIN2=22644
 MotorControl.H1_GPIO_PIN=LL_GPIO_PIN_15
 MotorControl.H1_GPIO_PORT=GPIOA
 MotorControl.H2_GPIO_PIN=LL_GPIO_PIN_3
@@ -952,7 +1069,7 @@ MotorControl.HALL_AVERAGING_FIFO_DEPTH=6
 MotorControl.HALL_ICx_FILTER=190
 MotorControl.HALL_MEAS_ERRORS_BEFORE_FAULTS=3
 MotorControl.HALL_MTPA=false
-MotorControl.HALL_PHASE_SHIFT=359
+MotorControl.HALL_PHASE_SHIFT=300
 MotorControl.HALL_SENSORS_AVAILABLE=true
 MotorControl.HALL_SENSORS_PLACEMENT=DEGREES_120
 MotorControl.HALL_TIMER_REMAPPING=NO_REMAP_TIM2
@@ -966,25 +1083,25 @@ MotorControl.HFI_DC_4_COEFF=-0.894874
 MotorControl.HFI_DEBUG_MODE=false
 MotorControl.HFI_FREQUENCY=400
 MotorControl.HFI_HIFRAMPLSCAN=25
-MotorControl.HFI_HP_ID_0_COEFF=0.959381
-MotorControl.HFI_HP_ID_1_COEFF=-1.918761
-MotorControl.HFI_HP_ID_2_COEFF=0.959381
-MotorControl.HFI_HP_ID_3_COEFF=1.917111
-MotorControl.HFI_HP_ID_4_COEFF=-0.920412
+MotorControl.HFI_HP_ID_0_COEFF=0.855931
+MotorControl.HFI_HP_ID_1_COEFF=-1.711861
+MotorControl.HFI_HP_ID_2_COEFF=0.855931
+MotorControl.HFI_HP_ID_3_COEFF=1.690996
+MotorControl.HFI_HP_ID_4_COEFF=-0.732726
 MotorControl.HFI_IDH_DELAY=32400
-MotorControl.HFI_LOCKFREQ=22
-MotorControl.HFI_LP_ID_0_COEFF=0.002751
-MotorControl.HFI_LP_ID_1_COEFF=0.005502
-MotorControl.HFI_LP_ID_2_COEFF=0.002751
-MotorControl.HFI_LP_ID_3_COEFF=1.846252
-MotorControl.HFI_LP_ID_4_COEFF=-0.857255
+MotorControl.HFI_LOCKFREQ=82
+MotorControl.HFI_LP_ID_0_COEFF=0.032106
+MotorControl.HFI_LP_ID_1_COEFF=0.064213
+MotorControl.HFI_LP_ID_2_COEFF=0.032106
+MotorControl.HFI_LP_ID_3_COEFF=1.433067
+MotorControl.HFI_LP_ID_4_COEFF=-0.561492
 MotorControl.HFI_MAXANGLEDIFF=3640
 MotorControl.HFI_MINIMUM_SPEED_RPM=402
-MotorControl.HFI_NOTCH_IQD_0_COEFF=0.979509
-MotorControl.HFI_NOTCH_IQD_1_COEFF=-1.952148
-MotorControl.HFI_NOTCH_IQD_2_COEFF=0.979509
-MotorControl.HFI_NOTCH_IQD_3_COEFF=1.952148
-MotorControl.HFI_NOTCH_IQD_4_COEFF=-0.959018
+MotorControl.HFI_NOTCH_IQD_0_COEFF=0.928286
+MotorControl.HFI_NOTCH_IQD_1_COEFF=-1.765705
+MotorControl.HFI_NOTCH_IQD_2_COEFF=0.928286
+MotorControl.HFI_NOTCH_IQD_3_COEFF=1.765705
+MotorControl.HFI_NOTCH_IQD_4_COEFF=-0.856572
 MotorControl.HFI_NS_MIN_SAT_DIFF=0
 MotorControl.HFI_NSDETPOINTSSKIP=10
 MotorControl.HFI_NSMAXDETPOINTS=20
@@ -1010,41 +1127,41 @@ MotorControl.HIGH_SIDE_IDLE_STATE=false
 MotorControl.HW_COMPLEMENTED_LOW_SIDE=false
 MotorControl.HW_DEAD_TIME_NS=500
 MotorControl.HW_OV_CURRENT_PROT_BYPASS=false
-MotorControl.ID_DEMAG=-4731
+MotorControl.ID_DEMAG=-4114
 MotorControl.INRUSH_CURR_LIMITER_POLARITY=DOUT_ACTIVE_HIGH
-MotorControl.INRUSH_CURRLIMIT_AT_POWER_ON=true
+MotorControl.INRUSH_CURRLIMIT_AT_POWER_ON=false
 MotorControl.INRUSH_CURRLIMIT_CHANGE_AFTER_MS=1000
 MotorControl.INRUSH_CURRLIMIT_ENABLING=false
 MotorControl.INRUSH_CURRLIMIT_GPIO_PIN=LL_GPIO_PIN_10
 MotorControl.INRUSH_CURRLIMIT_GPIO_PORT=GPIOC
 MotorControl.INTERNAL_OVERCURRENTPROTECTION=false
 MotorControl.INTERNAL_OVERVOLTAGEPROTECTION=false
-MotorControl.IPs=NVIC,RCC,SYS,CORDIC,MotorControl,ADC1,TIM1,DMA,USART2
-MotorControl.IQMAX=4731
+MotorControl.IPs=NVIC,RCC,SYS,CORDIC,MotorControl,TIM1,ADC1,ADC2,TIM2,DAC1,USART2
+MotorControl.IQMAX=4114
 MotorControl.LCD_JOYSTICK_FUNCTIONALITY=false
 MotorControl.LCD_MODE=LCD_FULL
 MotorControl.LDLQ_RATIO=1.000
 MotorControl.LOW_SIDE_BRAKE_STATE=false
 MotorControl.LOW_SIDE_IDLE_STATE=false
 MotorControl.LOW_SIDE_SIGNALS_ENABLING=LS_PWM_TIMER
-MotorControl.LS=0.001400
-MotorControl.MAX_APPLICATION_SPEED=5000
-MotorControl.MAX_MODULATION_96_PER_CENT=true
-MotorControl.MAX_MODULATION_INDEX=MAX_MODULATION_96_PER_CENT
+MotorControl.LS=0.015000
+MotorControl.MAX_APPLICATION_SPEED=4000
+MotorControl.MAX_MODULATION_100_PER_CENT=true
+MotorControl.MAX_MODULATION_INDEX=MAX_MODULATION_100_PER_CENT
 MotorControl.MC_WORKBENCH_VERSION=5.4.4.20160
 MotorControl.MCU=STM32G431RB
 MotorControl.MCU_TYPE=STM32G431RB
 MotorControl.MEAS_ERRORS_BEFORE_FAULTS=3
 MotorControl.MIN_APPLICATION_SPEED=0
-MotorControl.MOTOR_MAX_SPEED_RPM=5000
+MotorControl.MOTOR_MAX_SPEED_RPM=4000
 MotorControl.MOTOR_TYPE=PMSM
-MotorControl.MOTOR_VOLTAGE_CONSTANT=6.2
+MotorControl.MOTOR_VOLTAGE_CONSTANT=50.0
 MotorControl.MTPA_ENABLING=false
 MotorControl.NB_CONSECUTIVE_TESTS=2
-MotorControl.NOMINAL_BUS_VOLTAGE_V=24
-MotorControl.NOMINAL_CURRENT=4731
+MotorControl.NOMINAL_BUS_VOLTAGE_V=12
+MotorControl.NOMINAL_CURRENT=4114
 MotorControl.OBS_MEAS_ERRORS_BEFORE_FAULTS=3
-MotorControl.OBS_MINIMUM_SPEED_RPM=3000
+MotorControl.OBS_MINIMUM_SPEED_RPM=580
 MotorControl.OCP_COMP_THRESHOLD=0.30
 MotorControl.OCP_FILTER=COMP_Mode_HighSpeed
 MotorControl.OCP_INVERTINGINPUT=COMPX_InvertingInput_VREF
@@ -1093,16 +1210,16 @@ MotorControl.OCPC_INVERTINGINPUT=COMPX_InvertingInput_VREF
 MotorControl.OCPC_INVERTINGINPUT_GPIO_PIN=LL_GPIO_PIN_4
 MotorControl.OCPC_INVERTINGINPUT_GPIO_PORT=GPIOA
 MotorControl.OCPC_INVERTINGINPUT_MODE=INT_MODE
-MotorControl.OCPC_NONINVERTINGINPUT=COMP4_NonInvertingInput_PB0
-MotorControl.OCPC_NONINVERTINGINPUT_GPIO_PIN=LL_GPIO_PIN_0
-MotorControl.OCPC_NONINVERTINGINPUT_GPIO_PORT=GPIOB
+MotorControl.OCPC_NONINVERTINGINPUT=COMP3_NonInvertingInput_PD14
+MotorControl.OCPC_NONINVERTINGINPUT_GPIO_PIN=LL_GPIO_PIN_14
+MotorControl.OCPC_NONINVERTINGINPUT_GPIO_PORT=GPIOD
 MotorControl.OCPC_OUTPUT=COMP_Output_TIM1BKIN2
 MotorControl.OCPC_OUTPUT_GPIO_AF=GPIO_AF_2
-MotorControl.OCPC_OUTPUT_GPIO_PIN=LL_GPIO_PIN_1
-MotorControl.OCPC_OUTPUT_GPIO_PORT=GPIOB
+MotorControl.OCPC_OUTPUT_GPIO_PIN=LL_GPIO_PIN_8
+MotorControl.OCPC_OUTPUT_GPIO_PORT=GPIOC
 MotorControl.OCPC_OUTPUT_MODE=INT_MODE
 MotorControl.OCPC_OUTPUTPOL=COMP_OutputPol_NonInverted
-MotorControl.OCPC_SELECTION=COMP4
+MotorControl.OCPC_SELECTION=COMP3
 MotorControl.OCPREF=23830
 MotorControl.OFST={0,0,0,0,0,0,0,0}
 MotorControl.ON_OVER_VOLTAGE=TURN_OFF_PWM
@@ -1164,7 +1281,7 @@ MotorControl.OV_CURR_BYPASS_GPIO_PIN=LL_GPIO_PIN_11
 MotorControl.OV_CURR_BYPASS_GPIO_PORT=GPIOC
 MotorControl.OV_TEMPERATURE_HYSTERESIS_C=10
 MotorControl.OV_TEMPERATURE_PROT_ENABLING=true
-MotorControl.OV_TEMPERATURE_THRESHOLD_C=110
+MotorControl.OV_TEMPERATURE_THRESHOLD_C=70
 MotorControl.OV_VOLTAGE_PROT_ENABLING=true
 MotorControl.OV_VOLTAGE_THRESHOLD_V=50
 MotorControl.OVERCURR_FEEDBACK_POLARITY=EMSTOP_ACTIVE_LOW
@@ -1190,8 +1307,8 @@ MotorControl.PHASE_CURRENTS_CHANNEL=ADC_CHANNEL_7
 MotorControl.PHASE_CURRENTS_GPIO_PIN=LL_GPIO_PIN_1
 MotorControl.PHASE_CURRENTS_GPIO_PORT=GPIOC
 MotorControl.PHASE_U_CURR_ADC=ADC1_2
-MotorControl.PHASE_U_CURR_CHANNEL=ADC_CHANNEL_2
-MotorControl.PHASE_U_GPIO_PIN=LL_GPIO_PIN_1
+MotorControl.PHASE_U_CURR_CHANNEL=ADC_CHANNEL_1
+MotorControl.PHASE_U_GPIO_PIN=LL_GPIO_PIN_0
 MotorControl.PHASE_U_GPIO_PORT=GPIOA
 MotorControl.PHASE_UH_GPIO_AF=GPIO_AF_6
 MotorControl.PHASE_UH_GPIO_PIN=LL_GPIO_PIN_8
@@ -1202,9 +1319,9 @@ MotorControl.PHASE_UL_GPIO_PIN=LL_GPIO_PIN_7
 MotorControl.PHASE_UL_GPIO_PORT=GPIOA
 MotorControl.PHASE_UL_POLARITY=L_ACTIVE_LOW
 MotorControl.PHASE_V_CURR_ADC=ADC1_2
-MotorControl.PHASE_V_CURR_CHANNEL=ADC_CHANNEL_14
-MotorControl.PHASE_V_GPIO_PIN=LL_GPIO_PIN_11
-MotorControl.PHASE_V_GPIO_PORT=GPIOB
+MotorControl.PHASE_V_CURR_CHANNEL=ADC_CHANNEL_7
+MotorControl.PHASE_V_GPIO_PIN=LL_GPIO_PIN_1
+MotorControl.PHASE_V_GPIO_PORT=GPIOC
 MotorControl.PHASE_VH_GPIO_AF=GPIO_AF_6
 MotorControl.PHASE_VH_GPIO_PIN=LL_GPIO_PIN_9
 MotorControl.PHASE_VH_GPIO_PORT=GPIOA
@@ -1213,10 +1330,10 @@ MotorControl.PHASE_VL_GPIO_AF=GPIO_AF_6
 MotorControl.PHASE_VL_GPIO_PIN=LL_GPIO_PIN_0
 MotorControl.PHASE_VL_GPIO_PORT=GPIOB
 MotorControl.PHASE_VL_POLARITY=L_ACTIVE_LOW
-MotorControl.PHASE_W_CURR_ADC=ADC2
-MotorControl.PHASE_W_CURR_CHANNEL=ADC_CHANNEL_4
-MotorControl.PHASE_W_GPIO_PIN=LL_GPIO_PIN_7
-MotorControl.PHASE_W_GPIO_PORT=GPIOA
+MotorControl.PHASE_W_CURR_ADC=ADC1_2
+MotorControl.PHASE_W_CURR_CHANNEL=ADC_CHANNEL_6
+MotorControl.PHASE_W_GPIO_PIN=LL_GPIO_PIN_0
+MotorControl.PHASE_W_GPIO_PORT=GPIOC
 MotorControl.PHASE_WH_GPIO_AF=GPIO_AF_6
 MotorControl.PHASE_WH_GPIO_PIN=LL_GPIO_PIN_10
 MotorControl.PHASE_WH_GPIO_PORT=GPIOA
@@ -1225,44 +1342,44 @@ MotorControl.PHASE_WL_GPIO_AF=GPIO_AF_4
 MotorControl.PHASE_WL_GPIO_PIN=LL_GPIO_PIN_1
 MotorControl.PHASE_WL_GPIO_PORT=GPIOB
 MotorControl.PHASE_WL_POLARITY=L_ACTIVE_LOW
-MotorControl.PHASE1_DURATION=1000
-MotorControl.PHASE1_FINAL_CURRENT=1234
+MotorControl.PHASE1_DURATION=0
+MotorControl.PHASE1_FINAL_CURRENT=0
 MotorControl.PHASE1_FINAL_SPEED_RPM=0
-MotorControl.PHASE2_DURATION=3333
-MotorControl.PHASE2_FINAL_CURRENT=1234
-MotorControl.PHASE2_FINAL_SPEED_RPM=3333
-MotorControl.PHASE3_DURATION=0
-MotorControl.PHASE3_FINAL_CURRENT=1234
-MotorControl.PHASE3_FINAL_SPEED_RPM=3333
-MotorControl.PHASE4_DURATION=0
-MotorControl.PHASE4_FINAL_CURRENT=1234
-MotorControl.PHASE4_FINAL_SPEED_RPM=3333
+MotorControl.PHASE2_DURATION=700
+MotorControl.PHASE2_FINAL_CURRENT=617
+MotorControl.PHASE2_FINAL_SPEED_RPM=0
+MotorControl.PHASE3_DURATION=350
+MotorControl.PHASE3_FINAL_CURRENT=720
+MotorControl.PHASE3_FINAL_SPEED_RPM=630
+MotorControl.PHASE4_DURATION=1150
+MotorControl.PHASE4_FINAL_CURRENT=720
+MotorControl.PHASE4_FINAL_SPEED_RPM=2700
 MotorControl.PHASE5_DURATION=0
-MotorControl.PHASE5_FINAL_CURRENT=1234
-MotorControl.PHASE5_FINAL_SPEED_RPM=3333
+MotorControl.PHASE5_FINAL_CURRENT=720
+MotorControl.PHASE5_FINAL_SPEED_RPM=2700
 MotorControl.PID_FLUX_KD_DEFAULT=100
-MotorControl.PID_FLUX_KI_DEFAULT=2609
-MotorControl.PID_FLUX_KP_DEFAULT=2854
+MotorControl.PID_FLUX_KI_DEFAULT=2905
+MotorControl.PID_FLUX_KP_DEFAULT=3822
 MotorControl.PID_SPEED_KD_DEFAULT=0
-MotorControl.PID_SPEED_KI_DEFAULT=8
-MotorControl.PID_SPEED_KP_DEFAULT=3000
+MotorControl.PID_SPEED_KI_DEFAULT=700
+MotorControl.PID_SPEED_KP_DEFAULT=1000
 MotorControl.PID_TORQUE_KD_DEFAULT=100
-MotorControl.PID_TORQUE_KI_DEFAULT=2609
-MotorControl.PID_TORQUE_KP_DEFAULT=2854
-MotorControl.PLL_KI_GAIN=8
-MotorControl.PLL_KP_GAIN=355
+MotorControl.PID_TORQUE_KI_DEFAULT=2905
+MotorControl.PID_TORQUE_KP_DEFAULT=3822
+MotorControl.PLL_KI_GAIN=94
+MotorControl.PLL_KP_GAIN=1064
 MotorControl.POLE_PAIR_NUM=4
 MotorControl.POSITION_CTRL_ENABLING=false
-MotorControl.PWBDID=5
-MotorControl.PWM_FREQUENCY=30000
+MotorControl.PWBDID=4
+MotorControl.PWM_FREQUENCY=16000
 MotorControl.PWM_TIMER_REMAPPING=PWM_PARTIAL_REMAP
 MotorControl.PWM_TIMER_SELECTION=PWM_TIM1
 MotorControl.R_BRAKE_GPIO_PIN=LL_GPIO_PIN_11
 MotorControl.R_BRAKE_GPIO_PORT=GPIOC
 MotorControl.R_BRAKE_SWITCH_OFF_THRES_V=40
-MotorControl.REGCONVADC=ADC1
-MotorControl.REGULATION_EXECUTION_RATE=1
-MotorControl.RS=0.60
+MotorControl.REGCONVADC=ADC2
+MotorControl.REGULATION_EXECUTION_RATE=2
+MotorControl.RS=2.85
 MotorControl.RSHUNT=0.01000
 MotorControl.RTOS=NONE
 MotorControl.SEGDIV=0
@@ -1272,22 +1389,22 @@ MotorControl.SERIAL_COM_MODE=COM_BIDIRECTIONAL
 MotorControl.SERIAL_COM_MOTOR=0
 MotorControl.SERIAL_COMMUNICATION=true
 MotorControl.SHARED_SIGNAL_ENABLE=false
-MotorControl.SINGLE_SHUNT=true
 MotorControl.SINGLEDRIVE=true
 MotorControl.SP_KDDIV=16
-MotorControl.SP_KIDIV=15
-MotorControl.SP_KPDIV=15
+MotorControl.SP_KIDIV=256
+MotorControl.SP_KPDIV=16
 MotorControl.SPD_DIFFERENTIAL_TERM_ENABLING=false
 MotorControl.SPEED_BAND_LOWER_LIMIT=15
 MotorControl.SPEED_BAND_UPPER_LIMIT=17
-MotorControl.SPEED_LOOP_FREQUENCY_HZ=1000
+MotorControl.SPEED_FEEDBACK_CHECK=true
+MotorControl.SPEED_LOOP_FREQUENCY_HZ=500
 MotorControl.SPEED_SENSOR_SELECTION=STATE_OBSERVER_PLL
 MotorControl.START_STOP_BTN=true
 MotorControl.START_STOP_GPIO_PIN=LL_GPIO_PIN_13
 MotorControl.START_STOP_GPIO_PORT=GPIOC
 MotorControl.START_STOP_POLARITY=DIN_ACTIVE_LOW
 MotorControl.START_STOP_POLARITY_EDGE=GPIO_NOPULL
-MotorControl.STARTING_ANGLE_DEG=0
+MotorControl.STARTING_ANGLE_DEG=90
 MotorControl.STATE_OBSERVER_PLL=true
 MotorControl.STM32G431RB=true
 MotorControl.STO_FIFO_DEPTH_01HZ=64
@@ -1298,15 +1415,16 @@ MotorControl.SW_OV_CURRENT_PROT_ENABLING=true
 MotorControl.T_MAX=110
 MotorControl.T0_C=25
 MotorControl.TEMP_ADC_SAMPLING_TIME=47
-MotorControl.TEMP_FDBK_ADC=ADC1
+MotorControl.TEMP_FDBK_ADC=ADC2
 MotorControl.TEMP_FDBK_CHANNEL=ADC_CHANNEL_8
 MotorControl.TEMP_FDBK_GPIO_PIN=LL_GPIO_PIN_2
 MotorControl.TEMP_FDBK_GPIO_PORT=GPIOC
 MotorControl.TEMPERATURE_READING=true
 MotorControl.TF_KDDIV=8192
-MotorControl.TF_KIDIV=8192
-MotorControl.TF_KPDIV=128
+MotorControl.TF_KIDIV=256
+MotorControl.TF_KPDIV=8
 MotorControl.TFDIFFERENTIAL_TERM_ENABLING=false
+MotorControl.THREE_SHUNT_INDEPENDENT_RESOURCES=true
 MotorControl.TNOISE_NS=1000
 MotorControl.TRANSITION_DURATION=25
 MotorControl.TRISE_NS=1000
@@ -1322,8 +1440,8 @@ MotorControl.USE_3OPAMPS=false
 MotorControl.USE_INTERNAL_OPAMP=false
 MotorControl.UV_VOLTAGE_PROT_ENABLING=true
 MotorControl.V0_V=1.055
-MotorControl.VARIANCE_THRESHOLD=0.1
-MotorControl.VBUS_ADC=ADC1
+MotorControl.VARIANCE_THRESHOLD=0.062
+MotorControl.VBUS_ADC=ADC2
 MotorControl.VBUS_ADC_SAMPLING_TIME=47
 MotorControl.VBUS_CHANNEL=ADC_CHANNEL_2
 MotorControl.VBUS_GPIO_PIN=LL_GPIO_PIN_1
@@ -1341,12 +1459,14 @@ MotorControl.WB_to_Mx_version=1.1.0
 # ProjectManager.functionlistsort=\                                                                                    #
 # 1-MX_GPIO_Init-GPIO-false-HAL-true,\                                                                                 #
 # 2-SystemClock_Config-RCC-false-HAL-false,\                                                                           #
-# 3-MX_DMA_Init-DMA-false-HAL-true,\                                                                                   #
-# 4-MX_ADC1_Init-ADC1-false-HAL-true,\                                                                                 #
+# 3-MX_ADC1_Init-ADC1-false-HAL-true,\                                                                                 #
+# 4-MX_ADC2_Init-ADC2-false-HAL-true,\                                                                                 #
 # 5-MX_CORDIC_Init-CORDIC-false-HAL-true,\                                                                             #
-# 6-MX_TIM1_Init-TIM1-false-HAL-true,\                                                                                 #
-# 7-MX_USART2_UART_Init-USART2-false-HAL-true,\                                                                        #
-# 8-MX_MotorControl_Init-MotorControl-false-HAL-true                                                                   #
+# 6-MX_DAC1_Init-DAC1-false-HAL-true,\                                                                                 #
+# 7-MX_TIM1_Init-TIM1-false-HAL-true,\                                                                                 #
+# 8-MX_TIM2_Init-TIM2-false-HAL-true,\                                                                                 #
+# 9-MX_USART2_UART_Init-USART2-false-HAL-true,\                                                                        #
+# 10-MX_MotorControl_Init-MotorControl-false-HAL-true                                                                  #
 ########################################################################################################################
 
 Mcu.UserConstants=

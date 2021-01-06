@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    mc_tasks.h 
+  * @file    mc_tasks.h
   * @author  Motor Control SDK Team, ST Microelectronics
   * @brief   This file implementes tasks definition.
   ******************************************************************************
@@ -16,7 +16,7 @@
   *
   ******************************************************************************
   * @ingroup MCTasks
-  */ 
+  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MCTASKS_H
@@ -31,8 +31,8 @@
   */
 
 /** @defgroup MCTasks Motor Control Tasks
-  * 
-  * @brief Motor Control subsystem configuration and operation routines.  
+  *
+  * @brief Motor Control subsystem configuration and operation routines.
   *
   * @{
   */

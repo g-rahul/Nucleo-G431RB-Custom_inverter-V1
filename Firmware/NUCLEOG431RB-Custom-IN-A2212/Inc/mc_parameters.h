@@ -3,7 +3,7 @@
   ******************************************************************************
   * @file    mc_parameters.h
   * @author  Motor Control SDK Team, ST Microelectronics
-  * @brief   This file provides declarations of HW parameters specific to the 
+  * @brief   This file provides declarations of HW parameters specific to the
   *          configuration of the subsystem.
   *
   ******************************************************************************
@@ -22,26 +22,17 @@
 #ifndef MC_PARAMETERS_H
 #define MC_PARAMETERS_H
 
-#include "r1_g4xx_pwm_curr_fdbk.h"
- 
- 
+#include "r3_2_g4xx_pwm_curr_fdbk.h"
+
 /* USER CODE BEGIN Additional include */
 
-/* USER CODE END Additional include */  
- 
- 
- 
- 
- 
- 
- 
-extern R1_Params_t R1_ParamsM1; 
- 
- 
- 
+/* USER CODE END Additional include */
+
+extern R3_2_Params_t R3_2_ParamsM1;
+
 /* USER CODE BEGIN Additional extern */
 
-/* USER CODE END Additional extern */  
+/* USER CODE END Additional extern */
 
 #endif /* MC_PARAMETERS_H */
 /******************* (C) COPYRIGHT 2019 STMicroelectronics *****END OF FILE****/

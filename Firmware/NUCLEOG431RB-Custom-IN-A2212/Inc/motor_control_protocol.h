@@ -30,6 +30,7 @@
 #include "frame_communication_protocol.h"
 
 #include "user_interface.h"
+#include "dac_ui.h"
 
 /**
  * @addtogroup MCSDK
@@ -60,6 +61,7 @@ typedef struct MCP_Handle_s
   FCP_AbortReceiveFct_t fFcpAbortReceive;
   uint8_t BufferFrame[FCP_MAX_PAYLOAD_SIZE];  /**< buffer containing data */
   const char *s_fwVer;    /**< String of FW version used */
+  DAC_UI_Handle_t * pDAC; /**< Pointer on DAC handle structure. */
   uint8_t BufferSize;      /**< Frame buffer size */
 
 } MCP_Handle_t;
@@ -72,6 +74,7 @@ void MCP_Init( MCP_Handle_t *pHandle,
                FCP_SendFct_t fFcpSend,
                FCP_ReceiveFct_t fFcpReceive,
                FCP_AbortReceiveFct_t fFcpAbortReceive,
+               DAC_UI_Handle_t * pDAC,
                const char* s_fwVer);
 void MCP_OnTimeOut(MCP_Handle_t *pHandle);
 

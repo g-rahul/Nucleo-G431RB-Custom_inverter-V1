@@ -1,0 +1,3 @@
+EMF/BUS_SENSE=BEMF_U,BEMF_V,BEMF_W,GPIO_BEMF,V_Bus
+G_SignalFet=G_U_HO,PH_U,G_U_LO,G_V_HO,PH_V,G_V_LO,G_W_HO,PH_W,G_W_LO
+V_Shunt=V_Shunt_U_N,V_Shunt_U_P,V_Shunt_V_N,V_Shunt_V_P,V_Shunt_W_N,V_Shunt_W_P

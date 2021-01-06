@@ -18,7 +18,7 @@
   *
   ******************************************************************************
   */
-  
+
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __PARAMETERS_CONVERSION_G4XX_H
 #define __PARAMETERS_CONVERSION_G4XX_H
@@ -30,7 +30,7 @@
 
 /************************* CPU & ADC PERIPHERAL CLOCK CONFIG ******************/
 #define SYSCLK_FREQ      170000000uL
-#define TIM_CLOCK_DIVIDER  1 
+#define TIM_CLOCK_DIVIDER  1
 #define ADV_TIM_CLK_MHz  170
 #define ADC_CLK_MHz     42
 #define HALL_TIM_CLK    170000000uL
@@ -42,45 +42,45 @@
 #define TIMx_BRK_M1_IRQHandler TIM1_BRK_TIM15_IRQHandler
 
 #define ADC_TRIG_CONV_LATENCY_CYCLES 3.5
-#define ADC_SAR_CYCLES 12.5 
+#define ADC_SAR_CYCLES 12.5
 
 #define M1_VBUS_SW_FILTER_BW_FACTOR     6u
 
 #define OPAMP1_InvertingInput_PC5         LL_OPAMP_INPUT_INVERT_IO0
-#define OPAMP1_InvertingInput_PA3         LL_OPAMP_INPUT_INVERT_IO1 
+#define OPAMP1_InvertingInput_PA3         LL_OPAMP_INPUT_INVERT_IO1
 #define OPAMP1_InvertingInput_PGA         LL_OPAMP_INPUT_INVERT_CONNECT_NO
 #define OPAMP1_InvertingInput_FOLLOWER    LL_OPAMP_MODE_FOLLOWER
 #define OPAMP2_InvertingInput_PC5         LL_OPAMP_INPUT_INVERT_IO0
-#define OPAMP2_InvertingInput_PA5         LL_OPAMP_INPUT_INVERT_IO1 
+#define OPAMP2_InvertingInput_PA5         LL_OPAMP_INPUT_INVERT_IO1
 #define OPAMP2_InvertingInput_PGA         LL_OPAMP_INPUT_INVERT_CONNECT_NO
 #define OPAMP2_InvertingInput_FOLLOWER    LL_OPAMP_MODE_FOLLOWER
 #define OPAMP3_InvertingInput_PB10        LL_OPAMP_INPUT_INVERT_IO0
-#define OPAMP3_InvertingInput_PB2         LL_OPAMP_INPUT_INVERT_IO1 
+#define OPAMP3_InvertingInput_PB2         LL_OPAMP_INPUT_INVERT_IO1
 #define OPAMP3_InvertingInput_PGA         LL_OPAMP_INPUT_INVERT_CONNECT_NO
 #define OPAMP3_InvertingInput_FOLLOWER    LL_OPAMP_MODE_FOLLOWER
 #define OPAMP4_InvertingInput_PB10        LL_OPAMP_INPUT_INVERT_IO0
-#define OPAMP4_InvertingInput_PD8         LL_OPAMP_INPUT_INVERT_IO1 
+#define OPAMP4_InvertingInput_PD8         LL_OPAMP_INPUT_INVERT_IO1
 #define OPAMP4_InvertingInput_PGA         LL_OPAMP_INPUT_INVERT_CONNECT_NO
 #define OPAMP4_InvertingInput_FOLLOWER    LL_OPAMP_MODE_FOLLOWER
 
-#define OPAMP1_NonInvertingInput_PA1      LL_OPAMP_INPUT_NONINVERT_IO0   
-#define OPAMP1_NonInvertingInput_PA3      LL_OPAMP_INPUT_NONINVERT_IO1  
-#define OPAMP1_NonInvertingInput_PA7      LL_OPAMP_INPUT_NONINVERT_IO2                                                                  
-#define OPAMP2_NonInvertingInput_PA7      LL_OPAMP_INPUT_NONINVERT_IO0                                
-#define OPAMP2_NonInvertingInput_PB14     LL_OPAMP_INPUT_NONINVERT_IO1                                  
-#define OPAMP2_NonInvertingInput_PB0      LL_OPAMP_INPUT_NONINVERT_IO2     
-#define OPAMP2_NonInvertingInput_PD14     LL_OPAMP_INPUT_NONINVERT_IO3                                  
-#define OPAMP3_NonInvertingInput_PB0      LL_OPAMP_INPUT_NONINVERT_IO0                                  
-#define OPAMP3_NonInvertingInput_PB13     LL_OPAMP_INPUT_NONINVERT_IO1                                  
+#define OPAMP1_NonInvertingInput_PA1      LL_OPAMP_INPUT_NONINVERT_IO0
+#define OPAMP1_NonInvertingInput_PA3      LL_OPAMP_INPUT_NONINVERT_IO1
+#define OPAMP1_NonInvertingInput_PA7      LL_OPAMP_INPUT_NONINVERT_IO2
+#define OPAMP2_NonInvertingInput_PA7      LL_OPAMP_INPUT_NONINVERT_IO0
+#define OPAMP2_NonInvertingInput_PB14     LL_OPAMP_INPUT_NONINVERT_IO1
+#define OPAMP2_NonInvertingInput_PB0      LL_OPAMP_INPUT_NONINVERT_IO2
+#define OPAMP2_NonInvertingInput_PD14     LL_OPAMP_INPUT_NONINVERT_IO3
+#define OPAMP3_NonInvertingInput_PB0      LL_OPAMP_INPUT_NONINVERT_IO0
+#define OPAMP3_NonInvertingInput_PB13     LL_OPAMP_INPUT_NONINVERT_IO1
 #define OPAMP3_NonInvertingInput_PA1      LL_OPAMP_INPUT_NONINVERT_IO2
 #define OPAMP4_NonInvertingInput_PB13     LL_OPAMP_INPUT_NONINVERT_IO0
 #define OPAMP4_NonInvertingInput_PD11     LL_OPAMP_INPUT_NONINVERT_IO1
 #define OPAMP4_NonInvertingInput_PB11     LL_OPAMP_INPUT_NONINVERT_IO2
-#define OPAMP5_NonInvertingInput_PB14     LL_OPAMP_INPUT_NONINVERT_IO0                                 
-#define OPAMP5_NonInvertingInput_PD12     LL_OPAMP_INPUT_NONINVERT_IO1                                 
+#define OPAMP5_NonInvertingInput_PB14     LL_OPAMP_INPUT_NONINVERT_IO0
+#define OPAMP5_NonInvertingInput_PD12     LL_OPAMP_INPUT_NONINVERT_IO1
 #define OPAMP5_NonInvertingInput_PC3      LL_OPAMP_INPUT_NONINVERT_IO2
-#define OPAMP6_NonInvertingInput_PB12     LL_OPAMP_INPUT_NONINVERT_IO0                                 
-#define OPAMP6_NonInvertingInput_PD9      LL_OPAMP_INPUT_NONINVERT_IO1                                 
+#define OPAMP6_NonInvertingInput_PB12     LL_OPAMP_INPUT_NONINVERT_IO0
+#define OPAMP6_NonInvertingInput_PD9      LL_OPAMP_INPUT_NONINVERT_IO1
 #define OPAMP6_NonInvertingInput_PB13     LL_OPAMP_INPUT_NONINVERT_IO2
 
 #define OPAMP1_PGAConnect_PC5             OPAMP_CSR_PGGAIN_3
@@ -127,7 +127,7 @@
 
 /* USER CODE BEGIN Additional parameters */
 
-/* USER CODE END Additional parameters */  
+/* USER CODE END Additional parameters */
 
 #endif /*__PARAMETERS_CONVERSION_F30X_H*/
 
